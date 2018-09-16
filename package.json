@@ -139,11 +139,19 @@
     }
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^2.0.2",
-    "@semantic-release/git": "^5.0.0",
-    "@semantic-release/github": "^5.0.5",
-    "@semantic-release/npm": "^3.3.1",
-    "@yeutech-lab/rollup-umd-documentation": "^2.3.19",
+    "@semantic-release/changelog": "^3.0.0",
+    "@semantic-release/exec": "^2.3.0",
+    "@semantic-release/git": "^7.0.0",
+    "@semantic-release/gitlab": "^2.1.4",
+    "@semantic-release/npm": "^4.0.0",
+    "@yeutech-lab/rollup-umd-documentation": "^2.3.18",
+    "@yeutech/rollup-documentation": "^2.3.4",
+    "@yeutech/rollup-umd-ci-build": "^1.0.5",
+    "@yeutech/rollup-umd-ci-deploy": "^1.0.7",
+    "@yeutech/rollup-umd-ci-release": "^1.0.5",
+    "@yeutech/rollup-umd-ci-release-transitive": "^1.1.6",
+    "@yeutech/rollup-umd-ci-test": "^1.0.6",
+    "@yeutech/rollup-umd-scripts": "^0.15.22",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -188,7 +196,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
-    "react-styleguidist": "7.1.1",
+    "react-styleguidist": "7.1.0",
     "react-test-renderer": "^16.0.0",
     "redux": "^4.0.0",
     "redux-immutable": "^4.0.0",
@@ -275,7 +283,7 @@
   },
   "publishConfig": {
     "tag": "latest",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.kopaxgroup.com"
   },
   "private": false,
   "release": {
