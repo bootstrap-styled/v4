@@ -226,6 +226,7 @@
     "setupFiles": [
       "raf/polyfill"
     ],
+    "testURL": "http://localhost/",
     "setupTestFrameworkScriptFile": "<rootDir>/internals/testing/test-bundler.js",
     "testPathIgnorePatterns": [
       "<rootDir>/dist/",
