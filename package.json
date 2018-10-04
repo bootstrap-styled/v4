@@ -247,8 +247,7 @@
     ]
   },
   "pre-commit": [
-    "build:readme",
-    "lint-staged"
+    "build:readme"
   ],
   "dependencies": {
     "bootstrap-styled": "^1.7.8",
