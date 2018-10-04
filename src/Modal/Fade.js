@@ -4,7 +4,7 @@ import cn from 'classnames';
 import Transition from 'react-transition-group/Transition';
 import mapToCssModules from 'map-to-css-modules';
 import omit from 'lodash.omit';
-import { pick } from 'bootstrap-styled-utils';
+import { pick } from '@bootstrap-styled/utils/lib/tools';
 
 export const propTypes = {
   ...Transition.propTypes,

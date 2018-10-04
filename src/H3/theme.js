@@ -1,4 +1,4 @@
-import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
 const { rmUnit, UNIT } = unitUtils;
 /**
  * BOOTSTRAP THEME H3

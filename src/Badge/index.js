@@ -6,9 +6,9 @@ import cn from 'classnames';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { hoverFocus } from 'bootstrap-styled-mixins/lib/hover';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { badgeVariant } from 'bootstrap-styled-mixins/lib/badge';
+import { hoverFocus } from '@bootstrap-styled/css-mixins/lib/hover';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { badgeVariant } from '@bootstrap-styled/css-mixins/lib/badge';
 
 export const defaultProps = {
   color: 'default',

@@ -9,10 +9,10 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { borderRightRadius, borderLeftRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { mediaBreakpointUp } from 'bootstrap-styled-mixins/lib/breakpoints';
-import { ifThen } from 'bootstrap-styled-mixins/lib/conditional';
-import { card } from 'bootstrap-styled-mixins/lib/cards';
+import { borderRightRadius, borderLeftRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { mediaBreakpointUp } from '@bootstrap-styled/css-mixins/lib/breakpoints';
+import { ifThen } from '@bootstrap-styled/css-mixins/lib/conditional';
+import { card } from '@bootstrap-styled/css-mixins/lib/cards';
 
 export const defaultProps = {
   tag: 'div',
@@ -33,8 +33,6 @@ export const defaultProps = {
     '$card-bg': '$white',
     '$card-link-hover-color': '$white',
     '$card-img-overlay-padding': '1.25rem',
-    '$card-margin-y-halved': '((rmUnit(], UNIT.REM) / 2) + UNIT.REM',
-    '$card-margin-x-halved': '((rmUnit(], UNIT.REM) / 2) + UNIT.REM',
     '$card-columns-count-md': '2',
     '$card-columns-gap-md': '1rem',
     '$card-columns-margin-md': '$card-spacer-y',
@@ -89,8 +87,6 @@ export const propTypes = {
     '$card-bg': PropTypes.string,
     '$card-link-hover-color': PropTypes.string,
     '$card-img-overlay-padding': PropTypes.string,
-    '$card-margin-y-halved': PropTypes.string,
-    '$card-margin-x-halved': PropTypes.string,
     '$card-columns-count-md': PropTypes.string,
     '$card-columns-gap-md': PropTypes.string,
     '$card-columns-margin-md': PropTypes.string,
@@ -160,8 +156,6 @@ const CardGroup = styled(CardGroupUnstyled)`
       props.theme['$card-border-width'],
       props.theme['$card-border-color'],
       props.theme['$card-border-radius'],
-      props.theme['$card-margin-y-halved'],
-      props.theme['$card-margin-x-halved'],
       props.theme['$card-cap-bg'],
       props.theme['$card-border-radius-inner'],
       props.theme['$brand-primary'],

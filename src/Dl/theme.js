@@ -1,4 +1,4 @@
-import { allowFalseValue } from '../theme/utils';
+import { allowFalseValue } from 'bootstrap-styled/lib/theme/utils';
 /**
  * BOOTSTRAP THEME DL
  *

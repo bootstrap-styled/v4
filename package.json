@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
   "module": "dist/@bootstrap-styled/v4.esm.js",
-  "homepage": "https://@bootstrap-styled/v4.yeutech.com",
+  "homepage": "https://bootstrap-styled.yeutech.com/v4",
   "browserslist": [
     "IE >= 9",
     "last 2 versions"
@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://module.kopaxgroup.com/bootstrap-styled/v4.yeutech.com.git"
+    "url": "https://module.kopaxgroup.com/bootstrap-styled/v4.git"
   },
   "bugs": {
-    "url": "https://module.kopaxgroup.com/bootstrap-styled/v4.yeutech.com/issues"
+    "url": "https://module.kopaxgroup.com/bootstrap-styled/v4/issues"
   },
   "keywords": [
     "rollup",
@@ -144,7 +144,6 @@
     "@semantic-release/git": "^7.0.0",
     "@semantic-release/gitlab": "^2.1.4",
     "@semantic-release/npm": "^4.0.0",
-    "@yeutech-lab/rollup-umd-documentation": "^2.3.18",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -169,8 +168,6 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "bootstrap-styled-provider": "^1.1.5",
-    "bootstrap-styled-redux": "^1.0.1",
     "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
@@ -186,8 +183,8 @@
     "mini-html-webpack-plugin": "^0.2.3",
     "pre-commit": "^1.2.2",
     "raf": "^3.3.2",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "react-test-renderer": "^16.0.0",
     "redux": "^4.0.0",
@@ -207,7 +204,7 @@
     "rollup-watch": "^4.3.1",
     "semantic-release": "^15.8.0",
     "sinon": "^3.3.0",
-    "styled-components": "^3.3.2",
+    "styled-components": "^3.3.3",
     "toctoc": "^0.3.0",
     "webpack": "^4.16.1"
   },
@@ -218,6 +215,7 @@
     "setupFiles": [
       "raf/polyfill"
     ],
+    "testURL": "http://localhost/",
     "setupTestFrameworkScriptFile": "<rootDir>/internals/testing/test-bundler.js",
     "testPathIgnorePatterns": [
       "<rootDir>/dist/",
@@ -253,9 +251,12 @@
     "lint-staged"
   ],
   "dependencies": {
+    "bootstrap-styled": "^1.7.8",
     "basic-math-utils": "^0.3.4",
-    "bootstrap-styled-mixins": "^1.0.4",
-    "bootstrap-styled-utils": "^1.0.2",
+    "@bootstrap-styled/utils": "^1.0.5",
+    "@bootstrap-styled/css-mixins": "^1.0.0",
+    "@bootstrap-styled/css-utils": "^1.0.0",
+    "@bootstrap-styled/provider": "^1.0.1",
     "classnames": "^2.2.6",
     "color": "^1.0.3",
     "lodash.omit": "^4.5.0",
@@ -269,13 +270,14 @@
     "tether-fix": "^1.4.0-fix-es"
   },
   "peerDependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "styled-components": "^3.3.0"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "styled-components": "^3.3.3"
   },
   "publishConfig": {
     "tag": "latest",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "private": false,
   "release": {
@@ -307,7 +309,8 @@
         "path": "@semantic-release/git",
         "assets": [
           "package.json",
-          "src/**/*.js",
+          "dist/**/*.{js|es}",
+          "lib/**/*.js",
           "CHANGELOG.md",
           "README.md",
           "LICENSE.md"

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { navbar } from 'bootstrap-styled-mixins/lib/navbar';
-import { ifThen } from 'bootstrap-styled-mixins/lib/conditional';
+import { navbar } from '@bootstrap-styled/css-mixins/lib/navbar';
+import { ifThen } from '@bootstrap-styled/css-mixins/lib/conditional';
 import PropTypes from 'prop-types';
 
 export const defaultProps = {

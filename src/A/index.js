@@ -5,7 +5,7 @@ import cn from 'classnames';
 import omit from 'lodash.omit';
 
 import mapToCssModules from 'map-to-css-modules';
-import { a } from 'bootstrap-styled-mixins/lib/a';
+import { a } from '@bootstrap-styled/css-mixins/lib/a';
 
 export const defaultProps = {
   tag: 'a',

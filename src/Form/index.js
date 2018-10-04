@@ -8,14 +8,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cn from 'classnames';
-import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { formControl, formControlValidation } from 'bootstrap-styled-mixins/lib/forms';
-import { mediaBreakpointUp } from 'bootstrap-styled-mixins/lib/breakpoints';
-import { customForms } from 'bootstrap-styled-mixins/lib/customForms';
-import { makeRow } from 'bootstrap-styled-mixins/lib/grid';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { formControl, formControlValidation } from '@bootstrap-styled/css-mixins/lib/forms';
+import { mediaBreakpointUp } from '@bootstrap-styled/css-mixins/lib/breakpoints';
+import { customForms } from '@bootstrap-styled/css-mixins/lib/customForms';
+import { makeRow } from '@bootstrap-styled/css-mixins/lib/grid';
 
 
 const defaultProps = {

@@ -7,7 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
-import { makeGridColumns } from 'bootstrap-styled-mixins/lib/grid-framework';
+import { makeGridColumns } from '@bootstrap-styled/css-mixins/lib/grid-framework';
 
 export const defaultProps = {
   theme: {

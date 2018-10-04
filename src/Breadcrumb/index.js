@@ -8,8 +8,8 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { clearfix } from 'bootstrap-styled-mixins/lib/clearfix';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { clearfix } from '@bootstrap-styled/css-mixins/lib/clearfix';
 
 export const defaultProps = {
   tag: 'ol',

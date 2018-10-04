@@ -1,6 +1,6 @@
 import Color from 'color';
-import { assertAscending, assertStartAtZero } from 'bootstrap-styled-mixins/lib/variables';
-import { allowFalseValue } from '../theme/utils';
+import { assertAscending, assertStartAtZero } from '@bootstrap-styled/css-mixins/lib/variables';
+import { allowFalseValue } from 'bootstrap-styled/lib/theme/utils';
 /**
  * BOOTSTRAP THEME MODAL
  *

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
-import { media as mediaCss } from 'bootstrap-styled-mixins/lib/media';
+import { media as mediaCss } from '@bootstrap-styled/css-mixins/lib/media';
 import mapToCssModules from 'map-to-css-modules';
 
 

@@ -9,9 +9,9 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { hoverFocusActive } from 'bootstrap-styled-mixins/lib/hover';
-import { borderRadius, borderLeftRadius, borderRightRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { formControl } from 'bootstrap-styled-mixins/lib/forms';
+import { hoverFocusActive } from '@bootstrap-styled/css-mixins/lib/hover';
+import { borderRadius, borderLeftRadius, borderRightRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { formControl } from '@bootstrap-styled/css-mixins/lib/forms';
 
 
 export const defaultProps = {

@@ -6,8 +6,8 @@ import styled from 'styled-components';
 import {makeTheme} from './theme';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import {navbar} from 'bootstrap-styled-mixins/lib/navbar';
-import {nav} from 'bootstrap-styled-mixins/lib/nav';
+import {navbar} from '@bootstrap-styled/css-mixins/lib/navbar';
+import {nav} from '@bootstrap-styled/css-mixins/lib/nav';
 
 
 const getToggleableClass = (toggleable) => { // eslint-disable-line react/prefer-stateless-function

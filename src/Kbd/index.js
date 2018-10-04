@@ -7,8 +7,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { boxShadow } from 'bootstrap-styled-mixins/lib/box-shadow';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { boxShadow } from '@bootstrap-styled/css-mixins/lib/box-shadow';
 
 export const defaultProps = {
   theme: {

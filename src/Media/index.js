@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cn from 'classnames';
 import mapToCssModules from 'map-to-css-modules';
-import { media } from 'bootstrap-styled-mixins/lib/media';
+import { media } from '@bootstrap-styled/css-mixins/lib/media';
 import A from '../A';
 import Img from '../Img';
 import Ul from '../Ul';
