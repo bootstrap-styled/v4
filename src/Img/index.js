@@ -11,10 +11,10 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { imgFluid } from 'bootstrap-styled-mixins/lib/image';
-import { boxShadow } from 'bootstrap-styled-mixins/lib/box-shadow';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { transition } from 'bootstrap-styled-mixins/lib/transition';
+import { imgFluid } from '@bootstrap-styled/css-mixins/lib/image';
+import { boxShadow } from '@bootstrap-styled/css-mixins/lib/box-shadow';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { transition } from '@bootstrap-styled/css-mixins/lib/transition';
 
 
 export const defaultProps = {

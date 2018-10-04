@@ -9,8 +9,8 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { nav } from 'bootstrap-styled-mixins/lib/nav';
-import { navbar as navbarMixin } from 'bootstrap-styled-mixins/lib/navbar';
+import { nav } from '@bootstrap-styled/css-mixins/lib/nav';
+import { navbar as navbarMixin } from '@bootstrap-styled/css-mixins/lib/navbar';
 import Ul from '../Ul';
 
 

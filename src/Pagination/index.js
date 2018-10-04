@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { pagination } from 'bootstrap-styled-mixins/lib/paginations';
+import { pagination } from '@bootstrap-styled/css-mixins/lib/paginations';
 
 
 export const defaultProps = {

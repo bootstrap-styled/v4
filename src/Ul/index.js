@@ -11,9 +11,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
-import { nav } from 'bootstrap-styled-mixins/lib/nav';
-import { listUnstyled, listInline } from 'bootstrap-styled-mixins/lib/lists';
-import { navbar } from 'bootstrap-styled-mixins/lib/navbar';
+import { nav } from '@bootstrap-styled/css-mixins/lib/nav';
+import { listUnstyled, listInline } from '@bootstrap-styled/css-mixins/lib/lists';
+import { navbar } from '@bootstrap-styled/css-mixins/lib/navbar';
 
 
 export const defaultProps = {

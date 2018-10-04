@@ -9,10 +9,10 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { hover } from 'bootstrap-styled-mixins/lib/hover';
-import { borderRadius, borderTopRadius, borderBottomRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { cardVariant, cardOutlineVariant, cardInverse } from 'bootstrap-styled-mixins/lib/cards';
-import { ifThen } from 'bootstrap-styled-mixins/lib/conditional';
+import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
+import { borderRadius, borderTopRadius, borderBottomRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { cardVariant, cardOutlineVariant, cardInverse } from '@bootstrap-styled/css-mixins/lib/cards';
+import { ifThen } from '@bootstrap-styled/css-mixins/lib/conditional';
 
 export const defaultProps = {
   tag: 'div',

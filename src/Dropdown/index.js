@@ -9,12 +9,12 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { boxShadow } from 'bootstrap-styled-mixins/lib/box-shadow';
-import { navDivider } from 'bootstrap-styled-mixins/lib/nav-divider';
-import { hoverFocus } from 'bootstrap-styled-mixins/lib/hover';
-import { buttonGroup } from 'bootstrap-styled-mixins/lib/buttonGroup';
-import { ifThen } from 'bootstrap-styled-mixins/lib/conditional';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { boxShadow } from '@bootstrap-styled/css-mixins/lib/box-shadow';
+import { navDivider } from '@bootstrap-styled/css-mixins/lib/nav-divider';
+import { hoverFocus } from '@bootstrap-styled/css-mixins/lib/hover';
+import { buttonGroup } from '@bootstrap-styled/css-mixins/lib/buttonGroup';
+import { ifThen } from '@bootstrap-styled/css-mixins/lib/conditional';
 import DropdownMenu from './DropdownMenu';
 import TetherContent from '../TetherContent';
 

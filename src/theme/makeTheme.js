@@ -1,4 +1,4 @@
-import makeOriginal from '../theme/makeOriginal';
+import makeOriginal from 'bootstrap-styled/lib/theme/makeOriginal';
 import { makeTheme as makeThemeA } from '../A/theme';
 import { makeTheme as makeThemeAlert } from '../Alert/theme';
 import { makeTheme as makeThemeBadge } from '../Badge/theme';

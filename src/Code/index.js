@@ -7,7 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
 
 export const defaultProps = {
   tag: 'a',

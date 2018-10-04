@@ -8,9 +8,9 @@ import cn from 'classnames';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { alertVariant } from 'bootstrap-styled-mixins/lib/alert';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { createChainedFunction } from 'bootstrap-styled-utils';
+import { alertVariant } from '@bootstrap-styled/css-mixins/lib/alert';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { createChainedFunction } from '@bootstrap-styled/utils/lib/tools';
 import Fade, { defaultProps as FadeDefaultProps } from '../Modal/Fade';
 import Close from '../Close';
 

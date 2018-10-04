@@ -7,11 +7,11 @@ import styled from 'styled-components';
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { tableRowVariant } from 'bootstrap-styled-mixins/lib/table-row';
-import { hover as hoverMixin } from 'bootstrap-styled-mixins/lib/hover';
+import { tableRowVariant } from '@bootstrap-styled/css-mixins/lib/table-row';
+import { hover as hoverMixin } from '@bootstrap-styled/css-mixins/lib/hover';
 
 
 export const defaultProps = {

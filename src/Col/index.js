@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import omit from 'lodash.omit';
-import { makeGridColumns } from 'bootstrap-styled-mixins/lib/grid-framework';
+import { makeGridColumns } from '@bootstrap-styled/css-mixins/lib/grid-framework';
 import mapToCssModules from 'map-to-css-modules';
 
 

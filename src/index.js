@@ -117,5 +117,5 @@ export { default as NavDropdown } from './Navbar/NavDropdown';
 export { default as Container } from './Container';
 export { default as ContainerFluid } from './ContainerFluid';
 // 4. extra
-export { getGlobalStyles, getGlobalStyleNoBootstrapProvider } from 'bootstrap-styled-mixins/lib/utilities/reboot';
+export { getGlobalStyles, getGlobalStyleNoBootstrapProvider } from '@bootstrap-styled/css-utils/lib/reboot';
 

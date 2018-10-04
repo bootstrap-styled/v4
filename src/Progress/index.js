@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import styled, { keyframes } from 'styled-components';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { getBackgroundUtilities } from 'bootstrap-styled-mixins/lib/utilities/background';
-import { gradientStriped } from 'bootstrap-styled-mixins/lib/gradients';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { getBackgroundUtilities } from '@bootstrap-styled/css-utils/lib/background';
+import { gradientStriped } from '@bootstrap-styled/css-mixins/lib/gradients';
 
 
 export const defaultProps = {

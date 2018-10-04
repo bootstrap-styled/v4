@@ -8,7 +8,7 @@ import cn from 'classnames';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { buttonGroup } from 'bootstrap-styled-mixins/lib/buttonGroup';
+import { buttonGroup } from '@bootstrap-styled/css-mixins/lib/buttonGroup';
 
 export const defaultProps = {
   tag: 'div',

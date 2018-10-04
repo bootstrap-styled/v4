@@ -1,10 +1,10 @@
 import Color from 'color';
-import { allowFalseValue } from '../theme/utils';
+import { allowFalseValue } from 'bootstrap-styled/lib/theme/utils';
 /**
  * BOOTSTRAP THEME A TAG
  *
  * this file is not meant to be used and must be kept as original
- * @param userTheme
+ * @param userThemeh
  */
 export const makeTheme = (userTheme = {}) => {
   /* eslint dot-notation: 'off', new-cap: 'off' */

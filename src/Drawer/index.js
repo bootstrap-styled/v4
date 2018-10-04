@@ -4,10 +4,10 @@ import cn from 'classnames';
 import omit from 'lodash.omit';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules';
-import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
-import { ifThen } from 'bootstrap-styled-mixins';
-import { boxShadow } from 'bootstrap-styled-mixins/lib/box-shadow';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+import { ifThen } from '@bootstrap-styled/css-mixins/lib/conditional';
+import { boxShadow } from '@bootstrap-styled/css-mixins/lib/box-shadow';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
 
 export const defaultProps = {
   active: false,

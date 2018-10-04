@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { makeRow } from 'bootstrap-styled-mixins/lib/grid';
+import { makeRow } from '@bootstrap-styled/css-mixins/lib/grid';
 
 
 export const defaultProps = {

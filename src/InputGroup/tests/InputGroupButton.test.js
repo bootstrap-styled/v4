@@ -3,7 +3,7 @@
  */
 import { shallow, mount } from 'enzyme';
 import React from 'react';
-import { BootstrapProvider } from 'bootstrap-styled-provider';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import InputGroupButton from '../InputGroupButton';
 import Button from '../../Button';
 const children = (<h1>Test</h1>);

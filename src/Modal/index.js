@@ -9,14 +9,14 @@ import {
   getOriginalBodyPadding,
   conditionallyUpdateScrollbar,
   setScrollbarWidth,
-} from 'bootstrap-styled-utils/lib/tools';
+} from '@bootstrap-styled/utils/lib/tools';
 import mapToCssModules from 'map-to-css-modules';
-import { transition } from 'bootstrap-styled-mixins/lib/transition';
-import { borderRadius } from 'bootstrap-styled-mixins/lib/border-radius';
-import { boxShadow } from 'bootstrap-styled-mixins/lib/box-shadow';
-import { mediaBreakpointUp } from 'bootstrap-styled-mixins/lib/breakpoints';
-import { fade } from 'bootstrap-styled-mixins/lib//utilities/transition';
-import rebootUtils from 'bootstrap-styled-mixins/lib/utilities/reboot';
+import { transition } from '@bootstrap-styled/css-mixins/lib/transition';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import { boxShadow } from '@bootstrap-styled/css-mixins/lib/box-shadow';
+import { mediaBreakpointUp } from '@bootstrap-styled/css-mixins/lib/breakpoints';
+import { fade } from '@bootstrap-styled/css-utils/lib/transition';
+import rebootUtils from '@bootstrap-styled/css-utils/lib/reboot';
 import Fade, { propTypes as FadePropType, defaultProps as FadeDefaultProps } from './Fade';
 import { makeTheme } from './theme';
 

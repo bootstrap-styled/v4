@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
-import { a } from 'bootstrap-styled-mixins/lib/a';
+import { a } from '@bootstrap-styled/css-mixins/lib/a';
 import bsTheme from '../theme';
 
 export const defaultProps = {

@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
   "module": "dist/@bootstrap-styled/v4.esm.js",
-  "homepage": "https://bootstrap-styled.github.io/v4",
+  "homepage": "https://bootstrap-styled.yeutech.com/v4",
   "browserslist": [
     "IE >= 9",
     "last 2 versions"
@@ -144,14 +144,6 @@
     "@semantic-release/git": "^7.0.0",
     "@semantic-release/gitlab": "^2.1.4",
     "@semantic-release/npm": "^4.0.0",
-    "@yeutech-lab/rollup-umd-documentation": "^2.3.18",
-    "@yeutech/rollup-documentation": "^2.3.4",
-    "@yeutech/rollup-umd-ci-build": "^1.0.5",
-    "@yeutech/rollup-umd-ci-deploy": "^1.0.7",
-    "@yeutech/rollup-umd-ci-release": "^1.0.5",
-    "@yeutech/rollup-umd-ci-release-transitive": "^1.1.6",
-    "@yeutech/rollup-umd-ci-test": "^1.0.6",
-    "@yeutech/rollup-umd-scripts": "^0.15.22",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -176,8 +168,6 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "bootstrap-styled-provider": "^1.1.5",
-    "bootstrap-styled-redux": "^1.0.1",
     "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
@@ -196,7 +186,6 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
-    "react-styleguidist": "7.1.0",
     "react-test-renderer": "^16.0.0",
     "redux": "^4.0.0",
     "redux-immutable": "^4.0.0",
@@ -262,9 +251,12 @@
     "lint-staged"
   ],
   "dependencies": {
+    "bootstrap-styled": "^1.7.8",
     "basic-math-utils": "^0.3.4",
-    "bootstrap-styled-mixins": "^1.0.4",
-    "bootstrap-styled-utils": "^1.0.2",
+    "@bootstrap-styled/utils": "^1.0.5",
+    "@bootstrap-styled/css-mixins": "^1.0.0",
+    "@bootstrap-styled/css-utils": "^1.0.0",
+    "@bootstrap-styled/provider": "^1.0.1",
     "classnames": "^2.2.6",
     "color": "^1.0.3",
     "lodash.omit": "^4.5.0",
@@ -284,7 +276,8 @@
   },
   "publishConfig": {
     "tag": "latest",
-    "registry": "https://npm.kopaxgroup.com"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "private": false,
   "release": {
@@ -316,7 +309,8 @@
         "path": "@semantic-release/git",
         "assets": [
           "package.json",
-          "src/**/*.js",
+          "dist/**/*.{js|es}",
+          "lib/**/*.js",
           "CHANGELOG.md",
           "README.md",
           "LICENSE.md"
