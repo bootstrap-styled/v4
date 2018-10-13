@@ -1,3 +1,5 @@
+import { makeTheme as bsMakeTheme } from 'bootstrap-styled/lib/theme/makeTheme';
+import { toMakeTheme } from 'bootstrap-styled/lib/utils';
 import makeOriginal from 'bootstrap-styled/lib/theme/makeOriginal';
 import { makeTheme as makeThemeA } from '../A/theme';
 import { makeTheme as makeThemeAlert } from '../Alert/theme';
@@ -109,28 +111,10 @@ export const makeThemeList = [
 ];
 
 /* eslint-disable */
-/**
- * This makeTheme can build from a list of makeTheme also
- * @param list
- * @param theme
- * @returns {*}
- */
-export function makeTheme(list, theme) {
-  if (!Array.isArray(list)) {
-    theme = list;
-    list = makeThemeList;
-  }
-  const all = [].concat(list);
-  let t = theme;
-  let mt;
 
-  while (mt = all.shift()) {
-    t = mt(t);
-  }
-  return t;
-}
+const theme = bsMakeTheme(makeThemeList);
 
-const theme = makeTheme();
+export const makeTheme = toMakeTheme(theme);
 
 export default theme;
 
