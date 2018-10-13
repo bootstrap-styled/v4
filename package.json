@@ -250,7 +250,7 @@
     "build:readme"
   ],
   "dependencies": {
-    "bootstrap-styled": "^1.8.0",
+    "bootstrap-styled": "^1.8.1",
     "basic-math-utils": "^0.3.4",
     "@bootstrap-styled/utils": "^1.0.5",
     "@bootstrap-styled/css-mixins": "^1.0.0",
