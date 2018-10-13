@@ -1,3 +1,10 @@
+## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/v4/compare/v1.0.0...v1.0.1) (2018-10-13)
+
+
+### Bug Fixes
+
+* **makeTheme function:** removed function and imports it instead from bootstrap-styled. ([54acb4c](https://module.kopaxgroup.com/bootstrap-styled/v4/commit/54acb4c))
+
 # 1.0.0 (2018-10-04)
 
 
