@@ -1,3 +1,10 @@
+## [1.0.2](https://module.kopaxgroup.com/bootstrap-styled/v4/compare/v1.0.1...v1.0.2) (2018-10-13)
+
+
+### Bug Fixes
+
+* **package.json:** updated bootstrap-styled. ([3d2e170](https://module.kopaxgroup.com/bootstrap-styled/v4/commit/3d2e170))
+
 ## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/v4/compare/v1.0.0...v1.0.1) (2018-10-13)
 
 
