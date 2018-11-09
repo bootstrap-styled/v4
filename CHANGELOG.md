@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/bootstrap-styled/v4/compare/v1.1.0...v1.1.1) (2018-11-09)
+
+
+### Bug Fixes
+
+* **release:** GitHub release https://github.com/bootstrap-styled/v4 ([fdec33f](https://github.com/bootstrap-styled/v4/commit/fdec33f))
+
 # [1.1.0](https://module.kopaxgroup.com/bootstrap-styled/v4/compare/v1.0.2...v1.1.0) (2018-11-09)
 
 
