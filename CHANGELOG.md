@@ -1,3 +1,15 @@
+# [1.1.0](https://module.kopaxgroup.com/bootstrap-styled/v4/compare/v1.0.2...v1.1.0) (2018-11-09)
+
+
+### Bug Fixes
+
+* **documentation:** improved documentation. ([44f2423](https://module.kopaxgroup.com/bootstrap-styled/v4/commit/44f2423))
+
+
+### Features
+
+* **GH:** release GH. ([453ec8b](https://module.kopaxgroup.com/bootstrap-styled/v4/commit/453ec8b))
+
 ## [1.0.2](https://module.kopaxgroup.com/bootstrap-styled/v4/compare/v1.0.1...v1.0.2) (2018-10-13)
 
 
