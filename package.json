@@ -332,24 +332,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "transitive": {
-    "name": "v4",
-    "scope": "bootstrap-styled",
-    "scopedName": "@bootstrap-styled/v4",
-    "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
-    "module": "dist/@bootstrap-styled/v4.esm.js",
-    "homepage": "https://bootstrap-styled.github.io/v4",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/bootstrap-styled/v4.git"
-    },
-    "bugs": {
-      "url": "https://github.com/bootstrap-styled/v4/issues"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org"
-    }
   }
 }
