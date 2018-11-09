@@ -9,4 +9,15 @@
 ![image](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![image]($IMG_SHIELD_PUBLISHING)
 
-Bootstrap Styled is a free and NO-CSS framework based on Bootstrap, ReactJS and Styled-component.
+This is library of styled React components based on bootstrap v4.
+ 
+Using [styled-components](https://www.styled-components.com/) and our 
+[BootstrapProvider](https://github.com/bootstrap-styled/provider), each component is highly customizable and themes 
+are easily created and shared.
+
+You can create your own themes very quickly with the [theming tools](https://github.com/bootstrap-styled/bootstrap-styled).
+
+And with the advanced [theming tools](https://bootstrap-styled.github.io/bootstrap-styled), this library can be used as
+the building blocks for more complicated components. These components, or what we call modules, can have the same level 
+of customizability and have easily built and sharable themes.
+
