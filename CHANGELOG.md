@@ -1,3 +1,15 @@
+## [1.1.2](https://github.com/bootstrap-styled/v4/compare/v1.1.1...v1.1.2) (2018-11-10)
+
+
+### Bug Fixes
+
+* **merge confilct:** fix ([26ff952](https://github.com/bootstrap-styled/v4/commit/26ff952))
+
+
+### Performance Improvements
+
+* **styled-components:** migrating to v4. ([52296e9](https://github.com/bootstrap-styled/v4/commit/52296e9))
+
 ## [1.1.1](https://github.com/bootstrap-styled/v4/compare/v1.1.0...v1.1.1) (2018-11-09)
 
 
