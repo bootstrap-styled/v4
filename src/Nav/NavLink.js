@@ -13,7 +13,7 @@ export const propTypes = {
    */
   className: PropTypes.string,
   /** Use that property to pass a ref callback to the native button component. */
-  innerRef: PropTypes.func,
+  ref: PropTypes.func,
   /** Toggles disabled CSS style. */
   disabled: PropTypes.bool,
   /** Toggles active CSS style. */
@@ -67,7 +67,7 @@ class NavLink extends React.Component { // eslint-disable-line react/prefer-stat
       cssModule,
       active,
       tag: Tag,
-      innerRef,
+      ref,
       ...attributes
     } = this.props;
 
@@ -81,7 +81,7 @@ class NavLink extends React.Component { // eslint-disable-line react/prefer-stat
     ), cssModule);
 
     return (
-      <Tag {...attributes} ref={innerRef} onClick={this.onClick} className={classes} />
+      <Tag {...attributes} ref={ref} onClick={this.onClick} className={classes} />
     );
   }
 }

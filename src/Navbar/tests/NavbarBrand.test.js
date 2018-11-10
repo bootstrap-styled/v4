@@ -1,14 +1,14 @@
 /**
  * Testing our NavbarBrand component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import NavbarBrand from '../NavbarBrand';
 
 const children = (<span>Test</span>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <NavbarBrand
     className={props.className}
   >

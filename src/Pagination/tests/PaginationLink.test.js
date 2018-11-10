@@ -2,14 +2,14 @@
  * Testing our PaginationLink component
  */
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import PaginationLink from '../PaginationLink';
 
 const children = (<h1>Test</h1>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <PaginationLink {...props}>
     {props.children}
   </PaginationLink>
@@ -45,22 +45,21 @@ describe('<PaginationLink />', () => {
     expect(renderedComponent.contains(children)).toEqual(true);
   });
   it('should render previous', () => {
-    const wrapper = shallow(<PaginationLink previous />);
-
-    expect(wrapper.prop('aria-label')).toBe('Previous');
+    const wrapper = mount(<PaginationLink previous />);
+    expect(wrapper.find('A').prop('aria-label')).toBe('Previous');
     expect(wrapper.find({ 'aria-hidden': 'true' }).text()).toBe('\u00ab');
     expect(wrapper.find('.sr-only').text()).toBe('Previous');
   });
 
   it('should render next', () => {
-    const wrapper = shallow(<PaginationLink next />);
+    const wrapper = mount(<PaginationLink next />);
 
-    expect(wrapper.prop('aria-label')).toBe('Next');
+    expect(wrapper.find('A').prop('aria-label')).toBe('Next');
     expect(wrapper.find({ 'aria-hidden': 'true' }).text()).toBe('\u00bb');
     expect(wrapper.find('.sr-only').text()).toBe('Next');
   });
   it('should render custom caret', () => {
-    const wrapper = shallow(<PaginationLink next>Yo</PaginationLink>);
+    const wrapper = mount(<PaginationLink next>Yo</PaginationLink>);
 
     expect(wrapper.find({ 'aria-hidden': 'true' }).text()).toBe('Yo');
   });

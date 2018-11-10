@@ -1,6 +1,6 @@
 import { assertAscending, assertStartAtZero } from '@bootstrap-styled/css-mixins/lib/variables';
 import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
-import { allowFalseValue } from 'bootstrap-styled/lib/theme/utils';
+import { allowFalseValue } from '@bootstrap-styled/bootstrap-styled/lib/theme/utils';
 
 const { rmUnit, UNIT } = unitUtils;
 

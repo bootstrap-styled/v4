@@ -2,7 +2,7 @@
  * Testing our CardBlockquote component
  */
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
@@ -10,7 +10,7 @@ import CardBlockquote from '../CardBlockquote';
 
 const children = <h1> test </h1>;
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <CardBlockquote {...props} />
 );
 

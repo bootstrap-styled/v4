@@ -3,13 +3,13 @@
  */
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import theme from '../../theme';
 import FigCaption from '../FigCaption';
 
 const children = 'Test';
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <FigCaption {...props}>
     {children}
   </FigCaption>

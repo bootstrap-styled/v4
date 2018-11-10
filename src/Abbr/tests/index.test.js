@@ -2,13 +2,13 @@
  * Testing our Abbr component
  */
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import Abbr from '../index';
 
 const children = (<h1>Test</h1>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <Abbr {...props} />
 );
 

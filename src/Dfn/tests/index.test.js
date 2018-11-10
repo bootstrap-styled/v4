@@ -2,13 +2,13 @@
  * Testing our Dfn component
  */
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import Dfn from '../index';
 
 const children = 'Test';
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <Dfn {...props} />
 );
 

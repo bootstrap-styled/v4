@@ -3,11 +3,11 @@
  */
 
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Tbody from '../Tbody';
 
 const children = <span> test </span>;
-const renderComponent = () => shallow(
+const renderComponent = () => mount(
   <Tbody>
     {children}
   </Tbody>

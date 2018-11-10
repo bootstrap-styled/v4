@@ -1,18 +1,18 @@
 /**
  * Testing our NavbarToggler component
  */
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import NavbarToggler from '../NavbarToggler';
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <NavbarToggler {...props} />
 );
 
 describe('<NavbarToggler />', () => {
   it('should render an <NavbarToggler> tag without a theme', () => {
     const renderedComponent = renderComponent();
-    expect(renderedComponent.find('NavbarToggler').length).toBe(0);
+    expect(renderedComponent.find('NavbarToggler').length).toBe(1);
   });
   it('should render a <NavbarToggler> with class .navbar-toggler-left', () => {
     const renderedComponent = renderComponent({

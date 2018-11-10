@@ -1,14 +1,14 @@
 /**
  * Testing our H1 component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import H1 from '../index';
 
 const children = <p>Test</p>;
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <H1 {...props}>
     {props.children}
   </H1>
