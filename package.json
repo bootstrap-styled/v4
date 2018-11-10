@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/v4",
-  "version": "0.0.0-development",
+  "version": "1.1.1",
   "description": "Set of styled-components theme variables based on Bootstrap philosophy.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
