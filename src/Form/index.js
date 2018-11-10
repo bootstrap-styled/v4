@@ -318,7 +318,7 @@ const propTypes = {
   /** Toggles inline CSS style. */
   inline: PropTypes.bool,
   /** Use that property to pass a ref callback to the native button component. */
-  innerRef: PropTypes.func,
+  ref: PropTypes.func,
   /**
    * Replace the default component tag by the one specified. Can be:
    */
@@ -345,7 +345,7 @@ class FormUnstyled extends React.Component {// eslint-disable-line react/prefer-
       cssModule,
       inline,
       tag: Tag,
-      innerRef,
+      ref,
       ...rest
     } = omit(this.props, ['theme']);
 
@@ -355,7 +355,7 @@ class FormUnstyled extends React.Component {// eslint-disable-line react/prefer-
     ), cssModule);
 
     return (
-      <Tag ref={innerRef} className={classes} {...rest} />
+      <Tag ref={ref} className={classes} {...rest} />
     );
   }
 }

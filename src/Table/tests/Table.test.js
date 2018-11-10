@@ -2,7 +2,7 @@
  * Testing our Table component
  */
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import Table from '../index';
@@ -17,7 +17,7 @@ const children = (
   </tbody>
 );
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <BootstrapProvider>
     <Table {...props} />
   </BootstrapProvider>

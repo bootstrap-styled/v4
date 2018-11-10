@@ -2,14 +2,14 @@
  * Testing our ListGroupItemText component
  */
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import ListGroupItemText from '../ListGroupItemText';
 
 const children = (<span>Test</span>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <ListGroupItemText
     className={props.className}
   >

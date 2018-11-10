@@ -31,7 +31,7 @@ export const propTypes = {
   /** Toggles disabled check of input radio or checkbox. */
   disabled: PropTypes.bool,
   /** Use that property to pass a ref callback to the native button component. */
-  innerRef: PropTypes.func,
+  ref: PropTypes.func,
   /** Toggles inline CSS display. */
   inline: PropTypes.bool,
   /** Toggles row CSS display. */

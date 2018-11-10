@@ -2,14 +2,14 @@
  * Testing our CardGroup component
  */
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import CardGroup from '../CardGroup';
 
 const children = <h1> test </h1>;
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <CardGroup {...props} />
 );
 
