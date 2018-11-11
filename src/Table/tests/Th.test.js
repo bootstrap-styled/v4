@@ -5,12 +5,18 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Th from '../Th';
+import Table from '../index';
 
-const children = <span> test </span>;
 const renderComponent = (props) => mount(
-  <Th {...props}>
-    {children}
-  </Th>
+  <Table>
+    <thead>
+      <tr>
+        <Th {...props}>
+          test
+        </Th>
+      </tr>
+    </thead>
+  </Table>
 );
 
 describe('<Th />', () => {
@@ -18,15 +24,8 @@ describe('<Th />', () => {
     const renderedComponent = renderComponent();
     expect(renderedComponent.find('th').length).toBe(1);
   });
-  it('should have children without a theme', () => {
-    const renderedComponent = renderComponent({
-      children,
-    });
-    expect(renderedComponent.contains(children)).toEqual(true);
-  });
   it('should have a className table-active', () => {
     const renderedComponent = renderComponent({
-      children,
       color: 'active',
     });
     expect(renderedComponent.find('th').hasClass('table-active')).toBe(true);

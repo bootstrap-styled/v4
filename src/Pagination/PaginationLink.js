@@ -18,7 +18,7 @@ class PaginationLink extends React.Component { // eslint-disable-line react/pref
     cssModule: PropTypes.object,
     next: PropTypes.bool,
     previous: PropTypes.bool,
-    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   };
 
   static defaultProps = {
