@@ -19,6 +19,7 @@ export const propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.func,
+    PropTypes.object,
   ]),
   /**
    * Replace or remove a className from the component.

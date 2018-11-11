@@ -19,6 +19,7 @@ export const propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.func,
+    PropTypes.object,
   ]),
   /** Use that property to pass a ref callback to the native button component. */
   ref: PropTypes.func,

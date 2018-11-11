@@ -94,6 +94,7 @@ export const propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.func,
+    PropTypes.object,
   ]),
   /** Theme variables. Can be: */
   theme: PropTypes.shape({

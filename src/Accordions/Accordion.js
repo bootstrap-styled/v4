@@ -30,6 +30,8 @@ export const propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.func,
+    PropTypes.node,
+    PropTypes.object,
   ]),
   /** Delay transition in milliseconds before and after collapse. Can be: */
   delay: PropTypes.oneOfType([
