@@ -1,14 +1,14 @@
 /**
  * Testing our ButtonGroup component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import ButtonGroup from '../index';
 
 const children = (<h1>Test</h1>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <ButtonGroup {...props} />
 );
 

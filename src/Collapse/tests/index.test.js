@@ -3,7 +3,7 @@
  * Testing our Collapse component
  */
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import Collapse from '../index';
@@ -101,23 +101,23 @@ describe('<Collapse />', () => {
     expect(renderedComponent.state().height).toBe(0);
   });
   it('should render children', () => {
-    const renderedComponent = shallow(<Collapse><p>hello</p></Collapse>).find('p');
+    const renderedComponent = mount(<Collapse><p>hello</p></Collapse>).find('p');
     expect(renderedComponent.text()).toBe('hello');
   });
 
   it('should have default isOpen value', () => {
-    const renderedComponent = shallow(<Collapse />);
+    const renderedComponent = mount(<Collapse />);
     expect(renderedComponent.instance().props.isOpen).toEqual(false);
   });
 
   it('should render with class "collapse"', () => {
-    const renderedComponent = shallow(<Collapse />);
-    expect(renderedComponent.hasClass('collapse')).toEqual(true);
+    const renderedComponent = mount(<Collapse />);
+    expect(renderedComponent.find('div').hasClass('collapse')).toEqual(true);
   });
 
   it('should render with class "navbar"', () => {
-    const renderedComponent = shallow(<Collapse navbar />);
-    expect(renderedComponent.hasClass('navbar-collapse')).toEqual(true);
+    const renderedComponent = mount(<Collapse navbar />);
+    expect(renderedComponent.find('div').hasClass('navbar-collapse')).toEqual(true);
   });
 
   it('should render with class "show" when isOpen is true', () => {
@@ -128,12 +128,12 @@ describe('<Collapse />', () => {
 
   it('should set height to null when isOpen is true', () => {
     isOpen = true;
-    const renderedComponent = shallow(<Collapse isOpen={isOpen} />);
+    const renderedComponent = mount(<Collapse isOpen={isOpen} />);
     expect(renderedComponent.state('height')).toBe(null);
   });
 
   it('should not set height when isOpen is false', () => {
-    const renderedComponent = shallow(<Collapse isOpen={isOpen} />);
+    const renderedComponent = mount(<Collapse isOpen={isOpen} />);
     expect(renderedComponent.state('height')).toBe(null);
   });
   it('should change state with { collapse: ${State} } when isOpen change to true before transition', () => {

@@ -2,13 +2,13 @@
  * Testing our Progress component
  */
 import { ThemeProvider } from 'styled-components';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import theme from '../../theme';
 import Progress from '../index';
 import ProgressBar from '../ProgressBar';
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <Progress>
     {props.children}
   </Progress>

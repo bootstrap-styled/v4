@@ -1,5 +1,5 @@
 import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
-import { allowFalseValue } from 'bootstrap-styled/lib/theme/utils';
+import { allowFalseValue } from '@bootstrap-styled/bootstrap-styled/lib/theme/utils';
 const { detectUnit, rmUnit } = unitUtils;
 
 /**

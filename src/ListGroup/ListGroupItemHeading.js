@@ -23,6 +23,7 @@ export const propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.func,
+    PropTypes.object,
   ]),
 };
 class ListGroupItemHeading extends React.Component { // eslint-disable-line react/prefer-stateless-function

@@ -1,14 +1,14 @@
 /**
  * Testing our P component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import P from '../index';
 
 const children = <span>test</span>;
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <P {...props}>
     {props.children}
   </P>

@@ -3,25 +3,25 @@
  */
 
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Tbody from '../Tbody';
+import Table from '../index';
 
-const children = <span> test </span>;
-const renderComponent = () => shallow(
-  <Tbody>
-    {children}
-  </Tbody>
+const renderComponent = () => mount(
+  <Table>
+    <Tbody>
+      <tr>
+        <td>
+          test
+        </td>
+      </tr>
+    </Tbody>
+  </Table>
 );
 
 describe('<Tbody />', () => {
   it('should render a <Tbody> tag without a theme', () => {
     const renderedComponent = renderComponent();
     expect(renderedComponent.find('tbody').length).toBe(1);
-  });
-  it('should have children without a theme', () => {
-    const renderedComponent = renderComponent({
-      children,
-    });
-    expect(renderedComponent.contains(children)).toEqual(true);
   });
 });

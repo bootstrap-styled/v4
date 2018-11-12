@@ -1,13 +1,13 @@
 /**
  * Testing our Input component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import Input from '../index';
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <Input {...props} />
 
 );
@@ -77,13 +77,13 @@ describe('<Input />', () => {
     expect(renderedComponent.find('Input').hasClass('form-control-size-sm'));
   });
   it('should not render with "form-check-input" nor "form-control" class when type is checkbox and addon is truthy', () => {
-    const renderedComponent = shallow(<Input addon type="checkbox" />);
+    const renderedComponent = mount(<Input addon type="checkbox" />);
     expect(renderedComponent.hasClass('form-check-input')).toBe(false);
     expect(renderedComponent.hasClass('form-control')).toBe(false);
   });
 
   it('should not render with "form-check-input" nor "form-control" class when type is radio and addon is truthy', () => {
-    const renderedComponent = shallow(<Input addon type="radio" />);
+    const renderedComponent = mount(<Input addon type="radio" />);
     expect(renderedComponent.hasClass('form-check-input')).toBe(false);
     expect(renderedComponent.hasClass('form-control')).toBe(false);
   });

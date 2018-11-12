@@ -1,14 +1,13 @@
 /**
  * Testing our InputGroupButton component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import InputGroupButton from '../InputGroupButton';
-import Button from '../../Button';
 const children = (<h1>Test</h1>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <InputGroupButton>
     {props.children}
   </InputGroupButton>
@@ -57,39 +56,34 @@ describe('<InputGroupButton />', () => {
   });
   describe('Shorthand usage', () => {
     it('should render a child Button', () => {
-      const wrapper = shallow(<InputGroupButton>Yo!</InputGroupButton>);
-      expect(wrapper.childAt(0).type()).toBe(Button);
+      const wrapper = mount(<InputGroupButton>Yo!</InputGroupButton>);
+      expect(wrapper.find('Button').length).toBe(1);
     });
 
     it('should render the string provided in the child Button', () => {
-      const wrapper = shallow(<InputGroupButton>Yo!</InputGroupButton>);
-
-      expect(wrapper.childAt(0).prop('children')).toBe('Yo!');
+      const wrapper = mount(<InputGroupButton>Yo!</InputGroupButton>);
+      expect(wrapper.find('button').prop('children')).toBe('Yo!');
     });
 
     it('should render additional props on the child Button', () => {
-      const wrapper = shallow(<InputGroupButton color="primary">Yo!</InputGroupButton>);
-
-      expect(wrapper.childAt(0).prop('color')).toBe('primary');
+      const wrapper = mount(<InputGroupButton color="primary">Yo!</InputGroupButton>);
+      expect(wrapper.find('Button').prop('color')).toBe('primary');
     });
 
     it('should render additional classes on the child Button', () => {
-      const wrapper = shallow(<InputGroupButton className="yo">Yo!</InputGroupButton>);
-
-      expect(wrapper.childAt(0).hasClass('yo')).toBe(true);
+      const wrapper = mount(<InputGroupButton className="yo">Yo!</InputGroupButton>);
+      expect(wrapper.find('Button').hasClass('yo')).toBe(true);
     });
 
     it('should render groupClassName as additional classes on the input-group-btn wrapper', () => {
-      const wrapper = shallow(<InputGroupButton groupClassName="other">Yo!</InputGroupButton>);
-
-      expect(wrapper.hasClass('other')).toBe(true);
-      expect(wrapper.hasClass('input-group-btn')).toBe(true);
+      const wrapper = mount(<InputGroupButton groupClassName="other">Yo!</InputGroupButton>);
+      expect(wrapper.find('div').hasClass('other')).toBe(true);
+      expect(wrapper.find('div').hasClass('input-group-btn')).toBe(true);
     });
 
     it('should render groupAttributes as additional attributes on the input-group-btn wrapper', () => {
-      const wrapper = shallow(<InputGroupButton groupAttributes={{ style: { textAlign: 'left' } }}>Yo!</InputGroupButton>);
-
-      expect(wrapper.prop('style').textAlign).toBe('left');
+      const wrapper = mount(<InputGroupButton groupAttributes={{ style: { textAlign: 'left' } }}>Yo!</InputGroupButton>);
+      expect(wrapper.find('div').prop('style').textAlign).toBe('left');
     });
   });
 });

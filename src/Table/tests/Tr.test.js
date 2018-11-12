@@ -3,14 +3,20 @@
  */
 
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Tr from '../Tr';
+import Table from '../index';
 
-const children = <span> test </span>;
-const renderComponent = (props) => shallow(
-  <Tr {...props}>
-    {children}
-  </Tr>
+const renderComponent = (props) => mount(
+  <Table>
+    <thead>
+      <Tr {...props}>
+        <th>
+          test
+        </th>
+      </Tr>
+    </thead>
+  </Table>
 );
 
 describe('<Tr />', () => {
@@ -18,15 +24,8 @@ describe('<Tr />', () => {
     const renderedComponent = renderComponent();
     expect(renderedComponent.find('tr').length).toBe(1);
   });
-  it('should have children without a theme', () => {
-    const renderedComponent = renderComponent({
-      children,
-    });
-    expect(renderedComponent.contains(children)).toEqual(true);
-  });
   it('should have a className table-active', () => {
     const renderedComponent = renderComponent({
-      children,
       color: 'active',
     });
     expect(renderedComponent.find('tr').hasClass('table-active')).toBe(true);

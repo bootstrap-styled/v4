@@ -2,13 +2,13 @@
  * Testing our Output component
  */
 import { ThemeProvider } from 'styled-components';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import theme from '../../theme';
 
 import Output from '../index';
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
 
   <Output
     className={props.className}

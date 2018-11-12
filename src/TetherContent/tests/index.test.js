@@ -2,14 +2,14 @@
  * Testing our TetherContent component
  */
 
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import TetherContent from '../index';
 
 const children = <p>Test</p>;
 const functionTest = jest.fn();
 const tetherConfig = {};
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
 
   <TetherContent
     className={props.className}

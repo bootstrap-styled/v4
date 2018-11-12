@@ -61,6 +61,7 @@ export const propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.func,
+    PropTypes.object,
   ]),
   /** Toggles flush CSS style. */
   flush: PropTypes.bool,

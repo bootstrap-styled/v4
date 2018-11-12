@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import omit from 'lodash.omit';
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
 import { getBackgroundUtilities } from '@bootstrap-styled/css-utils/lib/background';
 import { gradientStriped } from '@bootstrap-styled/css-mixins/lib/gradients';
@@ -69,6 +69,12 @@ const backgroundPositionKeyFrame = (props) => keyframes`
   from { background-position: ${props.theme['$progress-height']} 0; }
   to { background-position: 0 0; }
 `;
+
+
+const animationRule = (props) => css`
+  ${backgroundPositionKeyFrame(props)} ${props.theme['$progress-bar-animation-timing']};
+`;
+
 /**
  * A classic `<Progress />` component. Can be used with **customized** value.
  * You can also control `height` and `backgrounds` colors or **multiple bars**.
@@ -114,7 +120,7 @@ const Progress = styled(ProgressUnstyled)`
     }
     
     .progress-bar-animated {
-      animation: ${backgroundPositionKeyFrame(props)} ${props.theme['$progress-bar-animation-timing']};
+      animation: ${animationRule};
     }
 
   `}

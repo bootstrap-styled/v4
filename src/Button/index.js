@@ -77,7 +77,7 @@ export const propTypes = {
     'danger',
   ]),
   /** Use that property to pass a ref callback to the native button component. */
-  innerRef: PropTypes.func,
+  ref: PropTypes.func,
   /** Start specified function when on click event is trigger. */
   onClick: PropTypes.func,
   /** Buttons use default size base and can use different size such as: */
@@ -170,7 +170,7 @@ class ButtonUnstyled extends React.Component { // eslint-disable-line react/pref
       color,
       outline,
       size,
-      innerRef,
+      ref,
       tag: Tag,
       ...attributes
     } = omit(this.props, ['theme']);
@@ -192,7 +192,7 @@ class ButtonUnstyled extends React.Component { // eslint-disable-line react/pref
       <Tag
         type={(Tag === 'button' && attributes.onClick) ? 'button' : undefined}
         className={classes}
-        ref={innerRef}
+        ref={ref}
         {...attributes}
         onClick={this.onClick}
       />

@@ -24,6 +24,7 @@ export const propTypes = {
     PropTypes.string,
     PropTypes.element,
     PropTypes.func,
+    PropTypes.object,
   ]),
   /** Wrapped tag variables. Can be: */
   wrapTag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),

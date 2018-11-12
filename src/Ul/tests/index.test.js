@@ -2,7 +2,7 @@
  * Testing our Unordered List component
  */
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import Ul from '../index';
@@ -11,7 +11,7 @@ import Li from '../../Li';
 
 const children = (<Li>Test</Li>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <Ul {...props}>
     {props.children}
   </Ul>

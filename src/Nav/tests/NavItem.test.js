@@ -1,7 +1,7 @@
 /**
  * Testing our NavItem component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
@@ -9,7 +9,7 @@ import NavItem from '../NavItem';
 
 const children = (<h1>Test</h1>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <NavItem {...props}>
     {props.children}
   </NavItem>

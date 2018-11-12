@@ -1,14 +1,14 @@
 /**
  * Testing our ModalBody component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import ModalBody from '../ModalBody';
 
 const children = <p>Test</p>;
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <ModalBody {...props} />
 );
 

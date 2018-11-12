@@ -3,14 +3,14 @@
  */
 import { ThemeProvider } from 'styled-components';
 
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import theme from '../../theme';
 import Select from '../index';
 
 const children = <option>test</option>;
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <Select
     autoFocus={props.autoFocus}
     disabled={props.disabled}

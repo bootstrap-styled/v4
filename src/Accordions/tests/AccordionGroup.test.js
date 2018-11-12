@@ -2,14 +2,14 @@
  * Testing our Abbr component
  */
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import AccordionGroup from '../AccordionGroup';
 import Accordion from '../Accordion';
 
 const children = (<Accordion heading="Collapsible Group Item #1" name="Accordion1">hey!</Accordion>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <AccordionGroup {...props} />
 );
 
@@ -37,7 +37,7 @@ describe('<AccordionGroup />', () => {
   });
 
   it('should render an <AccordionGroup> tag without a theme', () => {
-    expect(renderedComponent.find('div').length).toBe(1);
+    expect(renderedComponent.find('div').length).toBe(4);
   });
 
   it('should have children without a theme', () => {

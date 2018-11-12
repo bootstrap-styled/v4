@@ -1,14 +1,14 @@
 /**
  * Testing our Navbar component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import Navbar from '../index';
 
 const children = (<span>Test</span>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <Navbar {...props}>
     {props.children}
   </Navbar>

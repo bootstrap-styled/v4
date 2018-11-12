@@ -1,14 +1,14 @@
 /**
  * Testing our Button component
  */
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import ButtonDropdown from '../ButtonDropdown';
 
 const children = (<span>Test</span>);
 
-const renderComponent = (props = {}) => shallow(
+const renderComponent = (props = {}) => mount(
   <ButtonDropdown {...props} />
 );
 

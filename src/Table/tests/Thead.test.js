@@ -3,26 +3,25 @@
  */
 
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Thead from '../Thead';
+import Table from '../index';
 
-
-const children = <span> test </span>;
-const renderComponent = () => shallow(
-  <Thead>
-    {children}
-  </Thead>
+const renderComponent = () => mount(
+  <Table>
+    <Thead>
+      <tr>
+        <th>
+          test
+        </th>
+      </tr>
+    </Thead>
+  </Table>
 );
 
 describe('<Thead />', () => {
   it('should render a <Thead> tag without a theme', () => {
     const renderedComponent = renderComponent();
     expect(renderedComponent.find('thead').length).toBe(1);
-  });
-  it('should have children without a theme', () => {
-    const renderedComponent = renderComponent({
-      children,
-    });
-    expect(renderedComponent.contains(children)).toEqual(true);
   });
 });
