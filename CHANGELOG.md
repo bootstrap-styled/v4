@@ -1,3 +1,12 @@
+## [1.1.5](https://github.com/bootstrap-styled/v4/compare/v1.1.4...v1.1.5) (2018-11-12)
+
+
+### Bug Fixes
+
+* **bs:** added the right package. ([ac1d2ff](https://github.com/bootstrap-styled/v4/commit/ac1d2ff))
+* **bs:** merge resolv. ([048b93e](https://github.com/bootstrap-styled/v4/commit/048b93e))
+* **dependencies:** updated [@bs](https://github.com/bs)/provider. ([e9b84b1](https://github.com/bootstrap-styled/v4/commit/e9b84b1))
+
 ## [1.1.4](https://github.com/bootstrap-styled/v4/compare/v1.1.3...v1.1.4) (2018-11-12)
 
 
