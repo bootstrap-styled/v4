@@ -143,6 +143,7 @@
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "^4.0.0",
+    "@bootstrap-styled/provider": "^1.1.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -250,10 +251,9 @@
     "build:readme"
   ],
   "dependencies": {
-    "@bootstrap-styled/bootstrap-styled": "^1.0.0",
+    "bootstrap-styled": "^1.0.1",
     "@bootstrap-styled/css-mixins": "^1.0.2",
     "@bootstrap-styled/css-utils": "^1.0.1",
-    "@bootstrap-styled/provider": "^1.1.2",
     "@bootstrap-styled/utils": "^1.6.1",
     "basic-math-utils": "^0.3.4",
     "classnames": "^2.2.6",
