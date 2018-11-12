@@ -1,3 +1,18 @@
+## [1.1.4](https://github.com/bootstrap-styled/v4/compare/v1.1.3...v1.1.4) (2018-11-12)
+
+
+### Bug Fixes
+
+* **lib:** error in CI cause by lib being commited. ([8559c38](https://github.com/bootstrap-styled/v4/commit/8559c38))
+* **lib:** resolv merge conflict. ([10d00cd](https://github.com/bootstrap-styled/v4/commit/10d00cd))
+
+## [1.1.3](https://github.com/bootstrap-styled/v4/compare/v1.1.2...v1.1.3) (2018-11-11)
+
+
+### Bug Fixes
+
+* **tests:** fixed proptype failing since styled-compoents migration ([a96317b](https://github.com/bootstrap-styled/v4/commit/a96317b))
+
 ## [1.1.2](https://github.com/bootstrap-styled/v4/compare/v1.1.1...v1.1.2) (2018-11-10)
 
 
