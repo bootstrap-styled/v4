@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/bootstrap-styled/v4/compare/v1.1.2...v1.1.3) (2018-11-11)
+
+
+### Bug Fixes
+
+* **tests:** fixed proptype failing since styled-compoents migration ([a96317b](https://github.com/bootstrap-styled/v4/commit/a96317b))
+
 ## [1.1.2](https://github.com/bootstrap-styled/v4/compare/v1.1.1...v1.1.2) (2018-11-10)
 
 
