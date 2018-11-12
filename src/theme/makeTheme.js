@@ -1,6 +1,6 @@
-import { makeTheme as bsMakeTheme } from '@bootstrap-styled/bootstrap-styled/lib/theme/makeTheme';
-import { toMakeTheme } from '@bootstrap-styled/bootstrap-styled/lib/utils';
-import makeOriginal from '@bootstrap-styled/bootstrap-styled/lib/theme/makeOriginal';
+import { makeTheme as bsMakeTheme } from 'bootstrap-styled/lib/theme/makeTheme';
+import { toMakeTheme } from 'bootstrap-styled/lib/utils';
+import makeOriginal from 'bootstrap-styled/lib/theme/makeOriginal';
 import { makeTheme as makeThemeA } from '../A/theme';
 import { makeTheme as makeThemeAlert } from '../Alert/theme';
 import { makeTheme as makeThemeBadge } from '../Badge/theme';
