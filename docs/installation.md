@@ -1,3 +1,3 @@
 ```bash
-npm install --save $PACKAGE_NAME
+npm install --save @bootstrap-styled/v4
 ```
