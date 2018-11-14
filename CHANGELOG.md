@@ -1,3 +1,11 @@
+## [1.1.6](https://github.com/bootstrap-styled/v4/compare/v1.1.5...v1.1.6) (2018-11-12)
+
+
+### Bug Fixes
+
+* **doc:** updated deps + styled. ([9197ed5](https://github.com/bootstrap-styled/v4/commit/9197ed5))
+* **doc:** updated deps + tyled ([db72c66](https://github.com/bootstrap-styled/v4/commit/db72c66))
+
 ## [1.1.5](https://github.com/bootstrap-styled/v4/compare/v1.1.4...v1.1.5) (2018-11-12)
 
 
