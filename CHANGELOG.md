@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/bootstrap-styled/v4/compare/v1.2.3...v1.2.4) (2018-11-14)
+
+
+### Bug Fixes
+
+* **doc:** fix prepare.sh ([83e7dc4](https://github.com/bootstrap-styled/v4/commit/83e7dc4))
+
 ## [1.2.3](https://github.com/bootstrap-styled/v4/compare/v1.2.2...v1.2.3) (2018-11-14)
 
 
