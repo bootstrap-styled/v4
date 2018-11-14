@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/bootstrap-styled/v4/compare/v1.2.2...v1.2.3) (2018-11-14)
+
+
+### Bug Fixes
+
+* **description:** update package description ([b36a90f](https://github.com/bootstrap-styled/v4/commit/b36a90f))
+
 ## [1.2.2](https://github.com/bootstrap-styled/v4/compare/v1.2.1...v1.2.2) (2018-11-14)
 
 
