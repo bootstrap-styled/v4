@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/bootstrap-styled/v4/compare/v1.2.5...v1.2.6) (2018-11-17)
+
+
+### Bug Fixes
+
+* **dependencies:** Update to bootstrap-styled v2.0.4 ([90fd7bf](https://github.com/bootstrap-styled/v4/commit/90fd7bf))
+
 ## [1.2.5](https://github.com/bootstrap-styled/v4/compare/v1.2.4...v1.2.5) (2018-11-14)
 
 
