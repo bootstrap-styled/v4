@@ -1,20 +1,20 @@
 /**
  * Testing our Alert component
  */
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+
 
 import Alert from '../index';
 
 const children = (<h1>Test</h1>);
 
 const renderComponentUsingTheme = (props) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Alert {...props} />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 describe('<Alert />', () => {
@@ -31,13 +31,12 @@ describe('<Alert />', () => {
       children,
     });
     expect(renderedComponent.find('AlertUnstyled').length).toBe(1);
-    expect(renderedComponent.find('div').length).toBe(1);
   });
   it('should have a className .alert by default and with a theme', () => {
     const renderedComponent = renderComponentUsingTheme({
       children,
     });
-    expect(renderedComponent.find('div').hasClass('alert')).toBe(true);
+    expect(renderedComponent.find('div').at(1).hasClass('alert')).toBe(true);
   });
   it('should have children with a theme', () => {
     const renderedComponent = renderComponentUsingTheme({

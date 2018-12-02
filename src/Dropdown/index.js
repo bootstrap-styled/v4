@@ -37,6 +37,7 @@ export const defaultProps = {
     '$enable-gradients': false,
     '$enable-hover-media-query': false,
     '$spacer-y': '1rem',
+    '$body-color': 'black',
     '$border-width': '1px',
     '$font-size-sm': '.875rem',
     '$font-weight-normal': 'normal',
@@ -112,6 +113,7 @@ export const propTypes = {
     '$enable-gradients': PropTypes.bool,
     '$enable-hover-media-query': PropTypes.bool,
     '$spacer-y': PropTypes.string,
+    '$body-color': PropTypes.string,
     '$border-width': PropTypes.string,
     '$font-size-sm': PropTypes.string,
     '$font-weight-normal': PropTypes.string,
@@ -168,6 +170,7 @@ export const propTypes = {
    */
   cssModule: PropTypes.object,
 };
+
 class DropdownUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   static propTypes = propTypes;
@@ -317,6 +320,7 @@ class DropdownUnstyled extends React.Component { // eslint-disable-line react/pr
     );
   }
 }
+
 /**
  * Use our `<Dropdown />` blocks with dismissing menu.
  * Customize it with `<DropdownToggle />` with `caret` attribute for display icon and `<DropdownItem />` with `header`, `disabled` and `divider` attributes for customize menu.
@@ -419,8 +423,8 @@ const Dropdown = styled(DropdownUnstyled)`
         cursor: ${props.theme['$cursor-disabled']};
         background-color: transparent;
         ${ifThen(props.theme['$enable-gradients'],
-          'background-image: none; /* Remove CSS gradient */'
-        )}
+  'background-image: none; /* Remove CSS gradient */'
+)}
       }
     }
 
@@ -495,20 +499,20 @@ const Dropdown = styled(DropdownUnstyled)`
         
     /* Added Mixin boutonGroup to enable dropdown to beneficiate from buttonGroup classes */
     ${buttonGroup(
-      props.theme['$enable-shadows'],
-      props.theme['$enable-rounded'],
-      props.theme['$input-btn-border-width'],
-      props.theme['$btn-padding-x'],
-      props.theme['$btn-active-box-shadow'],
-      props.theme['$btn-padding-x-lg'],
-      props.theme['$btn-padding-y-lg'],
-      props.theme['$font-size-lg'],
-      props.theme['$btn-border-radius-lg'],
-      props.theme['$btn-padding-x-sm'],
-      props.theme['$btn-padding-y-sm'],
-      props.theme['$font-size-sm'],
-      props.theme['$btn-border-radius-sm']
-    )}
+  props.theme['$enable-shadows'],
+  props.theme['$enable-rounded'],
+  props.theme['$input-btn-border-width'],
+  props.theme['$btn-padding-x'],
+  props.theme['$btn-active-box-shadow'],
+  props.theme['$btn-padding-x-lg'],
+  props.theme['$btn-padding-y-lg'],
+  props.theme['$font-size-lg'],
+  props.theme['$btn-border-radius-lg'],
+  props.theme['$btn-padding-x-sm'],
+  props.theme['$btn-padding-y-sm'],
+  props.theme['$font-size-sm'],
+  props.theme['$btn-border-radius-sm']
+)}
   `}
 `;
 

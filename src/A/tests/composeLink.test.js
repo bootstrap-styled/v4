@@ -2,17 +2,18 @@
  * Testing our composeList HoC component constructor
  */
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import { mount } from 'enzyme';
+
 import A from '../index';
 import composeLink from '../composeLink';
 
 const Link = composeLink(A);
 
 const renderComponentUsingTheme = (props) => mount(
-  <ThemeProvider theme={{}}>
+  <BootstrapProvider>
     <Link {...props}>test</Link>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 describe('composeLink', () => {

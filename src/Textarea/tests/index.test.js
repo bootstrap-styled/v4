@@ -4,8 +4,7 @@
 
 import { mount } from 'enzyme';
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import Textarea from '../index';
 
@@ -14,9 +13,9 @@ const renderComponent = (props = {}) => mount(
 );
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Textarea {...props} />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 describe('<Textarea />', () => {

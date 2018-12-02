@@ -1,11 +1,11 @@
 /**
  * Testing our Code component
  */
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+
 
 import Code from '../index';
 
@@ -17,9 +17,9 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Code {...props} />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

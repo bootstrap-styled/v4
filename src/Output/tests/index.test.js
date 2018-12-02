@@ -1,10 +1,9 @@
 /**
  * Testing our Output component
  */
-import { ThemeProvider } from 'styled-components';
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import Output from '../index';
 
@@ -19,14 +18,14 @@ const renderComponent = (props = {}) => mount(
 );
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Output
       className={props.className}
       htmlFor={props.htmlFor}
       form={props.form}
       name={props.name}
     />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 describe('<Output />', () => {

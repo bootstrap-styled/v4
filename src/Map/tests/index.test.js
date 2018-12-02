@@ -2,11 +2,11 @@
  * Testing our Map component
  */
 
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+
 
 import Map from '../index';
 const children = (<h1>Test</h1>);
@@ -21,13 +21,13 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Map
       className={props.className}
     >
       {props.children}
     </Map>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

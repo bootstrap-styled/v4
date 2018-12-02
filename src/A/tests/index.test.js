@@ -6,7 +6,6 @@ import { mount } from 'enzyme';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import A from '../index';
 
-
 const children = (<h1>Test</h1>);
 
 const renderComponent = (props = {}) => mount(
