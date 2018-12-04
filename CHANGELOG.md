@@ -1,3 +1,15 @@
+## [1.2.7](https://github.com/bootstrap-styled/v4/compare/v1.2.6...v1.2.7) (2018-12-04)
+
+
+### Bug Fixes
+
+* **CI:** broken. ([d9e0827](https://github.com/bootstrap-styled/v4/commit/d9e0827))
+* **CI:** commented styleguide related lines in travis.yml ([a436a54](https://github.com/bootstrap-styled/v4/commit/a436a54))
+* **dependencies:** removed wrong package. ([646528a](https://github.com/bootstrap-styled/v4/commit/646528a))
+* **documentation:** removed rollup-umd-doc due to module conflict. Will be added on next push ([90e114e](https://github.com/bootstrap-styled/v4/commit/90e114e))
+* **propTypes:** fixed theme proptypes ino certain components. ([61c82ff](https://github.com/bootstrap-styled/v4/commit/61c82ff))
+* **theme:** BREAKING CHANGE: removed makeThemes by components and theme/. Theme and MakeTheme can only be imported from bootstrap-styled. ([9ef4b7f](https://github.com/bootstrap-styled/v4/commit/9ef4b7f))
+
 ## [1.2.6](https://github.com/bootstrap-styled/v4/compare/v1.2.5...v1.2.6) (2018-11-17)
 
 
