@@ -174,7 +174,6 @@
     "@bootstrap-styled/css-mixins": "^1.1.1",
     "@bootstrap-styled/css-utils": "^1.1.2",
     "@bootstrap-styled/utils": "^1.6.1",
-    "@bootstrap-styled/v4": "^1.2.6",
     "@rollup-umd/documentation-cli": "^1.0.9",
     "basic-math-utils": "^0.3.4",
     "bootstrap-styled": "^2.1.0",
