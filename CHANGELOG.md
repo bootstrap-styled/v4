@@ -1,3 +1,11 @@
+## [1.2.8](https://github.com/bootstrap-styled/v4/compare/v1.2.7...v1.2.8) (2018-12-04)
+
+
+### Bug Fixes
+
+* **CI:** travis.yml. ([21374e4](https://github.com/bootstrap-styled/v4/commit/21374e4))
+* **styleguide:** reimplemented configuration. ([83e8872](https://github.com/bootstrap-styled/v4/commit/83e8872))
+
 ## [1.2.7](https://github.com/bootstrap-styled/v4/compare/v1.2.6...v1.2.7) (2018-12-04)
 
 
