@@ -1,11 +1,9 @@
 /**
  * Testing our Td component
  */
-import { ThemeProvider } from 'styled-components';
-
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import Td from '../Td';
 import Table from '../index';
@@ -15,7 +13,7 @@ import Tbody from '../Tbody';
 const children = (<span>Test</span>);
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Table>
       <Tbody>
         <Tr>
@@ -25,7 +23,7 @@ const renderComponentUsingTheme = (props = {}) => mount(
         </Tr>
       </Tbody>
     </Table>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

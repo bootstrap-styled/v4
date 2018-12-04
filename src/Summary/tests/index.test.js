@@ -1,7 +1,7 @@
-import { ThemeProvider } from 'styled-components';
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
+
 import Summary from '../index';
 
 const children = (<h1>Test</h1>);
@@ -11,9 +11,9 @@ const renderComponent = (props = {}) => mount(
 );
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Summary {...props} />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 describe('<Summary />', () => {

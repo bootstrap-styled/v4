@@ -1,11 +1,11 @@
 /**
  * Testing our Header component
  */
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+
 
 import Header from '../index';
 
@@ -21,13 +21,13 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Header
       className={props.className}
     >
       {props.children}
     </Header>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

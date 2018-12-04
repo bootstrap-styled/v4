@@ -1,11 +1,11 @@
 /**
  * Testing our Hr component
  */
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+
 import Hr from '../index';
 
 const renderComponent = (props = {}) => mount(
@@ -16,11 +16,11 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Hr
       className={props.className}
     />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

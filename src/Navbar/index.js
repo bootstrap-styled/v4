@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import styled from 'styled-components';
-import {makeTheme} from './theme';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
 import {navbar} from '@bootstrap-styled/css-mixins/lib/navbar';

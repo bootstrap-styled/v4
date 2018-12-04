@@ -1,11 +1,10 @@
 /**
  * Testing our Row component
  */
-import { ThemeProvider } from 'styled-components';
-
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
+
 import Row from '../index';
 
 const children = (<h1>Test</h1>);
@@ -16,9 +15,9 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Row {...props} />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 
@@ -39,7 +38,7 @@ describe('<Row />', () => {
     const renderedComponent = renderComponentUsingTheme({
       children,
     });
-    expect(renderedComponent.find('div').length).toBe(1);
+    expect(renderedComponent.find('div').length).toBe(2);
     expect(renderedComponent.find('Row').length).toBe(1);
   });
   it('should have children with a theme', () => {
@@ -52,6 +51,6 @@ describe('<Row />', () => {
     const renderedComponent = renderComponentUsingTheme({
       noGutters: true,
     });
-    expect(renderedComponent.find('div').hasClass('no-gutters')).toBe(true);
+    expect(renderedComponent.find('div').at(1).hasClass('no-gutters')).toBe(true);
   });
 });

@@ -21,7 +21,7 @@ export const defaultProps = {
     '$progress-box-shadow': 'inset 0 .1rem .1rem rgba(0, 0, 0, 0.1)',
     '$progress-bar-color': '#fff',
     '$progress-bar-bg': '#0275d8',
-    '$progress-bar-animation-timing': 'infinite',
+    '$progress-bar-animation-timing': '1s linear infinite',
   },
 };
 export const propTypes = {
@@ -72,8 +72,7 @@ const backgroundPositionKeyFrame = (props) => keyframes`
 
 
 const animationRule = (props) => css`
-  ${backgroundPositionKeyFrame(props)} ${props.theme['$progress-bar-animation-timing']};
-`;
+  ${backgroundPositionKeyFrame(props)} ${props.theme['$progress-bar-animation-timing']}`;
 
 /**
  * A classic `<Progress />` component. Can be used with **customized** value.

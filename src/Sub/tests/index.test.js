@@ -1,7 +1,7 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import { mount } from 'enzyme';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
+
 import Sub from '../index';
 
 const children = 'Test';
@@ -12,9 +12,9 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Sub {...props} />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

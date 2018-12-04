@@ -1,11 +1,10 @@
 /**
  * Testing our Figure component
  */
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
 
 import Figure from '../Figure';
 
@@ -21,13 +20,13 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Figure
       className={props.className}
     >
       {props.children}
     </Figure>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

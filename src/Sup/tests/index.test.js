@@ -2,9 +2,9 @@
  * Testing our Sup component
  */
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import { mount } from 'enzyme';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
+
 import Sup from '../index';
 
 const children = 'Test';
@@ -14,9 +14,9 @@ const renderComponent = (props = {}) => mount(
 );
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Sup {...props} />
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

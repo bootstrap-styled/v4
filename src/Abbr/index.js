@@ -70,7 +70,6 @@ const Abbr = styled(AbbrUnstyled)`
   /* Reboot Scss */
   /* Abbreviations and acronyms */
   &[title] {
-    text-decoration: underline;
     text-decoration: underline dotted;
     cursor: help;
     border-bottom: 0;

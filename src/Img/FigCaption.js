@@ -8,8 +8,7 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import styled from 'styled-components';
 import omit from 'lodash.omit';
-import theme from './theme';
-
+import bsTheme from 'bootstrap-styled/lib/theme';
 
 class FigCaptionUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -23,7 +22,7 @@ class FigCaptionUnstyled extends React.Component { // eslint-disable-line react/
   };
 
   static defaultProps = {
-    theme,
+    theme: bsTheme,
   };
 
   render() {

@@ -1,11 +1,10 @@
 /**
  * Testing our Select component
  */
-import { ThemeProvider } from 'styled-components';
-
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
+
 import Select from '../index';
 
 const children = <option>test</option>;
@@ -27,7 +26,7 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Select
       autoFocus={props.autoFocus}
       disabled={props.disabled}
@@ -40,7 +39,7 @@ const renderComponentUsingTheme = (props = {}) => mount(
     >
       {children}
     </Select>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

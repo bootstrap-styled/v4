@@ -1,18 +1,18 @@
 /**
  * Testing our Fieldset component
  */
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { mount } from 'enzyme';
 import React from 'react';
-import theme from '../../theme';
+
 
 import Fieldset from '../index';
 
 const children = (<h1>Test</h1>);
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <Fieldset
       disabled={props.disabled}
       form={props.form}
@@ -21,7 +21,7 @@ const renderComponentUsingTheme = (props = {}) => mount(
     >
       {props.children}
     </Fieldset>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 describe('<Fieldset />', () => {

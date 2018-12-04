@@ -2,9 +2,9 @@
  * Testing our FigCaption component
  */
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import { mount } from 'enzyme';
-import theme from '../../theme';
+
 import FigCaption from '../FigCaption';
 
 const children = 'Test';
@@ -17,11 +17,11 @@ const renderComponent = (props = {}) => mount(
 
 
 const renderComponentUsingTheme = (props = {}) => mount(
-  <ThemeProvider theme={theme}>
+  <BootstrapProvider>
     <FigCaption {...props}>
       {children}
     </FigCaption>
-  </ThemeProvider>
+  </BootstrapProvider>
 );
 
 

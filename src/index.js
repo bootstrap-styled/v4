@@ -1,5 +1,3 @@
-// 0. Configuration
-export { default as theme, makeTheme } from './theme';
 // 1. Atoms
 export { default as A } from './A';
 export { default as composeLink } from './A/composeLink';
