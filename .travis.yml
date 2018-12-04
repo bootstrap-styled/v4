@@ -73,9 +73,9 @@ jobs:
         - git fetch --tags
         - git checkout refs/tags/$(git describe --tags `git rev-list --tags --max-count=1`)
         - npm install
-        - chmod +x styleguide/prepare.sh
-        - styleguide/prepare.sh
-        - npm run styleguide:build
+#        - chmod +x styleguide/prepare.sh
+#        - styleguide/prepare.sh
+#        - npm run styleguide:build
       deploy:
         - provider: pages
           skip_cleanup: true

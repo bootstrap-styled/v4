@@ -11,6 +11,8 @@
     "last 2 versions"
   ],
   "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "prebuild": "npm run build:clean",
     "build": "npm run build:lib && npm run build:dist",
     "prebuild:lib": "rimraf lib/*",
@@ -58,6 +60,7 @@
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "^4.0.0",
+    "@yeutech-lab/rollup-umd-documentation": "^2.4.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -172,6 +175,7 @@
     "@bootstrap-styled/css-mixins": "^1.1.1",
     "@bootstrap-styled/css-utils": "^1.1.2",
     "@bootstrap-styled/utils": "^1.6.1",
+    "@bootstrap-styled/v4": "^1.2.6",
     "@rollup-umd/documentation-cli": "^1.0.9",
     "basic-math-utils": "^0.3.4",
     "bootstrap-styled": "^2.1.0",
