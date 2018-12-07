@@ -6,7 +6,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cn from 'classnames';
-import Color from 'color';
+import Color from '@bootstrap-styled/color';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
 import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
