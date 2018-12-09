@@ -6,6 +6,9 @@
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
   "module": "dist/@bootstrap-styled/v4.esm.js",
   "homepage": "https://bootstrap-styled.github.io/v4",
+  "engines": {
+    "node": ">=8"
+  },
   "browserslist": [
     "IE >= 9",
     "last 2 versions"
