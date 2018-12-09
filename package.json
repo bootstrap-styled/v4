@@ -1,11 +1,14 @@
 {
   "name": "@bootstrap-styled/v4",
   "version": "1.2.9",
-  "description": "All UI components of Bootstrap 4 using Bootstrap Styled chart.",
+  "description": "All UI components of Bootstrap 4 using Bootstrap Styled chart",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
   "module": "dist/@bootstrap-styled/v4.esm.js",
   "homepage": "https://bootstrap-styled.github.io/v4",
+  "engines": {
+    "node": ">=8"
+  },
   "browserslist": [
     "IE >= 9",
     "last 2 versions"
@@ -73,9 +76,9 @@
     "@babel/plugin-transform-react-inline-elements": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "@bootstrap-styled/documentation": "^1.0.1",
+    "@bootstrap-styled/documentation": "^1.0.7",
     "@bootstrap-styled/provider": "^1.3.0",
-    "@rollup-umd/documentation": "^1.0.17",
+    "@rollup-umd/documentation": "^1.0.22",
     "@semantic-release/changelog": "^3.0.1",
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.5",
@@ -183,9 +186,9 @@
     "@bootstrap-styled/css-mixins": "^1.2.0",
     "@bootstrap-styled/css-utils": "^1.1.4",
     "@bootstrap-styled/utils": "^1.6.4",
-    "@rollup-umd/documentation-cli": "^1.0.9",
+    "@rollup-umd/documentation-cli": "^1.0.11",
     "basic-math-utils": "^0.3.4",
-    "bootstrap-styled": "^2.2.0",
+    "bootstrap-styled": "^2.2.3",
     "classnames": "^2.2.6",
     "lodash.omit": "^4.5.0",
     "map-to-css-modules": "^1.0.6",
@@ -198,8 +201,8 @@
     "tether-fix": "^1.4.0-fix-es"
   },
   "peerDependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "styled-components": "^4.1.2"
   },
   "publishConfig": {
