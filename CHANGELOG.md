@@ -1,3 +1,19 @@
+## [1.2.9](https://github.com/bootstrap-styled/v4/compare/v1.2.8...v1.2.9) (2018-12-07)
+
+
+### Bug Fixes
+
+* **dependencies:** Update [@bootstrap-styled](https://github.com/bootstrap-styled)/css-mixins [@bootstrap-styled](https://github.com/bootstrap-styled)/css-utils bootstrap-styled ([39fd5b1](https://github.com/bootstrap-styled/v4/commit/39fd5b1))
+* **dependencies:** Upgrade many deps, semantic-release, babel 7, remove color ([f7fd5fb](https://github.com/bootstrap-styled/v4/commit/f7fd5fb))
+
+## [1.2.8](https://github.com/bootstrap-styled/v4/compare/v1.2.7...v1.2.8) (2018-12-04)
+
+
+### Bug Fixes
+
+* **CI:** travis.yml. ([21374e4](https://github.com/bootstrap-styled/v4/commit/21374e4))
+* **styleguide:** reimplemented configuration. ([83e8872](https://github.com/bootstrap-styled/v4/commit/83e8872))
+
 ## [1.2.7](https://github.com/bootstrap-styled/v4/compare/v1.2.6...v1.2.7) (2018-12-04)
 
 
