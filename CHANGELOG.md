@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/bootstrap-styled/v4/compare/v1.2.10...v1.2.11) (2018-12-10)
+
+
+### Bug Fixes
+
+* **gitter:** added gitter badges ([5b4362f](https://github.com/bootstrap-styled/v4/commit/5b4362f))
+
 ## [1.2.10](https://github.com/bootstrap-styled/v4/compare/v1.2.9...v1.2.10) (2018-12-09)
 
 
