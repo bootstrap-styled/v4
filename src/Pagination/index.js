@@ -99,7 +99,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class PaginationUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -129,37 +128,37 @@ class PaginationUnstyled extends React.Component { // eslint-disable-line react/
 const Pagination = styled(PaginationUnstyled)`
   ${(props) => `
     ${pagination(
-      props.theme['$enable-rounded'],
-      props.theme['$enable-hover-media-query'],
-      props.theme['$border-radius'],
-      props.theme['$pagination-active-color'],
-      props.theme['$pagination-active-bg'],
-      props.theme['$pagination-active-border'],
-      props.theme['$pagination-disabled-color'],
-      props.theme['$cursor-disabled'],
-      props.theme['$pagination-disabled-bg'],
-      props.theme['$pagination-disabled-border'],
-      props.theme['$pagination-padding-y'],
-      props.theme['$pagination-padding-x'],
-      props.theme['$pagination-line-height'],
-      props.theme['$pagination-color'],
-      props.theme['$pagination-bg'],
-      props.theme['$pagination-border-width'],
-      props.theme['$pagination-border-color'],
-      props.theme['$pagination-hover-color'],
-      props.theme['$pagination-hover-bg'],
-      props.theme['$pagination-hover-border'],
-      props.theme['$pagination-padding-y-lg'],
-      props.theme['$pagination-padding-x-lg'],
-      props.theme['$font-size-lg'],
-      props.theme['$line-height-lg'],
-      props.theme['$border-radius-lg'],
-      props.theme['$pagination-padding-y-sm'],
-      props.theme['$pagination-padding-x-sm'],
-      props.theme['$font-size-sm'],
-      props.theme['$line-height-sm'],
-      props.theme['$border-radius-sm'],
-    )}
+    props.theme['$enable-rounded'],
+    props.theme['$enable-hover-media-query'],
+    props.theme['$border-radius'],
+    props.theme['$pagination-active-color'],
+    props.theme['$pagination-active-bg'],
+    props.theme['$pagination-active-border'],
+    props.theme['$pagination-disabled-color'],
+    props.theme['$cursor-disabled'],
+    props.theme['$pagination-disabled-bg'],
+    props.theme['$pagination-disabled-border'],
+    props.theme['$pagination-padding-y'],
+    props.theme['$pagination-padding-x'],
+    props.theme['$pagination-line-height'],
+    props.theme['$pagination-color'],
+    props.theme['$pagination-bg'],
+    props.theme['$pagination-border-width'],
+    props.theme['$pagination-border-color'],
+    props.theme['$pagination-hover-color'],
+    props.theme['$pagination-hover-bg'],
+    props.theme['$pagination-hover-border'],
+    props.theme['$pagination-padding-y-lg'],
+    props.theme['$pagination-padding-x-lg'],
+    props.theme['$font-size-lg'],
+    props.theme['$line-height-lg'],
+    props.theme['$border-radius-lg'],
+    props.theme['$pagination-padding-y-sm'],
+    props.theme['$pagination-padding-x-sm'],
+    props.theme['$font-size-sm'],
+    props.theme['$line-height-sm'],
+    props.theme['$border-radius-sm'],
+  )}
   `}
 `;
 

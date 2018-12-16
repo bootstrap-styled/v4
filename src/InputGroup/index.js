@@ -123,7 +123,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class InputGroupUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -177,9 +176,9 @@ const InputGroup = styled(InputGroupUnstyled)`
         margin-bottom: 0;
         
         ${hoverFocusActive(
-          props.theme['$enable-hover-media-query'],
-          'z-index: 3;'
-        )}
+    props.theme['$enable-hover-media-query'],
+    'z-index: 3;'
+  )}
       }
     }
     
@@ -194,9 +193,9 @@ const InputGroup = styled(InputGroupUnstyled)`
 
       &:not(:first-child):not(:last-child) {
         ${borderRadius(
-          props.theme['$enable-rounded'],
-          '0'
-        )}
+    props.theme['$enable-rounded'],
+    '0'
+  )}
       }
     }
    
@@ -219,9 +218,9 @@ const InputGroup = styled(InputGroupUnstyled)`
       padding: ${props.theme['$input-padding-y-lg']} ${props.theme['$input-padding-x-lg']};
       font-size: ${props.theme['$font-size-lg']};
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$input-border-radius-lg']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$input-border-radius-lg']
+  )}
     }
     
     &.input-group-sm > .form-control,
@@ -230,9 +229,9 @@ const InputGroup = styled(InputGroupUnstyled)`
       padding: ${props.theme['$input-padding-y-sm']} ${props.theme['$input-padding-x-sm']};
       font-size: ${props.theme['$font-size-sm']};
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$input-border-radius-sm']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$input-border-radius-sm']
+  )}
     }
    
    
@@ -251,9 +250,9 @@ const InputGroup = styled(InputGroupUnstyled)`
       background-color: ${props.theme['$input-group-addon-bg']};
       border: ${props.theme['$input-btn-border-width']} solid ${props.theme['$input-group-addon-border-color']};
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$input-border-radius']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$input-border-radius']
+  )}
    
       /* 
       Nuke default margins from checkboxes and radios to vertically center within.
@@ -277,9 +276,9 @@ const InputGroup = styled(InputGroupUnstyled)`
     & .input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle),
     & .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn {
       ${borderRightRadius(
-        props.theme['$enable-rounded'],
-        '0'
-      )}
+    props.theme['$enable-rounded'],
+    '0'
+  )}
     }
     & .input-group-addon:not(:last-child) {
       border-right: 0;
@@ -292,9 +291,9 @@ const InputGroup = styled(InputGroupUnstyled)`
     & .input-group-btn:not(:last-child) > .btn:not(:first-child),
     & .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn {
       ${borderLeftRadius(
-        props.theme['$enable-rounded'],
-        '0'
-      )}
+    props.theme['$enable-rounded'],
+    '0'
+  )}
     }
     & .form-control + .input-group-addon:not(:first-child) {
       border-left: 0;
@@ -326,9 +325,9 @@ const InputGroup = styled(InputGroupUnstyled)`
         
         /* Bring the active button to the front */
         ${hoverFocusActive(
-          props.theme['$enable-hover-media-query'],
-          'z-index: 3;'
-        )}
+    props.theme['$enable-hover-media-query'],
+    'z-index: 3;'
+  )}
       }
    
       /* Negative margin to only have a single, shared border between the two */
@@ -345,38 +344,38 @@ const InputGroup = styled(InputGroupUnstyled)`
           margin-left: -${props.theme['$input-btn-border-width']};
           /* Because specificity */
           ${hoverFocusActive(
-            props.theme['$enable-hover-media-query'],
-            'z-index: 3;'
-          )}
+    props.theme['$enable-hover-media-query'],
+    'z-index: 3;'
+  )}
         }
       }
     }
     
    /* Added So that Inputs in InputGroup grab the same .form-control class as in Component Form Not Bs4 */
    ${formControl(
-      props.theme['$enable-rounded'],
-      props.theme['$enable-transitions'],
-      props.theme['$enable-shadows'],
-      props.theme['$input-height'],
-      props.theme['$input-padding-y'],
-      props.theme['$input-padding-x'],
-      props.theme['$font-size-base'],
-      props.theme['$input-line-height'],
-      props.theme['$input-color'],
-      props.theme['$input-bg'],
-      props.theme['$input-border-radius'],
-      props.theme['$input-btn-border-width'],
-      props.theme['$input-border-color'],
-      props.theme['$input-transition'],
-      props.theme['$input-box-shadow'],
-      props.theme['$input-color-focus'],
-      props.theme['$input-bg-focus'],
-      props.theme['$input-border-focus'],
-      props.theme['$input-box-shadow-focus'],
-      props.theme['$input-color-placeholder'],
-      props.theme['$input-bg-disabled'],
-      props.theme['$cursor-disabled'],
-    )}
+    props.theme['$enable-rounded'],
+    props.theme['$enable-transitions'],
+    props.theme['$enable-shadows'],
+    props.theme['$input-height'],
+    props.theme['$input-padding-y'],
+    props.theme['$input-padding-x'],
+    props.theme['$font-size-base'],
+    props.theme['$input-line-height'],
+    props.theme['$input-color'],
+    props.theme['$input-bg'],
+    props.theme['$input-border-radius'],
+    props.theme['$input-btn-border-width'],
+    props.theme['$input-border-color'],
+    props.theme['$input-transition'],
+    props.theme['$input-box-shadow'],
+    props.theme['$input-color-focus'],
+    props.theme['$input-bg-focus'],
+    props.theme['$input-border-focus'],
+    props.theme['$input-box-shadow-focus'],
+    props.theme['$input-color-placeholder'],
+    props.theme['$input-bg-disabled'],
+    props.theme['$cursor-disabled'],
+  )}
   `}
 `;
 

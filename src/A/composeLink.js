@@ -10,7 +10,6 @@ export const defaultProps = {
 
 export default function composeLink(RouterLink) {
   class Link extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
     static propTypes = {
       /* eslint-disable react/no-unused-prop-types */
       className: PropTypes.string,
@@ -35,12 +34,12 @@ export default function composeLink(RouterLink) {
   Link = styled(Link)`
     ${(props) => `
       ${a(
-        props.theme['$link-color'],
-        props.theme['$link-decoration'],
-        props.theme['$link-hover-color'],
-        props.theme['$link-hover-decoration'],
-        props.theme['$enable-hover-media-query'],
-      )}
+    props.theme['$link-color'],
+    props.theme['$link-decoration'],
+    props.theme['$link-hover-color'],
+    props.theme['$link-hover-decoration'],
+    props.theme['$enable-hover-media-query'],
+  )}
     `}
   `;
   Link.defaultProps = defaultProps;

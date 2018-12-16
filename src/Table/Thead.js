@@ -21,7 +21,6 @@ export const propTypes = {
 };
 
 class Thead extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
 
   render() {

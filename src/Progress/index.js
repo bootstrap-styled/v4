@@ -46,7 +46,6 @@ export const propTypes = {
   }),
 };
 class ProgressUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -90,19 +89,19 @@ const Progress = styled(ProgressUnstyled)`
       text-align: center;
       background-color: ${props.theme['$progress-bg']};
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$progress-border-radius']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$progress-border-radius']
+  )}
       ${getBackgroundUtilities(
-        props.theme['$enable-hover-media-query'],
-        props.theme['$brand-primary'],
-        props.theme['$brand-success'],
-        props.theme['$brand-info'],
-        props.theme['$brand-warning'],
-        props.theme['$brand-danger'],
-        props.theme['$brand-inverse'],
-        props.theme['$gray-lightest'],
-      )}
+    props.theme['$enable-hover-media-query'],
+    props.theme['$brand-primary'],
+    props.theme['$brand-success'],
+    props.theme['$brand-info'],
+    props.theme['$brand-warning'],
+    props.theme['$brand-danger'],
+    props.theme['$brand-inverse'],
+    props.theme['$gray-lightest'],
+  )}
     }
     
     .progress-bar {

@@ -34,7 +34,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class StrongUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
 
   render() {

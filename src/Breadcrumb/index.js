@@ -54,7 +54,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class BreadcrumbUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -88,9 +87,9 @@ const Breadcrumb = styled(BreadcrumbUnstyled)`
       background-color: ${props.theme['$breadcrumb-bg']};
  
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$border-radius']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$border-radius']
+  )}
             
       ${clearfix()}
     }

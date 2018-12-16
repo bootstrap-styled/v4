@@ -17,7 +17,6 @@ export const propTypes = {
 };
 
 class DfnUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
 
   render() {

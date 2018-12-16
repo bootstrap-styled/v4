@@ -34,7 +34,6 @@ export const propTypes = {
 };
 
 class FieldsetUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -67,9 +66,9 @@ const Fieldset = styled(FieldsetUnstyled)`
 
     & .row {
       ${makeRow(
-        props.theme['$enable-grid-classes'],
-        props.theme['$grid-gutter-widths'],
-      )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$grid-gutter-widths'],
+  )}
     }
 
   `}

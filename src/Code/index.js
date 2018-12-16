@@ -43,7 +43,6 @@ export const propTypes = {
   }),
 };
 class CodeUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -61,7 +60,6 @@ class CodeUnstyled extends React.Component { // eslint-disable-line react/prefer
       </Tag>
     );
   }
-
 }
 
 const Code = styled(CodeUnstyled)`

@@ -182,7 +182,6 @@ export const defaultProps = {
 };
 
 class ModalUnstyled extends React.Component {
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -466,13 +465,13 @@ const Modal = styled(ModalUnstyled)`
       width: auto;
       margin: ${props.theme['$modal-dialog-margin']};
       ${rebootUtils.body(
-  props.theme['$font-family-base'],
-  props.theme['$font-size-base'],
-  props.theme['$font-weight-base'],
-  props.theme['$line-height-base'],
-  props.theme['$body-color'],
-  props.theme['$body-bg'],
-)}
+    props.theme['$font-family-base'],
+    props.theme['$font-size-base'],
+    props.theme['$font-weight-base'],
+    props.theme['$line-height-base'],
+    props.theme['$body-color'],
+    props.theme['$body-bg'],
+  )}
     }
     
     
@@ -540,7 +539,7 @@ const Modal = styled(ModalUnstyled)`
   
     // Scale up the modal
     ${mediaBreakpointUp('sm', props.theme['$grid-breakpoints'],
-  `
+    `
         & .modal-dialog {
           max-width: ${props.theme['$modal-md']};
           margin: ${props.theme['$modal-dialog-sm-up-margin-y']} auto;
@@ -554,16 +553,16 @@ const Modal = styled(ModalUnstyled)`
           max-width: ${props.theme['$modal-sm']};
         }
       `
-)}
+  )}
   
 
     ${mediaBreakpointUp('lg', props.theme['$grid-breakpoints'],
-  `
+    `
         & .modal-lg {
            max-width:  ${props.theme['$modal-lg']}; 
          }
       `
-)}
+  )}
   `}
 `;
 

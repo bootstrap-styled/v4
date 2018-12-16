@@ -61,7 +61,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class Collapse extends Component {
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 

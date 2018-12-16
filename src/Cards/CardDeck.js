@@ -145,36 +145,36 @@ class CardDeckUnstyled extends React.Component {// eslint-disable-line react/pre
 const CardDeck = styled(CardDeckUnstyled)`
   ${(props) => `
     ${card(
-      props.theme['$enable-rounded'],
-      props.theme['$enable-hover-media-query'],
-      props.theme['$card-spacer-y'],
-      props.theme['$card-spacer-x'],
-      props.theme['$card-bg'],
-      props.theme['$card-border-width'],
-      props.theme['$card-border-color'],
-      props.theme['$card-border-radius'],
-      props.theme['$card-cap-bg'],
-      props.theme['$card-border-radius-inner'],
-      props.theme['$brand-primary'],
-      props.theme['$brand-success'],
-      props.theme['$brand-info'],
-      props.theme['$brand-warning'],
-      props.theme['$brand-danger'],
-      props.theme['$btn-primary-bg'],
-      props.theme['$btn-secondary-border'],
-      props.theme['$btn-info-bg'],
-      props.theme['$btn-success-bg'],
-      props.theme['$btn-warning-bg'],
-      props.theme['$btn-danger-bg'],
-      props.theme['$card-link-hover-color'],
-      props.theme['$card-img-overlay-padding'],
-      props.theme['$card-inverse-bg-color'],
-      props.theme['$card-inverse-border-color'],
-    )}
+    props.theme['$enable-rounded'],
+    props.theme['$enable-hover-media-query'],
+    props.theme['$card-spacer-y'],
+    props.theme['$card-spacer-x'],
+    props.theme['$card-bg'],
+    props.theme['$card-border-width'],
+    props.theme['$card-border-color'],
+    props.theme['$card-border-radius'],
+    props.theme['$card-cap-bg'],
+    props.theme['$card-border-radius-inner'],
+    props.theme['$brand-primary'],
+    props.theme['$brand-success'],
+    props.theme['$brand-info'],
+    props.theme['$brand-warning'],
+    props.theme['$brand-danger'],
+    props.theme['$btn-primary-bg'],
+    props.theme['$btn-secondary-border'],
+    props.theme['$btn-info-bg'],
+    props.theme['$btn-success-bg'],
+    props.theme['$btn-warning-bg'],
+    props.theme['$btn-danger-bg'],
+    props.theme['$card-link-hover-color'],
+    props.theme['$card-img-overlay-padding'],
+    props.theme['$card-inverse-bg-color'],
+    props.theme['$card-inverse-border-color'],
+  )}
     ${mediaBreakpointUp(
-      'sm',
-      props.theme['$grid-breakpoints'],
-      `
+    'sm',
+    props.theme['$grid-breakpoints'],
+    `
         &.card-deck {
           display: flex;
           flex-flow: row wrap;
@@ -188,7 +188,7 @@ const CardDeck = styled(CardDeckUnstyled)`
           }
         }
       `
-    )}
+  )}
   `}
 `;
 

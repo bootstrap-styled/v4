@@ -21,8 +21,8 @@ export const propTypes = {
     PropTypes.func,
   ]),
 };
-class ListGroupItemText extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
+class ListGroupItemText extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 

@@ -40,7 +40,6 @@ export const propTypes = {
 };
 
 class DropdownItem extends React.Component {
-
   static propTypes = propTypes;
   static contextTypes = {
     toggle: PropTypes.func,

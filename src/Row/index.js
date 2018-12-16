@@ -46,8 +46,7 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 
-class RowUnstyled extends React.Component {    // eslint-disable-line react/prefer-stateless-function
-
+class RowUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -70,7 +69,6 @@ class RowUnstyled extends React.Component {    // eslint-disable-line react/pref
       <Tag {...attributes} className={classes} />
     );
   }
-
 }
 /**
  * A simple way to build **responsive grids**.
@@ -83,9 +81,9 @@ const Row = styled(RowUnstyled)`
   ${(props) => `
     &.row {
       ${makeRow(
-        props.theme['$enable-grid-classes'],
-        props.theme['$grid-gutter-widths']
-      )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$grid-gutter-widths']
+  )}
     }
     /*
       Remove the negative margin from default .row, then the horizontal padding
