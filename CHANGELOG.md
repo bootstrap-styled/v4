@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/bootstrap-styled/v4/compare/v1.2.11...v1.3.0) (2018-12-16)
+
+
+### Bug Fixes
+
+* **dependencies:** Fix lint, upgrade eslint to 5.10.0 and fix .eslintrc ([ac9aab4](https://github.com/bootstrap-styled/v4/commit/ac9aab4))
+* **doc:** Update [@bootstrap-styled](https://github.com/bootstrap-styled)/documentation ([e1bb2e2](https://github.com/bootstrap-styled/v4/commit/e1bb2e2))
+
+
+### Features
+
+* **greekeeper:** Added greenkeeper and upgrade all dependencies to latest ([96ab32b](https://github.com/bootstrap-styled/v4/commit/96ab32b))
+
 ## [1.2.11](https://github.com/bootstrap-styled/v4/compare/v1.2.10...v1.2.11) (2018-12-10)
 
 
