@@ -8,8 +8,8 @@ coverage/
 /reports
 /test-report.xml
 jest_0
-lib
-dist
+/lib
+/dist
 /public
 /docs/cli
 /docs/declinations
