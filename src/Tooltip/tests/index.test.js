@@ -361,7 +361,7 @@ describe('Tooltip', () => {
       const instance = wrapper.instance();
 
       instance.onMouseOverTooltip();
-      jest.runTimersToTime(0);  // delay: 0 toggle is still async
+      jest.runTimersToTime(0); // delay: 0 toggle is still async
 
       expect(isOpen).toBe(true);
       expect(toggleSpy).not.toHaveBeenCalled();
@@ -405,7 +405,7 @@ describe('Tooltip', () => {
       const instance = wrapper.instance();
 
       instance.onMouseLeaveTooltip();
-      jest.runTimersToTime(0);  // delay: 0 toggle is still async
+      jest.runTimersToTime(0); // delay: 0 toggle is still async
 
       expect(isOpen).toBe(false);
       expect(toggleSpy).not.toHaveBeenCalled();

@@ -107,7 +107,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class ListGroupUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -163,13 +162,13 @@ const ListGroup = styled(ListGroupUnstyled)`
     
       /* Hover state */
       ${hoverFocus(
-        props.theme['$enable-hover-media-query'],
-        `
+    props.theme['$enable-hover-media-query'],
+    `
           color: ${props.theme['$list-group-link-hover-color']};
           text-decoration: none;
           background-color: ${props.theme['$list-group-hover-bg']};
         `
-      )};
+  )};
       
       &:active {
         color: ${props.theme['$list-group-link-active-color']};
@@ -195,17 +194,17 @@ const ListGroup = styled(ListGroupUnstyled)`
     
       &:first-child {
         ${borderTopRadius(
-          props.theme['$enable-rounded'],
-          props.theme['$list-group-border-radius']
-        )}
+    props.theme['$enable-rounded'],
+    props.theme['$list-group-border-radius']
+  )}
       }
 
       &:last-child {
         margin-bottom: 0;
         ${borderBottomRadius(
-          props.theme['$enable-rounded'],
-          props.theme['$list-group-border-radius']
-        )}
+    props.theme['$enable-rounded'],
+    props.theme['$list-group-border-radius']
+  )}
       }
       
       ${hoverFocus(props.theme['$enable-hover-media-query'], 'text-decoration: none;')}
@@ -261,29 +260,29 @@ const ListGroup = styled(ListGroupUnstyled)`
     */
     
     ${listGroupItemVariant(
-      props.theme['$enable-hover-media-query'],
-      'success',
-      props.theme['$state-success-bg'],
-      props.theme['$state-success-text'],
-    )}
+    props.theme['$enable-hover-media-query'],
+    'success',
+    props.theme['$state-success-bg'],
+    props.theme['$state-success-text'],
+  )}
     ${listGroupItemVariant(
-      props.theme['$enable-hover-media-query'],
-      'info',
-      props.theme['$state-info-bg'],
-      props.theme['$state-info-text'],
-    )}
+    props.theme['$enable-hover-media-query'],
+    'info',
+    props.theme['$state-info-bg'],
+    props.theme['$state-info-text'],
+  )}
     ${listGroupItemVariant(
-      props.theme['$enable-hover-media-query'],
-      'warning',
-      props.theme['$state-warning-bg'],
-      props.theme['$state-warning-text'],
-    )}
+    props.theme['$enable-hover-media-query'],
+    'warning',
+    props.theme['$state-warning-bg'],
+    props.theme['$state-warning-text'],
+  )}
     ${listGroupItemVariant(
-      props.theme['$enable-hover-media-query'],
-      'danger',
-      props.theme['$state-danger-bg'],
-      props.theme['$state-danger-text'],
-    )}
+    props.theme['$enable-hover-media-query'],
+    'danger',
+    props.theme['$state-danger-bg'],
+    props.theme['$state-danger-text'],
+  )}
   `}
 `;
 

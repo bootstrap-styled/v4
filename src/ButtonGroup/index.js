@@ -71,7 +71,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class ButtonGroupUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = {
     /* eslint-disable react/no-unused-prop-types */
     tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
@@ -108,20 +107,20 @@ class ButtonGroupUnstyled extends React.Component { // eslint-disable-line react
 const ButtonGroup = styled(ButtonGroupUnstyled)`
   ${(props) => `
     ${buttonGroup(
-      props.theme['$enable-shadows'],
-      props.theme['$enable-rounded'],
-      props.theme['$input-btn-border-width'],
-      props.theme['$btn-padding-x'],
-      props.theme['$btn-active-box-shadow'],
-      props.theme['$btn-padding-x-lg'],
-      props.theme['$btn-padding-y-lg'],
-      props.theme['$font-size-lg'],
-      props.theme['$btn-border-radius-lg'],
-      props.theme['$btn-padding-x-sm'],
-      props.theme['$btn-padding-y-sm'],
-      props.theme['$font-size-sm'],
-      props.theme['$btn-border-radius-sm']
-    )}
+    props.theme['$enable-shadows'],
+    props.theme['$enable-rounded'],
+    props.theme['$input-btn-border-width'],
+    props.theme['$btn-padding-x'],
+    props.theme['$btn-active-box-shadow'],
+    props.theme['$btn-padding-x-lg'],
+    props.theme['$btn-padding-y-lg'],
+    props.theme['$font-size-lg'],
+    props.theme['$btn-border-radius-lg'],
+    props.theme['$btn-padding-x-sm'],
+    props.theme['$btn-padding-y-sm'],
+    props.theme['$font-size-sm'],
+    props.theme['$btn-border-radius-sm']
+  )}
   `}  
 `;
 

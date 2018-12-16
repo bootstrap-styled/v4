@@ -15,7 +15,6 @@ export const propTypes = {
   children: PropTypes.node,
 };
 class SelectUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
 
   state = {

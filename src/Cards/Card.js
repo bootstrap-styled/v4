@@ -146,7 +146,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class CardUnstyled extends React.Component {// eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -199,17 +198,17 @@ const Card = styled(CardUnstyled)`
       ${borderRadius(props.theme['$enable-rounded'], props.theme['$card-border-radius'])}
       
       ${ifThen(
-        props.width,
-        `width: ${props.width};`
-      )}
+    props.width,
+    `width: ${props.width};`
+  )}
       ${ifThen(
-        props.backgroundColor,
-        `background-color: ${props.backgroundColor};`
-      )}
+    props.backgroundColor,
+    `background-color: ${props.backgroundColor};`
+  )}
       ${ifThen(
-        props.borderColor,
-        `border-color: ${props.borderColor};`
-      )}
+    props.borderColor,
+    `border-color: ${props.borderColor};`
+  )}
     }
     
     &.card-block,
@@ -245,18 +244,18 @@ const Card = styled(CardUnstyled)`
       > .list-group:first-child {
         .list-group-item:first-child {
           ${borderTopRadius(
-            props.theme['$enable-rounded'],
-            props.theme['$card-border-radius']
-          )}
+    props.theme['$enable-rounded'],
+    props.theme['$card-border-radius']
+  )}
         }
       }
     
       > .list-group:last-child {
         .list-group-item:last-child {
           ${borderBottomRadius(
-            props.theme['$enable-rounded'],
-            props.theme['$card-border-radius']
-          )}
+    props.theme['$enable-rounded'],
+    props.theme['$card-border-radius']
+  )}
         }
       }
     }
@@ -274,12 +273,12 @@ const Card = styled(CardUnstyled)`
     
       &:first-child {
         ${borderRadius(
-          props.theme['$enable-rounded'],
-          props.theme['$card-border-radius-inner'],
-          props.theme['$card-border-radius-inner'],
-          '0',
-          '0'
-        )}
+    props.theme['$enable-rounded'],
+    props.theme['$card-border-radius-inner'],
+    props.theme['$card-border-radius-inner'],
+    '0',
+    '0'
+  )}
       }
     }
     
@@ -290,12 +289,12 @@ const Card = styled(CardUnstyled)`
     
       &:last-child {
         ${borderRadius(
-          props.theme['$enable-rounded'],
-          '0',
-          '0',
-          props.theme['$card-border-radius-inner'],
-          props.theme['$card-border-radius-inner']
-        )}
+    props.theme['$enable-rounded'],
+    '0',
+    '0',
+    props.theme['$card-border-radius-inner'],
+    props.theme['$card-border-radius-inner']
+  )}
       }
     }
     
@@ -323,65 +322,65 @@ const Card = styled(CardUnstyled)`
     
     &.card-primary {
       ${cardVariant(
-        props.theme['$brand-primary'],
-        props.theme['$brand-primary'],
-      )}
+    props.theme['$brand-primary'],
+    props.theme['$brand-primary'],
+  )}
     }
     &.card-success {
       ${cardVariant(
-        props.theme['$brand-success'],
-        props.theme['$brand-success'],
-      )}
+    props.theme['$brand-success'],
+    props.theme['$brand-success'],
+  )}
     }
     &.card-info {
       ${cardVariant(
-        props.theme['$brand-info'],
-        props.theme['$brand-info'],
-      )}
+    props.theme['$brand-info'],
+    props.theme['$brand-info'],
+  )}
     }
     &.card-warning {
       ${cardVariant(
-        props.theme['$brand-warning'],
-        props.theme['$brand-warning'],
-      )}
+    props.theme['$brand-warning'],
+    props.theme['$brand-warning'],
+  )}
     }
     &.card-danger {
       ${cardVariant(
-        props.theme['$brand-danger'],
-        props.theme['$brand-danger'],
-      )}
+    props.theme['$brand-danger'],
+    props.theme['$brand-danger'],
+  )}
     }
     
     /* Remove all backgrounds */
     &.card-outline-primary {
       ${cardOutlineVariant(
-        props.theme['$btn-primary-bg'],
-      )}
+    props.theme['$btn-primary-bg'],
+  )}
     }
     &.card-outline-secondary {
       ${cardOutlineVariant(
-        props.theme['$btn-secondary-border'],
-      )}
+    props.theme['$btn-secondary-border'],
+  )}
     }
     &.card-outline-info {
       ${cardOutlineVariant(
-        props.theme['$btn-info-bg'],
-      )}
+    props.theme['$btn-info-bg'],
+  )}
     }
     &.card-outline-success {
       ${cardOutlineVariant(
-        props.theme['$btn-success-bg'],
-      )}
+    props.theme['$btn-success-bg'],
+  )}
     }
     &.card-outline-warning {
       ${cardOutlineVariant(
-        props.theme['$btn-warning-bg'],
-      )}
+    props.theme['$btn-warning-bg'],
+  )}
     }
     &.card-outline-danger {
       ${cardOutlineVariant(
-        props.theme['$btn-danger-bg'],
-      )}
+    props.theme['$btn-danger-bg'],
+  )}
     }
     
     /*
@@ -390,9 +389,9 @@ const Card = styled(CardUnstyled)`
     
     &.card-inverse {
       ${cardInverse(
-        props.theme['$enable-hover-media-query'],
-        props.theme['$card-link-hover-color'],
-      )}
+    props.theme['$enable-hover-media-query'],
+    props.theme['$card-link-hover-color'],
+  )}
     }
     
     /*
@@ -408,9 +407,9 @@ const Card = styled(CardUnstyled)`
     /* Card image */
     & .card-img {
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$card-border-radius-inner'],
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$card-border-radius-inner'],
+  )}
     }
     
     & .card-img-overlay {
@@ -427,16 +426,16 @@ const Card = styled(CardUnstyled)`
     /* Card image caps */
     & .card-img-top {
       ${borderTopRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$card-border-radius-inner']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$card-border-radius-inner']
+  )}
     }
     
     & .card-img-bottom {
       ${borderBottomRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$card-border-radius-inner']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$card-border-radius-inner']
+  )}
     }
   `}
 `;

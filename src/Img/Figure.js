@@ -10,7 +10,6 @@ import styled from 'styled-components';
 import cn from 'classnames';
 
 class FigureUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = {
     /* eslint-disable react/no-unused-prop-types */
     children: PropTypes.node.isRequired,

@@ -119,7 +119,6 @@ export const propTypes = {
 };
 
 class CardColumnsUnstyled extends React.Component {// eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -146,36 +145,36 @@ class CardColumnsUnstyled extends React.Component {// eslint-disable-line react/
 const CardColumns = styled(CardColumnsUnstyled)`
   ${(props) => `
     ${card(
-      props.theme['$enable-rounded'],
-      props.theme['$enable-hover-media-query'],
-      props.theme['$card-spacer-y'],
-      props.theme['$card-spacer-x'],
-      props.theme['$card-bg'],
-      props.theme['$card-border-width'],
-      props.theme['$card-border-color'],
-      props.theme['$card-border-radius'],
-      props.theme['$card-cap-bg'],
-      props.theme['$card-border-radius-inner'],
-      props.theme['$brand-primary'],
-      props.theme['$brand-success'],
-      props.theme['$brand-info'],
-      props.theme['$brand-warning'],
-      props.theme['$brand-danger'],
-      props.theme['$btn-primary-bg'],
-      props.theme['$btn-secondary-border'],
-      props.theme['$btn-info-bg'],
-      props.theme['$btn-success-bg'],
-      props.theme['$btn-warning-bg'],
-      props.theme['$btn-danger-bg'],
-      props.theme['$card-link-hover-color'],
-      props.theme['$card-img-overlay-padding'],
-      props.theme['$card-inverse-bg-color'],
-      props.theme['$card-inverse-border-color'],
-    )}
+    props.theme['$enable-rounded'],
+    props.theme['$enable-hover-media-query'],
+    props.theme['$card-spacer-y'],
+    props.theme['$card-spacer-x'],
+    props.theme['$card-bg'],
+    props.theme['$card-border-width'],
+    props.theme['$card-border-color'],
+    props.theme['$card-border-radius'],
+    props.theme['$card-cap-bg'],
+    props.theme['$card-border-radius-inner'],
+    props.theme['$brand-primary'],
+    props.theme['$brand-success'],
+    props.theme['$brand-info'],
+    props.theme['$brand-warning'],
+    props.theme['$brand-danger'],
+    props.theme['$btn-primary-bg'],
+    props.theme['$btn-secondary-border'],
+    props.theme['$btn-info-bg'],
+    props.theme['$btn-success-bg'],
+    props.theme['$btn-warning-bg'],
+    props.theme['$btn-danger-bg'],
+    props.theme['$card-link-hover-color'],
+    props.theme['$card-img-overlay-padding'],
+    props.theme['$card-inverse-bg-color'],
+    props.theme['$card-inverse-border-color'],
+  )}
     ${mediaBreakpointUp(
-      'md',
-      props.theme['$grid-breakpoints'],
-      `
+    'md',
+    props.theme['$grid-breakpoints'],
+    `
         &.card-columns {
           column-count: ${props.theme['$card-columns-count-md']};
           column-gap: ${props.theme['$card-columns-gap-md']};
@@ -187,11 +186,11 @@ const CardColumns = styled(CardColumnsUnstyled)`
           }
         }
       `
-    )}
+  )}
     ${mediaBreakpointUp(
-      'lg',
-      props.theme['$grid-breakpoints'],
-      `
+    'lg',
+    props.theme['$grid-breakpoints'],
+    `
         &.card-columns {
           column-count: ${props.theme['$card-columns-count-lg']};
           column-gap: ${props.theme['$card-columns-gap-lg']};
@@ -203,11 +202,11 @@ const CardColumns = styled(CardColumnsUnstyled)`
           }
         }
       `
-    )}
+  )}
     ${mediaBreakpointUp(
-      'xl',
-      props.theme['$grid-breakpoints'],
-      `
+    'xl',
+    props.theme['$grid-breakpoints'],
+    `
         &.card-columns {
           column-count: ${props.theme['$card-columns-count-xl']};
           column-gap: ${props.theme['$card-columns-gap-xl']};
@@ -219,11 +218,11 @@ const CardColumns = styled(CardColumnsUnstyled)`
           }
         }
       `
-    )}
+  )}
     ${mediaBreakpointUp(
-      'xxl',
-      props.theme['$grid-breakpoints'],
-      `
+    'xxl',
+    props.theme['$grid-breakpoints'],
+    `
         &.card-columns {
           column-count: ${props.theme['$card-columns-count-xxl']};
           column-gap: ${props.theme['$card-columns-gap-xxl']};
@@ -235,7 +234,7 @@ const CardColumns = styled(CardColumnsUnstyled)`
           }
         }
       `
-    )}
+  )}
   `}
 `;
 

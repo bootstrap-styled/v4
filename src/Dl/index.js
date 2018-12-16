@@ -34,7 +34,6 @@ export const propTypes = {
 };
 
 class DlUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -59,9 +58,9 @@ const Dl = styled(DlUnstyled)`
   
   ${(props) => `
     ${makeRow(
-      props.theme['$enable-grid-classes'],
-      props.theme['$grid-gutter-widths']
-    )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$grid-gutter-widths']
+  )}
   `}
 `;
 

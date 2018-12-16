@@ -28,7 +28,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class CardSubtitle extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 

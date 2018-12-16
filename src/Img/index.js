@@ -85,7 +85,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class ImgUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -107,7 +106,7 @@ class ImgUnstyled extends React.Component { // eslint-disable-line react/prefer-
       fluid ? 'img-fluid' : false,
       thumbnail ? 'img-thumbnail' : false,
       figure ? 'figure-img' : false,
-  ), cssModule);
+    ), cssModule);
 
     return (
       <Tag
@@ -148,17 +147,17 @@ const Img = styled(ImgUnstyled)`
       background-color: ${props.theme['$thumbnail-bg']};
       border: ${props.theme['$thumbnail-border-width']} solid ${props.theme['$thumbnail-border-color']};
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$thumbnail-border-radius']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$thumbnail-border-radius']
+  )}
       ${transition(
-        props.theme['$enable-transitions'],
-        props.theme['$thumbnail-transition']
-      )}
+    props.theme['$enable-transitions'],
+    props.theme['$thumbnail-transition']
+  )}
       ${boxShadow(
-        props.theme['$enable-shadows'],
-        props.theme['$thumbnail-box-shadow']
-      )}
+    props.theme['$enable-shadows'],
+    props.theme['$thumbnail-box-shadow']
+  )}
       /* Keep them at most 100% wide */
       ${imgFluid()}
     }

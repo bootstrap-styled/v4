@@ -10,7 +10,6 @@ import A from '../A';
 
 
 class PaginationLink extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = {
     'aria-label': PropTypes.string,
     className: PropTypes.string,

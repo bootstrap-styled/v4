@@ -85,8 +85,7 @@ export const propTypes = {
    */
   cssModule: PropTypes.object,
 };
-class ColUnstyled extends React.Component {    // eslint-disable-line react/prefer-stateless-function
-
+class ColUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -150,11 +149,11 @@ class ColUnstyled extends React.Component {    // eslint-disable-line react/pref
 const Col = styled(ColUnstyled)`
   ${(props) => `
     ${makeGridColumns(
-      props.theme['$enable-grid-classes'],
-      props.theme['$grid-columns'],
-      props.theme['$grid-gutter-widths'],
-      props.theme['$grid-breakpoints']
-    )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$grid-columns'],
+    props.theme['$grid-gutter-widths'],
+    props.theme['$grid-breakpoints']
+  )}
   `}
 `;
 

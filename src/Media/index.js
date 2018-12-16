@@ -54,7 +54,6 @@ export const propTypes = {
  * Or alignment Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your .media-body content.
  */
 class MediaUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
 
   render() {

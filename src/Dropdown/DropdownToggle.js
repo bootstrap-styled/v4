@@ -46,7 +46,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class DropdownToggle extends React.Component {
-
   static propTypes = propTypes;
   static contextTypes = {
     isOpen: PropTypes.bool.isRequired,

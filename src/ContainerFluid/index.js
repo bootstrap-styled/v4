@@ -30,8 +30,7 @@ export const propTypes = {
     '$enable-grid-classes': PropTypes.bool,
   }),
 };
-class ContainerFluidUnstyled extends React.Component {    // eslint-disable-line react/prefer-stateless-function
-
+class ContainerFluidUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -52,9 +51,9 @@ class ContainerFluidUnstyled extends React.Component {    // eslint-disable-line
 const ContainerFluid = styled(ContainerFluidUnstyled)`
   ${(props) => `
     ${makeContainer(
-      props.theme['$enable-grid-classes'],
-      props.theme['$grid-gutter-widths']
-    )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$grid-gutter-widths']
+  )}
   `}
 `;
 

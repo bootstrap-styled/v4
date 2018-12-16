@@ -38,7 +38,6 @@ export const propTypes = {
   }),
 };
 class ContainerUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -59,15 +58,15 @@ class ContainerUnstyled extends React.Component { // eslint-disable-line react/p
 const Container = styled(ContainerUnstyled)`
   ${(props) => `
     ${makeContainer(
-      props.theme['$enable-grid-classes'],
-      props.theme['$grid-gutter-widths']
-    )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$grid-gutter-widths']
+  )}
     
     ${makeContainerMaxWidths(
-      props.theme['$enable-grid-classes'],
-      props.theme['$container-max-widths'],
-      props.theme['$grid-breakpoints']
-    )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$container-max-widths'],
+    props.theme['$grid-breakpoints']
+  )}
   `}
 `;
 

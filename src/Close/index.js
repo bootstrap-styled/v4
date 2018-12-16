@@ -42,7 +42,6 @@ export const propTypes = {
 };
 
 class CloseUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -84,14 +83,14 @@ const Close = styled(CloseUnstyled)`
     &:focus {outline:0;}
     
     ${hoverFocus(
-      props.theme['$enable-hover-media-query'],
-      `
+    props.theme['$enable-hover-media-query'],
+    `
         color: ${props.theme['$close-color']};
         text-decoration: none;
         cursor: pointer;
         opacity: .5;
       `
-    )}
+  )}
     
     /* Additional properties for button version
      iOS requires the button element instead of an anchor tag.

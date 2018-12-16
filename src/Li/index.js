@@ -58,7 +58,6 @@ export const propTypes = {
 };
 
 class LiUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 

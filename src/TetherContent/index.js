@@ -33,7 +33,6 @@ export const propTypes = {
   style: PropTypes.node,
 };
 class TetherContent extends React.Component {// eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 

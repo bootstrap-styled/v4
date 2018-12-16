@@ -60,7 +60,6 @@ export const propTypes = {
 };
 
 class DrawerUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   /* eslint-disable react/no-unused-prop-types */
   static propTypes = propTypes;
   /* eslint-enable react/no-unused-prop-types */
@@ -105,17 +104,17 @@ const Drawer = styled(DrawerUnstyled)`
       overflow-y: auto;
       outline: none;
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$drawer-border-radius'],
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$drawer-border-radius'],
+  )}
       ${boxShadow(
-        props.theme['$enable-shadows'],
-        props.theme['$drawer-box-shadow'],
-      )}
+    props.theme['$enable-shadows'],
+    props.theme['$drawer-box-shadow'],
+  )}
       &.drawer-top {
         ${ifThen(
-          props.top,
-          `
+    props.top,
+    `
             left: 0;
             top: 0;
             width: 100%;
@@ -125,12 +124,12 @@ const Drawer = styled(DrawerUnstyled)`
               transform: translate(0px, 0px);
             }
           `
-        )}
+  )}
       }
       &.drawer-right {
         ${ifThen(
-          props.right,
-          `
+    props.right,
+    `
             bottom: 0;
             right: 0;
             height: 100%;
@@ -140,12 +139,12 @@ const Drawer = styled(DrawerUnstyled)`
               transform: translate(0px, 0px);
             }
           `
-        )}
+  )}
       }
       &.drawer-bottom {
         ${ifThen(
-          props.bottom,
-          `
+    props.bottom,
+    `
             left: 0;
             bottom: 0;
             width: 100%;
@@ -155,12 +154,12 @@ const Drawer = styled(DrawerUnstyled)`
               transform: translate(0px, 0px);
             }
           `
-        )}
+  )}
       }
       &.drawer-left {
         ${ifThen(
-          props.left,
-          `
+    props.left,
+    `
             bottom: 0;
             left: 0;
             height: 100%;
@@ -170,7 +169,7 @@ const Drawer = styled(DrawerUnstyled)`
               transform: translate(0px, 0px);
             }
           `
-        )}
+  )}
       }
     }
     &.drawer-docked { 
@@ -179,15 +178,15 @@ const Drawer = styled(DrawerUnstyled)`
       background-color: ${props.theme['$drawer-bg']};
       &.drawer-left {
         ${ifThen(
-          props.left,
-          `
+    props.left,
+    `
           width: ${props.theme['$drawer-docked-width']};
           transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
           &.active {
             width: ${props.left};
           }
           `
-        )}
+  )}
       }
     }
   `}

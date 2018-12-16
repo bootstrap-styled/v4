@@ -6,7 +6,6 @@ import cn from 'classnames';
 import styled from 'styled-components';
 
 class OutputUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = {
     className: PropTypes.string,
   };

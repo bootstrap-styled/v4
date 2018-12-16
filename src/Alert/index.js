@@ -127,7 +127,6 @@ export const propTypes = {
 };
 
 class AlertUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -300,31 +299,31 @@ const Alert = styled(AlertUnstyled)`
 
     &.alert-success {
       ${alertVariant(
-  props.theme['$alert-success-bg'],
-  props.theme['$alert-success-border'],
-  props.theme['$alert-success-text'],
-)}    
+    props.theme['$alert-success-bg'],
+    props.theme['$alert-success-border'],
+    props.theme['$alert-success-text'],
+  )}    
     }
     &.alert-info {
       ${alertVariant(
-  props.theme['$alert-info-bg'],
-  props.theme['$alert-info-border'],
-  props.theme['$alert-info-text'],
-)}
+    props.theme['$alert-info-bg'],
+    props.theme['$alert-info-border'],
+    props.theme['$alert-info-text'],
+  )}
     } 
     &.alert-warning {
       ${alertVariant(
-  props.theme['$alert-warning-bg'],
-  props.theme['$alert-warning-border'],
-  props.theme['$alert-warning-text'],
-)} 
+    props.theme['$alert-warning-bg'],
+    props.theme['$alert-warning-border'],
+    props.theme['$alert-warning-text'],
+  )} 
     }
     &.alert-danger {
       ${alertVariant(
-  props.theme['$alert-danger-bg'],
-  props.theme['$alert-danger-border'],
-  props.theme['$alert-danger-text'],
-)} 
+    props.theme['$alert-danger-bg'],
+    props.theme['$alert-danger-border'],
+    props.theme['$alert-danger-text'],
+  )} 
     }
   `}
 `;

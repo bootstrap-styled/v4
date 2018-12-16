@@ -59,7 +59,6 @@ export const propTypes = {
   cssModule: PropTypes.object,
 };
 class JumbotronUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -94,14 +93,14 @@ const Jumbotron = styled(JumbotronUnstyled)`
       margin-bottom: ${props.theme['$jumbotron-padding']};
       background-color: ${props.theme['$jumbotron-bg']};
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        props.theme['$border-radius-lg']
-      )}
+    props.theme['$enable-rounded'],
+    props.theme['$border-radius-lg']
+  )}
     
       ${mediaBreakpointUp('sm',
-        props.theme['$grid-breakpoints'],
-        `padding: calc(${props.theme['$jumbotron-padding']} * 2) ${props.theme['$jumbotron-padding']};`
-      )}  
+    props.theme['$grid-breakpoints'],
+    `padding: calc(${props.theme['$jumbotron-padding']} * 2) ${props.theme['$jumbotron-padding']};`
+  )}  
     }
 
     & .jumbotron-hr {
@@ -112,9 +111,9 @@ const Jumbotron = styled(JumbotronUnstyled)`
       padding-right: 0;
       padding-left: 0;
       ${borderRadius(
-        props.theme['$enable-rounded'],
-        '0'
-      )}
+    props.theme['$enable-rounded'],
+    '0'
+  )}
     }
   `}
 `;

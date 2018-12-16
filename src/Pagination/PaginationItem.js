@@ -9,7 +9,6 @@ import mapToCssModules from 'map-to-css-modules';
 
 
 class PaginationItem extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = {
     active: PropTypes.bool,
     className: PropTypes.string,

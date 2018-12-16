@@ -56,7 +56,6 @@ export const propTypes = {
 };
 
 class AUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -93,12 +92,12 @@ class AUnstyled extends React.Component { // eslint-disable-line react/prefer-st
 const A = styled(AUnstyled)`
   ${(props) => `
     ${a(
-  props.theme['$link-color'],
-  props.theme['$link-decoration'],
-  props.theme['$link-hover-color'],
-  props.theme['$link-hover-decoration'],
-  props.theme['$enable-hover-media-query']
-)}
+    props.theme['$link-color'],
+    props.theme['$link-decoration'],
+    props.theme['$link-hover-color'],
+    props.theme['$link-hover-decoration'],
+    props.theme['$enable-hover-media-query']
+  )}
   `}
 `;
 

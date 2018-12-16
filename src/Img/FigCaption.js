@@ -11,7 +11,6 @@ import omit from 'lodash.omit';
 import bsTheme from 'bootstrap-styled/lib/theme';
 
 class FigCaptionUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = {
     /* eslint-disable react/no-unused-prop-types */
     children: PropTypes.node,
@@ -45,7 +44,6 @@ class FigCaptionUnstyled extends React.Component { // eslint-disable-line react/
       </figcaption>
     );
   }
-
 }
 
 const FigCaption = styled(FigCaptionUnstyled)`

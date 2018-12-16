@@ -51,7 +51,6 @@ export const propTypes = {
 };
 
 class KbdUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -68,7 +67,6 @@ class KbdUnstyled extends React.Component { // eslint-disable-line react/prefer-
       </kbd>
     );
   }
-
 }
 /**
  * Replace or remove a className from the component.

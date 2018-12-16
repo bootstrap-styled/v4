@@ -43,7 +43,6 @@ export const propTypes = {
   }),
 };
 class DdUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = propTypes;
   static defaultProps = defaultProps;
 
@@ -67,11 +66,11 @@ const Dd = styled(DdUnstyled)`
   margin-left: 0; /* Undo browser default */
   ${(props) => `
     ${makeGridColumns(
-      props.theme['$enable-grid-classes'],
-      props.theme['$grid-columns'],
-      props.theme['$grid-gutter-widths'],
-      props.theme['$grid-breakpoints']
-    )}
+    props.theme['$enable-grid-classes'],
+    props.theme['$grid-columns'],
+    props.theme['$grid-gutter-widths'],
+    props.theme['$grid-breakpoints']
+  )}
   `}
 `;
 
