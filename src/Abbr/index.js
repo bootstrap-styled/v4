@@ -20,6 +20,7 @@ export const propTypes = {
    */
   tag: PropTypes.oneOfType([
     PropTypes.string,
+    PropTypes.func,
     PropTypes.element,
   ]),
   /**
@@ -39,6 +40,7 @@ export const propTypes = {
 
 class AbbrUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
@@ -87,4 +89,3 @@ Abbr.propTypes = propTypes;
 
 /** @component */
 export default Abbr;
-

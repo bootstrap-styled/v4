@@ -120,6 +120,7 @@ export const propTypes = {
 
 class CardDeckUnstyled extends React.Component {// eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {

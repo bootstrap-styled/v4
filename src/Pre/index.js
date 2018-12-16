@@ -69,4 +69,3 @@ Pre.propTypes = propTypes;
 
 /** @component */
 export default Pre;
-

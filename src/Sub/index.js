@@ -9,4 +9,3 @@ const Sub = styled.sub`
 
 /** @component */
 export default Sub;
-

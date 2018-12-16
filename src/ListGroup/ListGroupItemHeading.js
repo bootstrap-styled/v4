@@ -28,6 +28,7 @@ export const propTypes = {
 };
 class ListGroupItemHeading extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
@@ -51,4 +52,3 @@ ListGroupItemHeading.defaultProps = defaultProps;
 ListGroupItemHeading.propTypes = propTypes;
 
 export default ListGroupItemHeading;
-

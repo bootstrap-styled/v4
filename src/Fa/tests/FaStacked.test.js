@@ -14,7 +14,8 @@ const renderComponent = (props = {}) => mount(
 const renderComponentUsingTheme = (props = {}) => mount(
   <BootstrapProvider>
     <FaStacked {...props} />
-  </BootstrapProvider>);
+  </BootstrapProvider>
+);
 
 describe('<FaStacked />', () => {
   it('should render an <FaStacked> tag without a theme', () => {

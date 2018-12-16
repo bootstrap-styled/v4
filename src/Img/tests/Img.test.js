@@ -7,12 +7,12 @@ import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider'
 import Img from '../index';
 
 const renderComponent = (props = {}) => mount(
-  <Img{...props} />
+  <Img {...props} />
 );
 
 const renderComponentUsingTheme = (props = {}) => mount(
   <BootstrapProvider>
-    <Img{...props} />
+    <Img {...props} />
   </BootstrapProvider>
 );
 

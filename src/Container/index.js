@@ -39,6 +39,7 @@ export const propTypes = {
 };
 class ContainerUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
@@ -75,4 +76,3 @@ Container.propTypes = propTypes;
 
 /** @component */
 export default Container;
-

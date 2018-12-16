@@ -48,9 +48,11 @@ export const propTypes = {
 };
 class Accordion extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static contextTypes = {
     accordionGroup: PropTypes.object,
   };
+
   static defaultProps = defaultProps;
 
   render() {

@@ -17,7 +17,7 @@ class PaginationLink extends React.Component { // eslint-disable-line react/pref
     cssModule: PropTypes.object,
     next: PropTypes.bool,
     previous: PropTypes.bool,
-    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+    tag: PropTypes.oneOfType([PropTypes.element, PropTypes.func, PropTypes.object]),
   };
 
   static defaultProps = {
@@ -54,7 +54,7 @@ class PaginationLink extends React.Component { // eslint-disable-line react/pref
       defaultCaret = '\u00bb';
     }
 
-    let children = this.props.children;
+    let { children } = this.props;
     if (previous || next) {
       children = [
         <span

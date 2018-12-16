@@ -147,6 +147,7 @@ export const propTypes = {
 };
 class CardUnstyled extends React.Component {// eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {

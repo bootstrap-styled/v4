@@ -39,6 +39,7 @@ export const propTypes = {
    */
   tag: PropTypes.oneOfType([
     PropTypes.string,
+    PropTypes.func,
     PropTypes.element,
   ]),
   /** Theme variables. Can be: */
@@ -73,7 +74,7 @@ export const propTypes = {
 class ButtonGroupUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = {
     /* eslint-disable react/no-unused-prop-types */
-    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    tag: PropTypes.oneOfType([PropTypes.element, PropTypes.func, PropTypes.string]),
     className: PropTypes.string,
     cssModule: PropTypes.object,
     size: PropTypes.string,
@@ -96,8 +97,7 @@ class ButtonGroupUnstyled extends React.Component { // eslint-disable-line react
       <Tag
         className={mapToCssModules(cn(className,
           vertical ? 'btn-group-vertical' : 'btn-group',
-          { [`btn-group-${size}`]: size },
-        ), cssModule)}
+          { [`btn-group-${size}`]: size }), cssModule)}
         {...attributes}
       />
     );
@@ -129,4 +129,3 @@ ButtonGroup.propTypes = propTypes;
 
 /** @component */
 export default ButtonGroup;
-

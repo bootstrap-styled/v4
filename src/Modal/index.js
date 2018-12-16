@@ -183,6 +183,7 @@ export const defaultProps = {
 
 class ModalUnstyled extends React.Component {
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   constructor(props) {
@@ -552,8 +553,7 @@ const Modal = styled(ModalUnstyled)`
         & .modal-sm {
           max-width: ${props.theme['$modal-sm']};
         }
-      `
-  )}
+      `)}
   
 
     ${mediaBreakpointUp('lg', props.theme['$grid-breakpoints'],
@@ -561,8 +561,7 @@ const Modal = styled(ModalUnstyled)`
         & .modal-lg {
            max-width:  ${props.theme['$modal-lg']}; 
          }
-      `
-  )}
+      `)}
   `}
 `;
 

@@ -30,7 +30,7 @@ export const propTypes = {
    */
   className: PropTypes.string,
   /** Toggles open Panel. */
-  active: PropTypes.bool.isRequired,
+  active: PropTypes.bool,
   /** Place Drawer at the top of screen with it's set height */
   top: PropTypes.string,
   /** Place Drawer at the right of screen with it's set width */
@@ -62,6 +62,7 @@ export const propTypes = {
 class DrawerUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   /* eslint-disable react/no-unused-prop-types */
   static propTypes = propTypes;
+
   /* eslint-enable react/no-unused-prop-types */
   static defaultProps = defaultProps;
 

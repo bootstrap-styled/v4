@@ -96,7 +96,9 @@ export { default as Tooltip } from './Tooltip';
 export { default as Ul } from './Ul';
 
 // 2. Molecules
-export { default as Card, CardBlock, CardFooter, CardHeader, CardImg, CardImgOverlay, CardLink, CardSubtitle, CardText, CardTitle, CardColumns, CardDeck, CardGroup, CardBlockquote } from './Cards';
+export {
+  default as Card, CardBlock, CardFooter, CardHeader, CardImg, CardImgOverlay, CardLink, CardSubtitle, CardText, CardTitle, CardColumns, CardDeck, CardGroup, CardBlockquote,
+} from './Cards';
 export { default as Accordion, AccordionGroup } from './Accordions';
 export { default as Form } from './Form';
 export { default as FormGroup } from './Form/FormGroup';
@@ -116,4 +118,3 @@ export { default as Container } from './Container';
 export { default as ContainerFluid } from './ContainerFluid';
 // 4. extra
 export { getGlobalStyles, getGlobalStyleNoBootstrapProvider } from '@bootstrap-styled/css-utils/lib/reboot';
-

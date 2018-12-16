@@ -37,7 +37,8 @@ class StrongUnstyled extends React.Component { // eslint-disable-line react/pref
   static propTypes = propTypes;
 
   render() {
-    const { className,
+    const {
+      className,
       color,
       children,
       cssModule,
@@ -65,4 +66,3 @@ Strong.propTypes = propTypes;
 
 /** @component */
 export default Strong;
-

@@ -60,6 +60,7 @@ export const propTypes = {
 };
 class JumbotronUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
@@ -99,8 +100,7 @@ const Jumbotron = styled(JumbotronUnstyled)`
     
       ${mediaBreakpointUp('sm',
     props.theme['$grid-breakpoints'],
-    `padding: calc(${props.theme['$jumbotron-padding']} * 2) ${props.theme['$jumbotron-padding']};`
-  )}  
+    `padding: calc(${props.theme['$jumbotron-padding']} * 2) ${props.theme['$jumbotron-padding']};`)}  
     }
 
     & .jumbotron-hr {

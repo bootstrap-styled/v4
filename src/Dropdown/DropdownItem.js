@@ -41,9 +41,11 @@ export const propTypes = {
 
 class DropdownItem extends React.Component {
   static propTypes = propTypes;
+
   static contextTypes = {
     toggle: PropTypes.func,
   };
+
   static defaultProps = defaultProps;
 
   onClick = (e) => {
@@ -75,7 +77,8 @@ class DropdownItem extends React.Component {
       disabled,
       tag: Tag,
       header,
-      ...attributes } = this.props;
+      ...attributes
+    } = this.props;
     /* eslint-enable prefer-const */
 
     const classes = mapToCssModules(cn(

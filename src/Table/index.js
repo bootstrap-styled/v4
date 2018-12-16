@@ -50,6 +50,7 @@ export const propTypes = {
    */
   tag: PropTypes.oneOfType([
     PropTypes.string,
+    PropTypes.func,
     PropTypes.element,
   ]),
   /** Change tab size with specified one. Can be: `sm` */
@@ -67,7 +68,7 @@ export const propTypes = {
   /** Toggles responsive CSS display. */
   responsive: PropTypes.bool,
   /** Replace the responsive component tag by the one specified. Can be: */
-  responsiveTag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  responsiveTag: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.element]),
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$body-bg': PropTypes.string,
@@ -99,6 +100,7 @@ export const propTypes = {
 };
 class TableUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {

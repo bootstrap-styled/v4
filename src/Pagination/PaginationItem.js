@@ -15,7 +15,7 @@ class PaginationItem extends React.Component { // eslint-disable-line react/pref
     children: PropTypes.node,
     cssModule: PropTypes.object,
     disabled: PropTypes.bool,
-    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    tag: PropTypes.oneOfType([PropTypes.element, PropTypes.func, PropTypes.string]),
   };
 
   static defaultProps = {

@@ -27,6 +27,7 @@ export const propTypes = {
   tag: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.element,
+    PropTypes.func,
   ]),
   /** Specified node element will be passed as children of `<Small />` component. */
   children: PropTypes.node,
@@ -53,10 +54,12 @@ export const propTypes = {
 };
 class SmallUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
-    const { className,
+    const {
+      className,
       color,
       children,
       cssModule,

@@ -39,6 +39,7 @@ export const propTypes = {
 };
 class NavLink extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   constructor(props) {

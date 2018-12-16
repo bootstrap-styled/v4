@@ -62,7 +62,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.element]),
   /** Extra small columns variables. */
   xs: columnProps,
   /** Small columns variables. */
@@ -87,6 +87,7 @@ export const propTypes = {
 };
 class ColUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
@@ -162,4 +163,3 @@ Col.propTypes = propTypes;
 
 /** @component */
 export default Col;
-
