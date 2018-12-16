@@ -173,10 +173,12 @@ export const propTypes = {
 
 class DropdownUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static childContextTypes = {
     isOpen: PropTypes.bool.isRequired,
     toggle: PropTypes.func.isRequired,
   };
+
   static defaultProps = defaultProps;
 
   getChildContext() {
@@ -422,8 +424,7 @@ const Dropdown = styled(DropdownUnstyled)`
         cursor: ${props.theme['$cursor-disabled']};
         background-color: transparent;
         ${ifThen(props.theme['$enable-gradients'],
-    'background-image: none; /* Remove CSS gradient */'
-  )}
+    'background-image: none; /* Remove CSS gradient */')}
       }
     }
 

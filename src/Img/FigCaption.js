@@ -33,8 +33,7 @@ class FigCaptionUnstyled extends React.Component { // eslint-disable-line react/
     } = omit(this.props, ['theme']);
 
     const classes = cn('figure-caption', className,
-      right ? 'text-right' : null
-    );
+      right ? 'text-right' : null);
     return (
       <figcaption
         className={classes}
@@ -57,4 +56,3 @@ const FigCaption = styled(FigCaptionUnstyled)`
 
 /** @component */
 export default FigCaption;
-

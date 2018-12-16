@@ -34,6 +34,7 @@ export const propTypes = {
 };
 class TetherContent extends React.Component {// eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   componentDidMount = () => {
@@ -54,7 +55,7 @@ class TetherContent extends React.Component {// eslint-disable-line react/prefer
   }
 
   getTarget = () => {
-    const target = this.props.tether.target;
+    const { target } = this.props.tether; // eslint-disable-line prefer-destructuring
 
     if (isFunction(target)) {
       return target();

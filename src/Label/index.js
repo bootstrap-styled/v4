@@ -35,6 +35,8 @@ export const propTypes = {
    */
   tag: PropTypes.oneOfType([
     PropTypes.string,
+    PropTypes.func,
+    PropTypes.element,
   ]),
   /** Theme variables. Can be: */
   theme: PropTypes.shape({

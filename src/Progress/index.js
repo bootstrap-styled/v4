@@ -47,6 +47,7 @@ export const propTypes = {
 };
 class ProgressUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {

@@ -32,4 +32,3 @@ Mark.propTypes = propTypes;
 
 /** @component */
 export default Mark;
-

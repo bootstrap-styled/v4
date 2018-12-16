@@ -99,6 +99,7 @@ export const defaultProps = {
 };
 export class TooltipUnstyled extends React.Component {
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   state = {
@@ -150,7 +151,7 @@ export class TooltipUnstyled extends React.Component {
   getDelay = (key) => {
     const { delay } = this.props;
     if (typeof delay === 'object') {
-      return isNaN(delay[key]) ? DEFAULT_DELAYS[key] : delay[key];
+      return isNaN(delay[key]) ? DEFAULT_DELAYS[key] : delay[key]; // eslint-disable-line no-restricted-globals
     }
     return delay;
   }
@@ -269,7 +270,7 @@ export class TooltipUnstyled extends React.Component {
       >
         <div
           {...attributes}
-          className={'tooltip-inner'}
+          className="tooltip-inner"
           onMouseOver={this.onMouseOverTooltipContent}
           onMouseLeave={this.onMouseLeaveTooltipContent}
           onFocus={this.handleFocus}

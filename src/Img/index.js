@@ -47,6 +47,7 @@ export const propTypes = {
    */
   tag: PropTypes.oneOfType([
     PropTypes.string,
+    PropTypes.func,
     PropTypes.element,
   ]),
   /** Toggles fluid responsive CSS display. */
@@ -86,6 +87,7 @@ export const propTypes = {
 };
 class ImgUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {

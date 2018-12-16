@@ -19,6 +19,17 @@ export const propTypes = {
   children: PropTypes.node,
   /** Toggles popup CSS style. */
   'aria-haspopup': PropTypes.bool,
+  /** Color variables. Can be: */
+  color: PropTypes.oneOf([
+    'white',
+    'muted',
+    'gray-dark',
+    'primary',
+    'success',
+    'info',
+    'warning',
+    'danger',
+  ]),
   /** Toggles caret CSS style. */
   caret: PropTypes.bool,
   /** Change toggle content with specified string. */
@@ -47,10 +58,12 @@ export const propTypes = {
 };
 class DropdownToggle extends React.Component {
   static propTypes = propTypes;
+
   static contextTypes = {
     isOpen: PropTypes.bool.isRequired,
     toggle: PropTypes.func.isRequired,
   };
+
   static defaultProps = defaultProps;
 
   onClick = (e) => {
@@ -71,7 +84,9 @@ class DropdownToggle extends React.Component {
   }
 
   render() {
-    const { className, cssModule, caret, split, nav, tag, ...attributes } = this.props;
+    const {
+      className, cssModule, caret, split, nav, tag, ...attributes
+    } = this.props;
     const ariaLabel = attributes['aria-label'] || 'Toggle Dropdown';
     const classes = mapToCssModules(classNames(
       className,

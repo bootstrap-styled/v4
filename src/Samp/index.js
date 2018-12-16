@@ -12,4 +12,3 @@ const Samp = styled.samp`
 
 /** @component */
 export default Samp;
-

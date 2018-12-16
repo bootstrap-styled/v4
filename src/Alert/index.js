@@ -81,7 +81,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.element]),
   /**
    * Transition used to dismiss alert.
    */
@@ -128,6 +128,7 @@ export const propTypes = {
 
 class AlertUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   state = {
@@ -147,12 +148,14 @@ class AlertUnstyled extends React.Component { // eslint-disable-line react/prefe
       this.setState({ exited: true });
     }
   }
+
   /* eslint-disable no-console */
   componentDidMount() {
     if (this.props.autoHideDuration) {
       this.setAutoHideTimer();
     }
   }
+
   /* eslint-enable no-console */
   componentWillReceiveProps(nextProps) {
     if (nextProps.isOpen) {

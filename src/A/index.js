@@ -27,6 +27,7 @@ export const propTypes = {
    */
   tag: PropTypes.oneOfType([
     PropTypes.string,
+    PropTypes.func,
     PropTypes.element,
   ]),
   /** Theme variables. Can be: */
@@ -57,6 +58,7 @@ export const propTypes = {
 
 class AUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   state = {

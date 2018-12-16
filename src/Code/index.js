@@ -44,6 +44,7 @@ export const propTypes = {
 };
 class CodeUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
@@ -88,4 +89,3 @@ Code.propTypes = propTypes;
 
 /** @component */
 export default Code;
-

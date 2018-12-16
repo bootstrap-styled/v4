@@ -85,7 +85,9 @@ describe('<Col />', () => {
   });
   it('should have a classes .col .col-sm-6 .sm-push-2 .sm-pull-2 .sm-offset-2', () => {
     const renderedComponent = renderComponentUsingTheme({
-      sm: { size: 6, push: 2, pull: 2, offset: 1 },
+      sm: {
+        size: 6, push: 2, pull: 2, offset: 1,
+      },
     });
     expect(renderedComponent.find('div').at(1).hasClass('col-sm-6')).toEqual(true);
     expect(renderedComponent.find('div').at(1).hasClass('push-sm-2')).toEqual(true);

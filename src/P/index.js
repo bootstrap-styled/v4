@@ -99,10 +99,12 @@ export const propTypes = {
 };
 class PUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
-    const { className,
+    const {
+      className,
       color,
       children,
       cssModule,

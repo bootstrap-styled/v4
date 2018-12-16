@@ -7,12 +7,12 @@ import omit from 'lodash.omit';
 import { pick } from '@bootstrap-styled/utils/lib/tools';
 
 export const propTypes = {
-  ...Transition.propTypes,
+  ...Transition.propTypes, // eslint-disable-line react/forbid-foreign-prop-types
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  tag: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  tag: PropTypes.oneOfType([PropTypes.string, PropTypes.func, PropTypes.element]),
   baseClass: PropTypes.string,
   baseClassActive: PropTypes.string,
   className: PropTypes.string,

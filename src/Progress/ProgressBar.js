@@ -49,12 +49,8 @@ export const propTypes = {
 
 class ProgressBar extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
-  static defaultProps = defaultProps;
 
-  state = {
-    classNameProgress: '',
-    classNameProgressBar: '',
-  }
+  static defaultProps = defaultProps;
 
   getWidth(valueNow, valueMin, valueMax) {
     return `${rangeUtils.mapBetween(valueNow, valueMin, valueMax)}%`;

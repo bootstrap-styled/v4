@@ -40,4 +40,3 @@ Dfn.propTypes = propTypes;
 
 /** @component */
 export default Dfn;
-

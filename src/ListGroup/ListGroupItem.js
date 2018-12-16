@@ -46,6 +46,7 @@ export const propTypes = {
 };
 class ListGroupItem extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {
@@ -82,4 +83,3 @@ ListGroupItem.defaultProps = defaultProps;
 ListGroupItem.propTypes = propTypes;
 
 export default ListGroupItem;
-

@@ -37,7 +37,9 @@ const contextTypes = {
 };
 
 const DropdownMenu = (props, context) => {
-  const { className, cssModule, right, tag: Tag, ...attributes } = props;
+  const {
+    className, cssModule, right, tag: Tag, ...attributes
+  } = props;
   const classes = mapToCssModules(cn(
     className,
     'dropdown-menu',

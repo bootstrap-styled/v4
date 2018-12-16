@@ -79,8 +79,18 @@ export const propTypes = {
    * @ignore
    */
   className: PropTypes.string,
-  /** Specified node element will be passed as children of `<Ul />` component. */
+  /**
+   * Replace the default component tag by the one specified. Can be:
+   */
+  tag: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func,
+    PropTypes.element,
+  ]),
+  /** @ignore */
   children: PropTypes.node.isRequired,
+  /** @ignore */
+  role: PropTypes.string,
   /** Toggles inline CSS style. */
   inline: PropTypes.bool,
   /** Toggles un-styled CSS style. */
@@ -138,6 +148,7 @@ export const propTypes = {
 };
 class UlUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   render() {

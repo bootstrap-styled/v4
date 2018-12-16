@@ -62,6 +62,7 @@ export const propTypes = {
 };
 class Collapse extends Component {
   static propTypes = propTypes;
+
   static defaultProps = defaultProps;
 
   state = {
@@ -76,7 +77,7 @@ class Collapse extends Component {
 
   componentWillReceiveProps(nextProps) {
     const willOpen = nextProps.isOpen;
-    const collapse = this.state.collapse;
+    const { collapse } = this.state;
 
     if (willOpen && collapse === HIDDEN) {
       // will open
@@ -110,26 +111,26 @@ class Collapse extends Component {
     }
     // else: do nothing.
 
-    if (nextProps.theme['$transition-collapse'] !== this.props.theme['$transition-collapse'] ||
-      nextProps.delay.show !== this.props.delay.show ||
-      nextProps.delay.hide !== this.props.delay.hide
+    if (nextProps.theme['$transition-collapse'] !== this.props.theme['$transition-collapse']
+      || nextProps.delay.show !== this.props.delay.show
+      || nextProps.delay.hide !== this.props.delay.hide
     ) {
       this.updateTransition({ delay: nextProps.delay, theme: nextProps.theme });
     }
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.collapse === SHOWN &&
-      prevState &&
-      prevState.collapse !== SHOWN) {
+    if (this.state.collapse === SHOWN
+      && prevState
+      && prevState.collapse !== SHOWN) {
       if (this.props.onOpened) {
         this.props.onOpened();
       }
     }
 
-    if (this.state.collapse === HIDDEN &&
-      prevState &&
-      prevState.collapse !== HIDDEN) {
+    if (this.state.collapse === HIDDEN
+      && prevState
+      && prevState.collapse !== HIDDEN) {
       if (this.props.onClosed) {
         this.props.onClosed();
       }
