@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/bootstrap-styled/v4/compare/v1.3.1...v1.3.2) (2018-12-18)
+
+
+### Bug Fixes
+
+* **dependencies:** Updated css-mixins to get cursor fix, and updated old dependencies ([a5cc995](https://github.com/bootstrap-styled/v4/commit/a5cc995))
+
 ## [1.3.1](https://github.com/bootstrap-styled/v4/compare/v1.3.0...v1.3.1) (2018-12-16)
 
 
