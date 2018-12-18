@@ -29,6 +29,7 @@ export const propTypes = {
     'info',
     'warning',
     'danger',
+    'link',
   ]),
   /** Toggles caret CSS style. */
   caret: PropTypes.bool,

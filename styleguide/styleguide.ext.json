@@ -42,8 +42,7 @@
         },
         {
           "name": "Configuration",
-          "content": "docs/configuration.md",
-          "components": "src/BootstrapProvider/*.js"
+          "content": "docs/configuration.md"
         }
       ],
       "sectionDepth": 0

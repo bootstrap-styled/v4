@@ -115,6 +115,5 @@ export { default as NavbarBrand } from './Navbar/NavbarBrand';
 export { default as NavDropdown } from './Navbar/NavDropdown';
 // 3. Organisms
 export { default as Container } from './Container';
-export { default as ContainerFluid } from './ContainerFluid';
 // 4. extra
 export { getGlobalStyles, getGlobalStyleNoBootstrapProvider } from '@bootstrap-styled/css-utils/lib/reboot';
