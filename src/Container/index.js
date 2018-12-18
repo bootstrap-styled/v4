@@ -23,7 +23,9 @@ export const defaultProps = {
     },
     '$enable-grid-classes': true,
   },
+  fluid: false,
 };
+
 export const propTypes = {
   /**
    * @ignore
@@ -36,7 +38,10 @@ export const propTypes = {
     '$container-max-widths': PropTypes.object,
     '$enable-grid-classes': PropTypes.bool,
   }),
+  /** Use a responsive container */
+  fluid: PropTypes.bool,
 };
+
 class ContainerUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
 
@@ -45,11 +50,18 @@ class ContainerUnstyled extends React.Component { // eslint-disable-line react/p
   render() {
     const {
       className,
+      fluid,
       ...attributes
     } = omit(this.props, ['theme']);
 
     return (
-      <div className={cn(className, 'container')} {...attributes} />
+      <div
+        className={cn(className, {
+          container: !fluid,
+          'container-fluid': fluid,
+        })}
+        {...attributes}
+      />
     );
   }
 }
@@ -63,11 +75,11 @@ const Container = styled(ContainerUnstyled)`
     props.theme['$grid-gutter-widths']
   )}
     
-    ${makeContainerMaxWidths(
+    ${!props.fluid ? makeContainerMaxWidths(
     props.theme['$enable-grid-classes'],
     props.theme['$container-max-widths'],
     props.theme['$grid-breakpoints']
-  )}
+  ) : ''}
   `}
 `;
 

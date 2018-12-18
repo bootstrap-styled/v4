@@ -1,16 +1,23 @@
-Add the `bootstrap-styled-provider` package.
+You can import individual components, it will work.
+ 
+To get all the bootstrap class utilities and use a different theme, you must install `@bootstrap-styled/provider` package.
 
-Import required **Bootstrap Styled** components within `src/App.js` file or your custom component files:
-
-```js static
-import BootstrapProvider from 'bootstrap-styled/lib/BootstrapProvider';
+```bash
+$ npm install --save @bootstrap-styled/provider
 ```
 
-Bootstrap Styled does not include Bootstrap CSS, instead it include a BootstrapProvider:
+Wrap your react application into it.
 
 ```js static
-<BootstrapProvider theme={{ '$brand-danger': 'red' }}>
-  <Button color="danger">Do not click!</Button>
-</BootstrapProvider>
+import React from 'react';
+import { render } from 'react-dom';
+import BootstrapProvider from '@bootstrap-styled/provider';
+
+render(document.getElementById('app'), (
+  <BootstrapProvider theme={{ '$brand-danger': 'green' }}>
+    <Button color="danger">Accomplish my wish</Button>
+  </BootstrapProvider>
+));
 ```
-Now you are ready to use the imported Bootstrap Styled components within your component hierarchy defined in the render method.
+
+
