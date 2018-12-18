@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/bootstrap-styled/v4/compare/v1.3.2...v1.3.3) (2018-12-18)
+
+
+### Bug Fixes
+
+* **dependencies:** Update to 1.3.3 ([c0c6bf8](https://github.com/bootstrap-styled/v4/commit/c0c6bf8))
+
 ## [1.3.2](https://github.com/bootstrap-styled/v4/compare/v1.3.1...v1.3.2) (2018-12-18)
 
 
