@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/bootstrap-styled/v4/compare/v1.3.3...v2.0.0) (2018-12-18)
+
+
+### Features
+
+* **container:** Remove <ContainerFluid /> and add <Container fluid /> ([ee8c342](https://github.com/bootstrap-styled/v4/commit/ee8c342)), closes [#37](https://github.com/bootstrap-styled/v4/issues/37)
+
+
+### BREAKING CHANGES
+
+* **container:** ContainerFluid was removed
+
 ## [1.3.3](https://github.com/bootstrap-styled/v4/compare/v1.3.2...v1.3.3) (2018-12-18)
 
 
