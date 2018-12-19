@@ -1,4 +1,4 @@
-## 
+## v4
 
 Thank you for contributing! Please take a moment to review our [**contributing guidelines**](https://github.com/bootstrap-styled/v4/blob/master/CONTRIBUTING.md)
 to make the process easy and effective for everyone involved.

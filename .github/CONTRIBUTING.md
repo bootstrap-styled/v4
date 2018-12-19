@@ -1,6 +1,6 @@
-# Contributing to 
+# Contributing to v4
 
-Love  and want to help? Thanks so much, there's something to do for everybody!
+Love v4 and want to help? Thanks so much, there's something to do for everybody!
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
@@ -81,11 +81,11 @@ included in the project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/.git
+   git clone https://github.com/<your-username>/v4.git
    # Navigate to the newly cloned directory
-   cd 
+   cd v4
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/kopax/.git
+   git remote add upstream https://github.com/kopax/v4.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
