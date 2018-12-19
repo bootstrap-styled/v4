@@ -1,6 +1,6 @@
-# Contributing to bootstrap-styled/v4
+# Contributing to 
 
-Love bootstrap-styled/v4 and want to help? Thanks so much, there's something to do for everybody!
+Love  and want to help? Thanks so much, there's something to do for everybody!
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
@@ -24,7 +24,7 @@ Guidelines for bug reports:
 
 2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master` or development branch in the repository.
 
-3. **Isolate the problem** &mdash; ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example.
+3. **Isolate the problem** &mdash; ideally create a reduced test case and a live example.
 
 A good bug report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS
 experience the problem? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
@@ -81,11 +81,11 @@ included in the project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/v4.git
+   git clone https://github.com/<your-username>/.git
    # Navigate to the newly cloned directory
-   cd v4
+   cd 
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/bootstrap-styled/v4.git
+   git remote add upstream https://github.com/kopax/.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
@@ -101,7 +101,7 @@ included in the project:
    git checkout -b <topic-branch-name>
    ```
 
-4. Commit your changes in logical chunks. Please adhere to these [git commit message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) or your code is unlikely be merged into the main project. Use Git's [interactive rebase](https://help.github.com/articles/about-git-rebase/) feature to tidy up your commits before making them public.
+4. Commit your changes in logical chunks. Please adhere to these [git commit message guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) or your code is unlikely be merged into the main project. Use Git's [interactive rebase](https://help.github.com/articles/about-git-rebase/) feature to tidy up your commits before making them public.
 
 5. Locally merge (or rebase) the upstream dev branch into your topic branch:
 
@@ -119,4 +119,4 @@ included in the project:
     with a clear title and description.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project
-owners to license your work under the terms of the [MIT License](https://github.com/bootstrap-styled/v4/blob/master/LICENSE.md).
+owners to license your work under the terms of the [ License](https://github.com/bootstrap-styled/v4/blob/master/LICENSE.md).

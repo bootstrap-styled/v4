@@ -1,4 +1,4 @@
-# bootstrap-styled
+# 
 
 Before opening a new issue, please take a moment to review our [**community guidelines**](https://github.com/bootstrap-styled/v4/blob/master/.github/CONTRIBUTING.md) to make the contribution process easy and effective for everyone involved.
 
@@ -21,4 +21,6 @@ https://github.com/bootstrap-styled/v4/issues?q=is%3Aissue+is%3Aclosed
 # Versions
 
 - Node/NPM:
-- Browser:
+- OS:
+- :
+
