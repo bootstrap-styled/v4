@@ -41,14 +41,7 @@ const defaultProps = {
       lg: '992px',
       xl: '1200px',
     },
-    '$grid-gutter-width-base': '30px',
-    '$grid-gutter-widths': {
-      xs: '30px',
-      sm: '30px',
-      md: '30px',
-      lg: '30px',
-      xl: '30px',
-    },
+    '$grid-gutter-width': '30px',
     '$font-size-base': '1rem',
     '$font-size-lg': '1.25rem',
     '$font-size-sm': '.875rem',
@@ -196,14 +189,7 @@ const propTypes = {
       'lg': PropTypes.string,
       'xl': PropTypes.string,
     }),
-    '$grid-gutter-width-base': PropTypes.string,
-    '$grid-gutter-widths': PropTypes.shape({
-      'xs': PropTypes.string,
-      'sm': PropTypes.string,
-      'md': PropTypes.string,
-      'lg': PropTypes.string,
-      'xl': PropTypes.string,
-    }),
+    '$grid-gutter-width': PropTypes.string,
     '$font-size-base': PropTypes.string,
     '$font-size-lg': PropTypes.string,
     '$font-size-sm': PropTypes.string,
@@ -781,7 +767,7 @@ const Form = styled(FormUnstyled)`
     & .row {
       ${makeRow(
     props.theme['$enable-grid-classes'],
-    props.theme['$grid-gutter-widths'],
+    props.theme['$grid-gutter-width'],
   )}
     }
   `}

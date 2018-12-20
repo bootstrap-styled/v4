@@ -1,7 +1,2 @@
-import styled from 'styled-components';
-
-const Footer = styled.footer`
-`;
-
-/** @component */
-export default Footer;
+import React from 'react';
+export default (props) => <footer {...props} />;

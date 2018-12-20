@@ -10,13 +10,7 @@ import { makeRow } from '@bootstrap-styled/css-mixins/lib/grid';
 export const defaultProps = {
   tag: 'div',
   theme: {
-    '$grid-gutter-widths': {
-      xs: '30px',
-      sm: '30px',
-      md: '30px',
-      lg: '30px',
-      xl: '30px',
-    },
+    '$grid-gutter-width': '30px',
     '$enable-grid-classes': false,
   },
 };
@@ -37,7 +31,7 @@ export const propTypes = {
   noGutters: PropTypes.bool,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
-    '$grid-gutter-widths': PropTypes.object,
+    '$grid-gutter-width': PropTypes.string,
     '$enable-grid-classes': PropTypes.bool,
   }),
   /**
@@ -82,10 +76,7 @@ class RowUnstyled extends React.Component { // eslint-disable-line react/prefer-
 const Row = styled(RowUnstyled)`
   ${(props) => `
     &.row {
-      ${makeRow(
-    props.theme['$enable-grid-classes'],
-    props.theme['$grid-gutter-widths']
-  )}
+      ${makeRow(props.theme['$enable-grid-classes'], props.theme['$grid-gutter-width'])}
     }
     /*
       Remove the negative margin from default .row, then the horizontal padding

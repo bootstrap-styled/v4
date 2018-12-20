@@ -14,6 +14,7 @@ export const defaultProps = {
   tag: Card,
   delay: 350,
 };
+
 export const propTypes = {
   /**
    * @ignore

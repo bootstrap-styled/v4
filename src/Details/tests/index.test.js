@@ -45,7 +45,6 @@ describe('<Details />', () => {
       children,
     });
     expect(renderedComponent.find('details').length).toBe(1);
-    expect(renderedComponent.find('Details').length).toBe(1);
   });
   it('should have a tag open without a theme', () => {
     const renderedComponent = renderComponentUsingTheme({
