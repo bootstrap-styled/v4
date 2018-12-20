@@ -45,13 +45,7 @@ export const defaultProps = {
       xl: '1200px',
     },
     '$grid-columns': '12',
-    '$grid-gutter-widths': {
-      xs: '30px',
-      sm: '30px',
-      md: '30px',
-      lg: '30px',
-      xl: '30px',
-    },
+    '$grid-gutter-width': '30px',
   },
 };
 export const propTypes = {
@@ -152,7 +146,7 @@ const Col = styled(ColUnstyled)`
     ${makeGridColumns(
     props.theme['$enable-grid-classes'],
     props.theme['$grid-columns'],
-    props.theme['$grid-gutter-widths'],
+    props.theme['$grid-gutter-width'],
     props.theme['$grid-breakpoints']
   )}
   `}

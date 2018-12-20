@@ -3,56 +3,28 @@
  *
  */
 
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import omit from 'lodash.omit';
 import { makeRow } from '@bootstrap-styled/css-mixins/lib/grid';
 
 export const defaultProps = {
   theme: {
-    '$grid-gutter-widths': {
-      xs: '30px',
-      sm: '30px',
-      md: '30px',
-      lg: '30px',
-      xl: '30px',
-    },
+    '$grid-gutter-width': '30px',
     '$enable-grid-classes': true,
   },
 };
 export const propTypes = {
-  /**
-   * @ignore
-   */
-  className: PropTypes.string,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
-    '$grid-gutter-widths': PropTypes.object,
+    '$grid-gutter-width': PropTypes.string,
     '$enable-grid-classes': PropTypes.bool,
   }),
 };
 
-class DlUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  static propTypes = propTypes;
-
-  static defaultProps = defaultProps;
-
-  render() {
-    const {
-      className,
-      ...attributes
-    } = omit(this.props, ['theme']);
-
-    return (
-      <dl className={className} {...attributes} />
-    );
-  }
-}
 /**
  * `<Dl />` defines a description list.
  */
-const Dl = styled(DlUnstyled)` 
+const Dl = styled.dl` 
   /* Reboot Scss */
   margin-top: 0;
   margin-bottom: 1rem;
@@ -60,7 +32,7 @@ const Dl = styled(DlUnstyled)`
   ${(props) => `
     ${makeRow(
     props.theme['$enable-grid-classes'],
-    props.theme['$grid-gutter-widths']
+    props.theme['$grid-gutter-width']
   )}
   `}
 `;

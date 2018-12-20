@@ -1,6 +1,2 @@
-import styled from 'styled-components';
-
-const Article = styled.article``;
-
-/** @component */
-export default Article;
+import React from 'react';
+export default (props) => <article {...props} />;

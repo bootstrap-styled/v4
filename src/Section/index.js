@@ -1,7 +1,2 @@
-import styled from 'styled-components';
-
-const Section = styled.section`
-`;
-
-/** @component */
-export default Section;
+import React from 'react';
+export default (props) => <section {...props} />;

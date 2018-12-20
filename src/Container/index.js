@@ -7,14 +7,7 @@ import { makeContainer, makeContainerMaxWidths } from '@bootstrap-styled/css-mix
 
 export const defaultProps = {
   theme: {
-    '$grid-gutter-width-base': '30px',
-    '$grid-gutter-widths': {
-      xs: '30px',
-      sm: '30px',
-      md: '30px',
-      lg: '30px',
-      xl: '30px',
-    },
+    '$grid-gutter-width': '30px',
     '$container-max-widths': {
       sm: '540px',
       md: '720px',
@@ -33,8 +26,7 @@ export const propTypes = {
   className: PropTypes.string,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
-    '$grid-gutter-width-base': PropTypes.string,
-    '$grid-gutter-widths': PropTypes.object,
+    '$grid-gutter-width': PropTypes.string,
     '$container-max-widths': PropTypes.object,
     '$enable-grid-classes': PropTypes.bool,
   }),
@@ -72,10 +64,10 @@ const Container = styled(ContainerUnstyled)`
   ${(props) => `
     ${makeContainer(
     props.theme['$enable-grid-classes'],
-    props.theme['$grid-gutter-widths']
+    props.theme['$grid-gutter-width']
   )}
     
-    ${!props.fluid ? makeContainerMaxWidths(
+  ${!props.fluid ? makeContainerMaxWidths(
     props.theme['$enable-grid-classes'],
     props.theme['$container-max-widths'],
     props.theme['$grid-breakpoints']
