@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/bootstrap-styled/v4/compare/v2.0.0...v2.0.1) (2018-12-20)
+
+
+### Bug Fixes
+
+* **css-mixins:** Update [@bootstrap-styled](https://github.com/bootstrap-styled)/css-mixins to latest, this version added the `$grid-gutter ([7f2d728](https://github.com/bootstrap-styled/v4/commit/7f2d728))
+
 # [2.0.0](https://github.com/bootstrap-styled/v4/compare/v1.3.3...v2.0.0) (2018-12-18)
 
 
