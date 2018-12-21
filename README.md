@@ -11,21 +11,35 @@
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4)
 [![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled) [![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/v4.svg)](https://greenkeeper.io/)
 
-All UI components of Bootstrap 4 using Bootstrap Styled chart.
-
+:rocket: [twbs/bootstrap](https://github.com/twbs/bootstrap) v4 UI Component made with [bootstrap-styled](https://bootstrap-styled.github.io/bootstrap-styled). Work with css-in-js, [react](https://github.com/facebook/react), [styled-components](https://github.com/styled-components/styled-components), and feature includes all bootstrap world known features.
 
 ## Table of Contents
 
+  - [Why ?](#why)
+  - [How ?](#how)
   - [Documentation](#documentation)
   - [Contributing](#contributing)
   - [License MIT](#license-mit)
 
 ---
 
+## Why ?
+
+Most of front-end developers one day used [Twitter Bootstrap](http://getbootstrap.com). Because most developers know it, it is the favorite front-end framework for companies.
+
+This is why $PACKAGE_NAME is the best library for sharing React UI globally and this is the main reason why it is a solid front-end library candidate for your organization.
+ 
+## How ?
+
+It's fully written in javascript, the API is working for every React application. Everyone use the same theme set of variables, or can create a new scope of variables.
+ 
+Every UI created with it can be shared and maintained in **Community** without any risks of breaking change for anyone thanks to the simplicity of [extending styles](https://www.styled-components.com/docs/basics#extending-styles) anywhere.
+
+Using $PACKAGE_NAME, you can quickly prototype things that will be working in other's Bootstrap Styled applications.
+
 ## Documentation
 
 Read [v4 documentation](https://bootstrap-styled.github.io/v4).
-
 
 ## Contributing
 
