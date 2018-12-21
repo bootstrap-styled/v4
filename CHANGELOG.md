@@ -1,3 +1,11 @@
+## [2.0.5](https://github.com/bootstrap-styled/v4/compare/v2.0.4...v2.0.5) (2018-12-21)
+
+
+### Bug Fixes
+
+* **exports:** Using named function even if no css ([7a1e60b](https://github.com/bootstrap-styled/v4/commit/7a1e60b))
+* **exports:** Using named function even if no css ([fd88a7a](https://github.com/bootstrap-styled/v4/commit/fd88a7a))
+
 ## [2.0.4](https://github.com/bootstrap-styled/v4/compare/v2.0.3...v2.0.4) (2018-12-21)
 
 
