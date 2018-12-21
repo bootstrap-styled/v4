@@ -1,3 +1,11 @@
+## [2.0.3](https://github.com/bootstrap-styled/v4/compare/v2.0.2...v2.0.3) (2018-12-21)
+
+
+### Bug Fixes
+
+* **readme:** fix readme ([a5430b9](https://github.com/bootstrap-styled/v4/commit/a5430b9))
+* **readme:** fix readme ([3330e33](https://github.com/bootstrap-styled/v4/commit/3330e33))
+
 ## [2.0.2](https://github.com/bootstrap-styled/v4/compare/v2.0.1...v2.0.2) (2018-12-21)
 
 
