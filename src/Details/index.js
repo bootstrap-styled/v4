@@ -1,2 +1,3 @@
 import React from 'react';
-export default (props) => <details {...props} />;
+const Details = <details {...props} />;
+export default (props) => Details;

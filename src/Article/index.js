@@ -1,2 +1,3 @@
 import React from 'react';
-export default (props) => <article {...props} />;
+const Article = (props) => <article {...props} />;
+export default Article;
