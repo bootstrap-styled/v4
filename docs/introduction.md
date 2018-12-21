@@ -11,7 +11,7 @@
 
 Most of front-end developers one day used [Twitter Bootstrap](http://getbootstrap.com). Because most developers know it, it is the favorite front-end framework for companies.
 
-This is why $PACKAGE_NAME is the best library for sharing React UI globally and this is the main reason why it is a solid front-end library candidate for your organization.
+This is why **$PACKAGE_NAME** is the best library for sharing React UI globally and this is the main reason why it is a solid front-end library candidate for your organization.
  
 ## How ?
 
@@ -19,7 +19,7 @@ It's fully written in javascript, the API is working for every React application
  
 Every UI created with it can be shared and maintained in **Community** without any risks of breaking change for anyone thanks to the simplicity of [extending styles](https://www.styled-components.com/docs/basics#extending-styles) anywhere.
 
-Using $PACKAGE_NAME, you can quickly prototype things that will be working in other's Bootstrap Styled applications.
+Using **$PACKAGE_NAME**, you can quickly prototype things that will be working in other's Bootstrap Styled applications.
 
 ```js
 initialState = {
@@ -28,6 +28,7 @@ initialState = {
 
 
 /**
+* @public
 * @description The <BootstrapProvider> inject bootstrap class utilities and a theme that can be customized.
 * @param {string} title - Your title, you can edit it through <BootstrapHello /> 
 * @param {string} name - Your name, you can edit it through <BootstrapHello />
@@ -57,7 +58,7 @@ const BootstrapStyledHelloApp = ({ title, name, theme, utils }) => (
   </BootstrapProvider>
 );
 
-// We can call our example
+// Create the example
 <BootstrapStyledHelloApp title="young" name="padawan" theme={{
   '$body-color': '#EA638C',
   '$btn-primary-bg': '#190E4F',
