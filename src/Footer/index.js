@@ -1,2 +1,3 @@
 import React from 'react';
-export default (props) => <footer {...props} />;
+const Footer = (props) => <footer {...props} />;
+export default Footer;

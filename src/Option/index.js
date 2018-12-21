@@ -1,2 +1,3 @@
 import React from 'react';
-export default (props) => <option {...props} />;
+const Option = (props) => <option {...props} />;
+export default Option;

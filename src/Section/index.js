@@ -1,2 +1,3 @@
 import React from 'react';
-export default (props) => <section {...props} />;
+const Section = (props) => <section {...props} />;
+export default Section;
