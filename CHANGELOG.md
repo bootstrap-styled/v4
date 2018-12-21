@@ -1,3 +1,12 @@
+## [2.0.4](https://github.com/bootstrap-styled/v4/compare/v2.0.3...v2.0.4) (2018-12-21)
+
+
+### Bug Fixes
+
+* **button:** Added props `hover` and `focus`, prop `tag` accept any prop types ([1f718c9](https://github.com/bootstrap-styled/v4/commit/1f718c9))
+* **card:** added props `hover` and `focus`, props `tag` now accept any propType. ([552ba36](https://github.com/bootstrap-styled/v4/commit/552ba36))
+* **dependencies:** update all dependencies ([f297449](https://github.com/bootstrap-styled/v4/commit/f297449))
+
 ## [2.0.3](https://github.com/bootstrap-styled/v4/compare/v2.0.2...v2.0.3) (2018-12-21)
 
 
