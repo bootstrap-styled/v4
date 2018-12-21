@@ -31,11 +31,11 @@ This is why **@bootstrap-styled/v4** is the best library for sharing React UI gl
  
 ## How ?
 
-It's fully written in javascript, the API is working for every React application. Everyone use the same theme set of variables, or can create a new scope of variables.
+It's fully written in javascript, the API is working for every React application. Everyone use the same set of theme variables or can create a new scope of variables.
  
 Every UI created with it can be shared and maintained in **Community** without any risks of breaking change for anyone thanks to the simplicity of [extending styles](https://www.styled-components.com/docs/basics#extending-styles) anywhere.
 
-Using **@bootstrap-styled/v4**, you can quickly prototype things that will be working in other's Bootstrap Styled applications.
+Using **@bootstrap-styled/v4**, you can quickly prototype things that will be working in other's Bootstrap Styled applications without code change.
 
 ## Documentation
 
@@ -43,7 +43,7 @@ Read [v4 documentation](https://bootstrap-styled.github.io/v4).
 
 ## Contributing
 
-If you want to contribute to v4 please see our [contributing and community guidelines](https://github.com/bootstrap-styled/v4/blob/master/.github/CONTRIBUTING.md), they\'ll help you get set up locally and explain the whole process.
+If you want to contribute to v4 please see our [contributing and community guidelines](https://github.com/bootstrap-styled/v4/blob/master/.github/CONTRIBUTING.md), they'll help you get set up locally and explain the whole process.
 
 Please also note that all repositories under the bootstrap-styled organization follow our [Code of Conduct](https://github.com/bootstrap-styled/v4/blob/master/CODE_OF_CONDUCT.md), make sure to review and follow it.
 
