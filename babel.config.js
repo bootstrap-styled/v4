@@ -13,7 +13,8 @@ module.exports = {
     '@babel/preset-react',
   ],
   plugins: [
-    'styled-components',
+    'babel-plugin-styled-components',
+    'babel-plugin-array-includes',
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-syntax-import-meta',
     '@babel/plugin-proposal-class-properties',
