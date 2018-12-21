@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
-import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
+import { hover as hoverCss } from '@bootstrap-styled/css-mixins/lib/hover';
 import { borderRadius, borderTopRadius, borderBottomRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
 import { cardVariant, cardOutlineVariant, cardInverse } from '@bootstrap-styled/css-mixins/lib/cards';
 import { ifThen } from '@bootstrap-styled/css-mixins/lib/conditional';
@@ -57,6 +57,8 @@ export const defaultProps = {
     '$enable-rounded': false,
     '$enable-hover-media-query': false,
   },
+  hover: false,
+  focus: false,
 };
 
 export const propTypes = {
@@ -67,11 +69,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.node,
-  ]),
+  tag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$brand-primary': PropTypes.string,
@@ -135,6 +133,10 @@ export const propTypes = {
   outline: PropTypes.bool,
   /** Width size in percent. */
   width: PropTypes.string,
+  /** Toggle hover CSS className. */
+  hover: PropTypes.bool,
+  /** Toggle focus CSS className. */
+  focus: PropTypes.bool,
   /** Use different background color with valid CSS. */
   backgroundColor: PropTypes.string,
   /** Use different border color with valid CSS. */
@@ -159,6 +161,8 @@ class CardUnstyled extends React.Component {// eslint-disable-line react/prefer-
       inverse,
       outline,
       tag: Tag,
+      hover,
+      focus,
       ...attributes
     } = omit(this.props, ['theme', 'backgroundColor', 'borderColor', 'width']);
 
@@ -168,6 +172,8 @@ class CardUnstyled extends React.Component {// eslint-disable-line react/prefer-
           className,
           'card',
           {
+            hover,
+            focus,
             inverse,
             'card-block': block,
             [`card-${color}`]: color,
@@ -232,9 +238,7 @@ const Card = styled(CardUnstyled)`
     }
    
     & .card-link {
-      ${hover(`
-        text-decoration: none;
-      `)}
+      ${hoverCss('text-decoration: none;')}
     
       + .card-link {
         margin-left: ${props.theme['$card-spacer-x']};

@@ -13,6 +13,8 @@ import { button } from '@bootstrap-styled/css-mixins/lib/buttons';
 export const defaultProps = {
   tag: 'button',
   color: 'primary',
+  hover: false,
+  focus: false,
   theme: {
     '$enable-rounded': true,
     '$enable-shadows': false,
@@ -60,6 +62,10 @@ export const propTypes = {
   active: PropTypes.bool,
   /** Toggles block CSS display. */
   block: PropTypes.bool,
+  /** Toggle hover CSS className. */
+  hover: PropTypes.bool,
+  /** Toggle focus CSS className. */
+  focus: PropTypes.bool,
   /** Toggles disable mouse event and CSS color. */
   disabled: PropTypes.bool,
   /** Toggles outline CSS border and background color. */
@@ -88,11 +94,7 @@ export const propTypes = {
   /** Toggles drop up CSS style. */
   dropup: PropTypes.bool,
   /** Replace the default component tag by the one specified. Can be: */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-  ]),
+  tag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$btn-padding-x': PropTypes.string,
@@ -172,11 +174,15 @@ class ButtonUnstyled extends React.Component { // eslint-disable-line react/pref
       size,
       ref,
       tag: Tag,
+      hover,
+      focus,
       ...attributes
     } = omit(this.props, ['theme']);
     /* eslint-enable prefer-const */
 
     const classes = mapToCssModules(cn(className, 'btn', {
+      hover,
+      focus,
       dropup,
       active,
       disabled,
