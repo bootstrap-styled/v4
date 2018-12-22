@@ -1,3 +1,10 @@
+## [2.0.6](https://github.com/bootstrap-styled/v4/compare/v2.0.5...v2.0.6) (2018-12-22)
+
+
+### Bug Fixes
+
+* **tag:** allow tag to be any type due to new warning ([698cf19](https://github.com/bootstrap-styled/v4/commit/698cf19))
+
 ## [2.0.5](https://github.com/bootstrap-styled/v4/compare/v2.0.4...v2.0.5) (2018-12-21)
 
 

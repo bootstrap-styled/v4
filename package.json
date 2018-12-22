@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/v4",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "twbs/bootstrap v4 UI Component made with bootstrap-styled. Work with css-in-js, react, styled-components, and feature includes all bootstrap world known features.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
