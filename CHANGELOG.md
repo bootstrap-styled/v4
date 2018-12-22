@@ -1,3 +1,35 @@
+## [2.0.6](https://github.com/bootstrap-styled/v4/compare/v2.0.5...v2.0.6) (2018-12-22)
+
+
+### Bug Fixes
+
+* **tag:** allow tag to be any type due to new warning ([698cf19](https://github.com/bootstrap-styled/v4/commit/698cf19))
+
+## [2.0.5](https://github.com/bootstrap-styled/v4/compare/v2.0.4...v2.0.5) (2018-12-21)
+
+
+### Bug Fixes
+
+* **exports:** Using named function even if no css ([7a1e60b](https://github.com/bootstrap-styled/v4/commit/7a1e60b))
+* **exports:** Using named function even if no css ([fd88a7a](https://github.com/bootstrap-styled/v4/commit/fd88a7a))
+
+## [2.0.4](https://github.com/bootstrap-styled/v4/compare/v2.0.3...v2.0.4) (2018-12-21)
+
+
+### Bug Fixes
+
+* **button:** Added props `hover` and `focus`, prop `tag` accept any prop types ([1f718c9](https://github.com/bootstrap-styled/v4/commit/1f718c9))
+* **card:** added props `hover` and `focus`, props `tag` now accept any propType. ([552ba36](https://github.com/bootstrap-styled/v4/commit/552ba36))
+* **dependencies:** update all dependencies ([f297449](https://github.com/bootstrap-styled/v4/commit/f297449))
+
+## [2.0.3](https://github.com/bootstrap-styled/v4/compare/v2.0.2...v2.0.3) (2018-12-21)
+
+
+### Bug Fixes
+
+* **readme:** fix readme ([a5430b9](https://github.com/bootstrap-styled/v4/commit/a5430b9))
+* **readme:** fix readme ([3330e33](https://github.com/bootstrap-styled/v4/commit/3330e33))
+
 ## [2.0.2](https://github.com/bootstrap-styled/v4/compare/v2.0.1...v2.0.2) (2018-12-21)
 
 
