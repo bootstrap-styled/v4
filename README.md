@@ -6,7 +6,7 @@
   <br/>  
 </div>
 
-**If you don't know Bootstrap Styled, we suggest you to read [their documentation]](https://bootstrap-styled.github.io/bootstrap-styled).**
+**If you don't know Bootstrap Styled yet, we suggest you to read [their documentation](https://bootstrap-styled.github.io/bootstrap-styled) first.**
 
 [![Build Status](https://travis-ci.org/bootstrap-styled/v4.svg?branch=master)](https://travis-ci.org/bootstrap-styled/v4) 
 [![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4) 
