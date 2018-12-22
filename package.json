@@ -1,7 +1,7 @@
 {
   "name": "@bootstrap-styled/v4",
   "version": "2.0.6",
-  "description": "twbs/bootstrap v4 UI Component made with bootstrap-styled. Work with css-in-js, react, styled-components, and feature includes all bootstrap world known features.",
+  "description": "twbs/bootstrap V4 UI Components made with bootstrap-styled. Work with css-in-js, react, styled-components, and Bootstrap Styled utilities.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
   "module": "dist/@bootstrap-styled/v4.esm.js",
@@ -76,9 +76,9 @@
     "@babel/plugin-transform-react-inline-elements": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
-    "@bootstrap-styled/documentation": "^1.2.0",
+    "@bootstrap-styled/documentation": "^1.2.1",
     "@bootstrap-styled/provider": "^1.4.1",
-    "@rollup-umd/documentation": "^1.3.2",
+    "@rollup-umd/documentation": "^1.3.5",
     "@semantic-release/changelog": "^3.0.1",
     "@semantic-release/git": "^7.0.6",
     "@semantic-release/github": "^5.2.7",
@@ -138,7 +138,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.1",
     "toctoc": "^0.3.2",
-    "webpack": "^4.28.1"
+    "webpack": "^4.28.2"
   },
   "jest": {
     "roots": [
@@ -193,7 +193,7 @@
     "@bootstrap-styled/utils": "^1.7.1",
     "@rollup-umd/documentation-cli": "^1.1.1",
     "basic-math-utils": "^0.3.4",
-    "bootstrap-styled": "^2.4.2",
+    "bootstrap-styled": "^2.4.3",
     "classnames": "^2.2.6",
     "lodash.omit": "^4.5.0",
     "map-to-css-modules": "^1.0.6",
