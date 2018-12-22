@@ -45,7 +45,7 @@ initialState = {
 * @returns {component} - The Hello example
 */
 const App = ({ title, name, theme }) => (
-  <BootstrapProvider theme={theme} utils={utils}>
+  <BootstrapProvider theme={theme}>
     <Card>
       <CardBlock>
         <H3 className="d-inline">
