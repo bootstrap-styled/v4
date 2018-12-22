@@ -21,6 +21,15 @@ Every UI created with it can be shared and maintained in **Community** without a
 
 Using **$PACKAGE_NAME**, you can quickly prototype things that will be working in other's Bootstrap Styled applications without any change to your source code.
 
+## In practice
+
+This is example is a counter made with React and Bootstrap Styled with a custom theme, we: 
+
+- Use `<App />` as application wrapper for our example.
+- Customize it's `theme` props .
+- Use a `<BootstrapProvider />` to modify the theme and inject bootstrap classes utilities in the scope such as `.d-inline`, `.mt-2` ...
+- Use a few bootstrap components such `<Alert />`, `<Code />`, `<A />`, `<Strong />`, `<Small />` 
+ 
 ```js
 initialState = {
   counter: 1336
@@ -35,31 +44,39 @@ initialState = {
 * @param {object} theme - A theme object, see https://bootstrap-styled.github.io/bootstrap-styled for more details
 * @returns {component} - The Hello example
 */
-const BootstrapStyledHelloApp = ({ title, name, theme, utils }) => (
+const App = ({ title, name, theme }) => (
   <BootstrapProvider theme={theme} utils={utils}>
-    <H3>
-      Hello {title} <Strong>{name}</Strong>, before you, we've been
-    </H3> 
-    <Badge color="danger" pill>
-      <H3>${state.counter}</H3>
-    </Badge>{' '} 
-    <Strong>visitors</Strong>,
-    <Button onClick={() => setState({ counter: state.counter + 1 })}>Click Here</Button> 
-    to add <Code><Strong>1</Strong></Code> to the counter.
-    {state.counter >= 1337 && (
-      <Alert color="success"className="mt-2" uncontrolled>
-        {state.counter === 1337 ? 'Congrats' : 'We won\'t tell anyone,'}, now click on 
-        <Code><Strong>VIEW CODE</Strong></Code> button to learn how it work
-        </Alert>
-    )}
-    {state.counter > 1500 && (
-      <Alert color="warning"className="mt-2">Do you know the <Code><Strong>Code snippet</Strong></Code> can be edited in live?</Alert>
-    )}
+    <Card>
+      <CardBlock>
+        <H3 className="d-inline">
+          Hello <Small>{title}</Small> <Strong>{name}</Strong>, <A>you</A>, can add <Code>1</Code> to
+        </H3>
+        {' '}
+        <Badge color="danger" pill>
+          <H3>${state.counter}</H3>
+        </Badge>{' '} 
+        <Strong>by</Strong> pressing,
+        <Button onClick={() => setState({ counter: state.counter + 1 })}>here</Button>. This 
+        <Code><Strong>module</Strong></Code> is a basic example with a custom Bootstrap Styled theme.
+        
+        {state.counter >= 1337 && (
+          <Alert color="success"className="mt-2" uncontrolled>
+            {state.counter === 1337 ? 'Congrats' : 'We won\'t tell anyone'}, now click on 
+            <Code><Strong>VIEW CODE</Strong></Code> button to learn how it work
+          </Alert>
+        )}
+        
+        {state.counter > 1500 && (
+          <Alert color="warning"className="mt-2">Do you know the <Code><Strong>Code snippet</Strong></Code> can be edited in live?</Alert>
+        )}
+      </CardBlock>
+    </Card>
   </BootstrapProvider>
 );
 
 // Create the example
-<BootstrapStyledHelloApp title="young" name="padawan" theme={{
+<App title="young" name="padawan" theme={{
+  '$font-family-base': 'Helvetica',
   '$body-color': '#EA638C',
   '$btn-primary-bg': '#190E4F',
   '$btn-border-radius': '.035rem',
@@ -69,5 +86,8 @@ const BootstrapStyledHelloApp = ({ title, name, theme, utils }) => (
   '$alert-border-radius': '.35rem',
   '$alert-success-text': '#EA638C',
   '$alert-success-bg': '#03012C',
+  '$link-color': '#CCC',
 }} />
 ```
+
+> Example can be edited. You can try to remove the theme props for `<App />`, the module will automatically adapt to the documentation theme without the need to refresh! 
