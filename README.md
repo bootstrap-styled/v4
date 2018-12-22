@@ -1,41 +1,32 @@
-# v4
+<div align="center">
+  <a href="https://bootstrap-styled.github.io">
+    <img alt="bootstrap-styled" src="https://user-images.githubusercontent.com/1866564/50375497-cda74880-0630-11e9-9f1e-e8d798dff47b.png" />
+  </a>
+  <br/>
+  <br/>  
+</div>
+
+**If you don't know Bootstrap Styled, we suggest you to read [their documentation]](https://bootstrap-styled.github.io/bootstrap-styled).**
 
 [![Build Status](https://travis-ci.org/bootstrap-styled/v4.svg?branch=master)](https://travis-ci.org/bootstrap-styled/v4) 
 [![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4) 
 [![License](https://img.shields.io/npm/l/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4) 
-[![NPM monthly downloads](https://img.shields.io/npm/dm/@bootstrap-styled/v4.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/v4) 
 [![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/v4.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/v4) 
-[![npm Version](https://img.shields.io/node/v/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4) 
 [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4) 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4)
 [![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled) [![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/v4.svg)](https://greenkeeper.io/)
 
-:rocket: [twbs/bootstrap](https://github.com/twbs/bootstrap) v4 UI Component made with [bootstrap-styled](https://bootstrap-styled.github.io/bootstrap-styled). Work with css-in-js, [react](https://github.com/facebook/react), [styled-components](https://github.com/styled-components/styled-components), and feature includes all bootstrap world known features.
+:rocket: [twbs/bootstrap](https://github.com/twbs/bootstrap) **V4** UI Components made with [bootstrap-styled](https://bootstrap-styled.github.io/bootstrap-styled). Work with css-in-js, [react](https://github.com/facebook/react), [styled-components](https://github.com/styled-components/styled-components), and Bootstrap Styled utilities.
 
 ## Table of Contents
 
-  - [Why ?](#why)
-  - [How ?](#how)
   - [Documentation](#documentation)
   - [Contributing](#contributing)
   - [License MIT](#license-mit)
 
 ---
 
-## Why ?
-
-Most of front-end developers one day used [Twitter Bootstrap](http://getbootstrap.com). Because most developers know it, it is the favorite front-end framework for companies.
-
-This is why **@bootstrap-styled/v4** is the best library for sharing React UI globally and this is the main reason why it is a solid front-end library candidate for your organization.
- 
-## How ?
-
-It's fully written in javascript, the API is working for every React application. Everyone use the same set of theme variables or can create a new scope of variables.
- 
-Every UI created with it can be shared and maintained in **Community** without any risks of breaking change for anyone thanks to the simplicity of [extending styles](https://www.styled-components.com/docs/basics#extending-styles) anywhere.
-
-Using **@bootstrap-styled/v4**, you can quickly prototype things that will be working in other's Bootstrap Styled applications without any change to your source code.
 
 ## Documentation
 
