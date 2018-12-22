@@ -1,3 +1,11 @@
+## [2.0.7](https://github.com/bootstrap-styled/v4/compare/v2.0.6...v2.0.7) (2018-12-22)
+
+
+### Bug Fixes
+
+* **documentation:** Added logo to readme and introduction, update package description ([04e80c0](https://github.com/bootstrap-styled/v4/commit/04e80c0))
+* **documentation:** Added logo to readme and introduction, update package description ([973d3f3](https://github.com/bootstrap-styled/v4/commit/973d3f3))
+
 ## [2.0.6](https://github.com/bootstrap-styled/v4/compare/v2.0.5...v2.0.6) (2018-12-22)
 
 
