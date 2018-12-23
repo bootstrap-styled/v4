@@ -48,6 +48,7 @@ export const propTypes = {
   tag: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.func,
+    PropTypes.node,
     PropTypes.element,
   ]),
   /** Toggles fluid responsive CSS display. */
@@ -60,7 +61,10 @@ export const propTypes = {
     PropTypes.object,
   ]).isRequired,
   /** Image alt description. */
-  alt: PropTypes.string.isRequired,
+  alt: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]).isRequired,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$enable-rounded': PropTypes.bool,
