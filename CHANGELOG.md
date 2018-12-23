@@ -1,3 +1,10 @@
+## [2.0.8](https://github.com/bootstrap-styled/v4/compare/v2.0.7...v2.0.8) (2018-12-23)
+
+
+### Bug Fixes
+
+* **Img:** alt can now also be of type object (useful for using <FormattedMessage /> in react-intl ([173e59d](https://github.com/bootstrap-styled/v4/commit/173e59d))
+
 ## [2.0.7](https://github.com/bootstrap-styled/v4/compare/v2.0.6...v2.0.7) (2018-12-22)
 
 
