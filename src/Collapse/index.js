@@ -10,60 +10,58 @@ const SHOWN = 'SHOWN';
 const HIDE = 'HIDE';
 const HIDDEN = 'HIDDEN';
 
+/* eslint-disable react/prop-types */
+export default class Collapse extends Component {
+  static propTypes = {
+    /**
+     * @ignore
+     */
+    className: PropTypes.string,
+    /**
+     * Replace the default component tag by the one specified. Can be:
+     */
+    tag: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.element,
+      PropTypes.func,
+    ]),
+    /** Delay transition in milliseconds before and after collapse. Can be: */
+    delay: PropTypes.oneOfType([
+      PropTypes.shape({ show: PropTypes.number, hide: PropTypes.number }),
+      PropTypes.number,
+    ]),
+    /** Toggles collapse open or close action. */
+    isOpen: PropTypes.bool,
+    /** Toggles nav bar CSS display. */
+    navbar: PropTypes.bool,
+    /** Call specified function when opened collapse action is triggered. */
+    onOpened: PropTypes.func,
+    /** Call specified function when closed collapse action is triggered. */
+    onClosed: PropTypes.func,
+    /** Theme variables. Can be: */
+    theme: PropTypes.shape({
+      '$transition-collapse': PropTypes.string,
+    }),
+    /**
+     * Replace or remove a className from the component.
+     * See example <a href="https://www.npmjs.com/package/map-to-css-modules" target="_blank">here</a>.
+     */
+    cssModule: PropTypes.object,
+  };
 
-export const defaultProps = {
-  isOpen: false,
-  theme: {
-    '$transition-collapse': 'height .35s ease',
-  },
-  tag: 'div',
-  delay: {
-    show: 350,
-    hide: 350,
-  },
-  onOpened: null,
-  onClosed: null,
-};
-export const propTypes = {
-  /**
-   * @ignore
-   */
-  className: PropTypes.string,
-  /**
-   * Replace the default component tag by the one specified. Can be:
-   */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-  ]),
-  /** Delay transition in milliseconds before and after collapse. Can be: */
-  delay: PropTypes.oneOfType([
-    PropTypes.shape({ show: PropTypes.number, hide: PropTypes.number }),
-    PropTypes.number,
-  ]),
-  /** Toggles collapse open or close action. */
-  isOpen: PropTypes.bool,
-  /** Toggles nav bar CSS display. */
-  navbar: PropTypes.bool,
-  /** Call specified function when opened collapse action is triggered. */
-  onOpened: PropTypes.func,
-  /** Call specified function when closed collapse action is triggered. */
-  onClosed: PropTypes.func,
-  /** Theme variables. Can be: */
-  theme: PropTypes.shape({
-    '$transition-collapse': PropTypes.string,
-  }),
-  /**
-   * Replace or remove a className from the component.
-   * See example <a href="https://www.npmjs.com/package/map-to-css-modules" target="_blank">here</a>.
-   */
-  cssModule: PropTypes.object,
-};
-class Collapse extends Component {
-  static propTypes = propTypes;
-
-  static defaultProps = defaultProps;
+  static defaultProps = {
+    isOpen: false,
+    theme: {
+      '$transition-collapse': 'height .35s ease',
+    },
+    tag: 'div',
+    delay: {
+      show: 350,
+      hide: 350,
+    },
+    onOpened: null,
+    onClosed: null,
+  };
 
   state = {
     collapse: HIDDEN,
@@ -212,9 +210,3 @@ class Collapse extends Component {
     );
   }
 }
-
-Collapse.defaultProps = defaultProps;
-Collapse.propTypes = propTypes;
-
-/** @component */
-export default Collapse;
