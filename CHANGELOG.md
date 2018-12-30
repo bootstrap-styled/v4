@@ -1,3 +1,10 @@
+## [2.0.10](https://github.com/bootstrap-styled/v4/compare/v2.0.9...v2.0.10) (2018-12-30)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade dependencies and use Proptypes.any for every prop tag ([c53ea2d](https://github.com/bootstrap-styled/v4/commit/c53ea2d))
+
 ## [2.0.9](https://github.com/bootstrap-styled/v4/compare/v2.0.8...v2.0.9) (2018-12-29)
 
 
