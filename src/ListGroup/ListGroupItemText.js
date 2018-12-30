@@ -15,11 +15,7 @@ export const propTypes = {
    * @ignore
    */
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-  ]),
+  tag: PropTypes.any,
 };
 
 class ListGroupItemText extends React.Component { // eslint-disable-line react/prefer-stateless-function

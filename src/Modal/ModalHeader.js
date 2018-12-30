@@ -20,14 +20,9 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-    PropTypes.object,
-  ]),
+  tag: PropTypes.any,
   /** Wrapped tag variables. Can be: */
-  wrapTag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  wrapTag: PropTypes.any,
   /** Call specified function when on toggle action is triggered. */
   toggle: PropTypes.func,
   /**

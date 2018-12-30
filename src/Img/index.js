@@ -45,12 +45,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.node,
-    PropTypes.element,
-  ]),
+  tag: PropTypes.any,
   /** Toggles fluid responsive CSS display. */
   fluid: PropTypes.bool,
   /** Toggles figure CSS style. */

@@ -19,12 +19,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-    PropTypes.object,
-  ]),
+  tag: PropTypes.any,
 };
 class ListGroupItemHeading extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
