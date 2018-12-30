@@ -15,12 +15,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-    PropTypes.object,
-  ]),
+  tag: PropTypes.any,
   /** Use that property to pass a ref callback to the native button component. */
   ref: PropTypes.func,
   /**

@@ -57,12 +57,7 @@ export const propTypes = {
    */
   className: PropTypes.string,
   /** Replace the default component tag by the one specified. Can be: */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-    PropTypes.object,
-  ]),
+  tag: PropTypes.any,
   /** Toggles flush CSS style. */
   flush: PropTypes.bool,
   /** Toggles passed as a string. Can be `true` or `false` */

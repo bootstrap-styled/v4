@@ -12,7 +12,7 @@ export const propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  tag: PropTypes.oneOfType([PropTypes.string, PropTypes.func, PropTypes.element]),
+  tag: PropTypes.any,
   baseClass: PropTypes.string,
   baseClassActive: PropTypes.string,
   className: PropTypes.string,

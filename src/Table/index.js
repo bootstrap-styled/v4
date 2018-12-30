@@ -48,11 +48,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.element,
-  ]),
+  tag: PropTypes.any,
   /** Change tab size with specified one. Can be: `sm` */
   size: PropTypes.string,
   /** Toggles bordered CSS style. */
@@ -68,7 +64,7 @@ export const propTypes = {
   /** Toggles responsive CSS display. */
   responsive: PropTypes.bool,
   /** Replace the responsive component tag by the one specified. Can be: */
-  responsiveTag: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.element]),
+  responsiveTag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$body-bg': PropTypes.string,

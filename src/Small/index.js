@@ -24,11 +24,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-  ]),
+  tag: PropTypes.any,
   /** Specified node element will be passed as children of `<Small />` component. */
   children: PropTypes.node,
   /** Theme variables. Can be: */
