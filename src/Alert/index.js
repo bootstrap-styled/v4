@@ -81,7 +81,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.element]),
+  tag: PropTypes.any,
   /**
    * Transition used to dismiss alert.
    */

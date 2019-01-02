@@ -20,11 +20,7 @@ export default class Collapse extends Component {
     /**
      * Replace the default component tag by the one specified. Can be:
      */
-    tag: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.element,
-      PropTypes.func,
-    ]),
+    tag: PropTypes.any,
     /** Delay transition in milliseconds before and after collapse. Can be: */
     delay: PropTypes.oneOfType([
       PropTypes.shape({ show: PropTypes.number, hide: PropTypes.number }),
