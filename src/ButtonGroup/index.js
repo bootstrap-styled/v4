@@ -37,11 +37,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.element,
-  ]),
+  tag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$input-btn-border-width': PropTypes.string,
@@ -74,7 +70,7 @@ export const propTypes = {
 class ButtonGroupUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = {
     /* eslint-disable react/no-unused-prop-types */
-    tag: PropTypes.oneOfType([PropTypes.element, PropTypes.func, PropTypes.string]),
+    tag: PropTypes.any,
     className: PropTypes.string,
     cssModule: PropTypes.object,
     size: PropTypes.string,

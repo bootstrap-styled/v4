@@ -38,7 +38,7 @@ export const propTypes = {
   /** Toggles right CSS style. */
   right: PropTypes.bool,
   /** . */
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.element]),
+  tag: PropTypes.any,
   /** Toggles top CSS style. */
   top: PropTypes.bool,
   /**

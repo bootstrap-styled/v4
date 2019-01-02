@@ -90,12 +90,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-    PropTypes.object,
-  ]),
+  tag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$border-width': PropTypes.string,

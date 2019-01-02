@@ -14,11 +14,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-    PropTypes.func,
-  ]),
+  tag: PropTypes.any,
   /** Toggle image position to top of the card. */
   top: PropTypes.bool,
   /** Toggle image position to bottom of the card. */

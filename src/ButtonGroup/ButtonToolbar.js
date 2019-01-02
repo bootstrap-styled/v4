@@ -39,11 +39,7 @@ export const propTypes = {
   /**
    * Replace the default component tag by the one specified. Can be:
    */
-  tag: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.element,
-  ]),
+  tag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     '$input-btn-border-width': PropTypes.string,
