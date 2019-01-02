@@ -1,3 +1,10 @@
+## [2.0.12](https://github.com/bootstrap-styled/v4/compare/v2.0.11...v2.0.12) (2019-01-02)
+
+
+### Bug Fixes
+
+* **col:** adding missing classname .col to <Col /> component ([b520494](https://github.com/bootstrap-styled/v4/commit/b520494))
+
 ## [2.0.11](https://github.com/bootstrap-styled/v4/compare/v2.0.10...v2.0.11) (2019-01-02)
 
 
