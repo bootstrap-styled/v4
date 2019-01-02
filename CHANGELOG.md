@@ -1,3 +1,11 @@
+## [2.0.11](https://github.com/bootstrap-styled/v4/compare/v2.0.10...v2.0.11) (2019-01-02)
+
+
+### Bug Fixes
+
+* **font-awesome:** added missing size to PropTypes ([b0d8b57](https://github.com/bootstrap-styled/v4/commit/b0d8b57))
+* **propTypes:** fix propTypes tag, set to any ([91832ba](https://github.com/bootstrap-styled/v4/commit/91832ba))
+
 ## [2.0.10](https://github.com/bootstrap-styled/v4/compare/v2.0.9...v2.0.10) (2018-12-30)
 
 
