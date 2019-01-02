@@ -130,6 +130,7 @@ class ColUnstyled extends React.Component { // eslint-disable-line react/prefer-
     return (
       <Tag
         className={mapToCssModules(cn(
+          'col',
           className,
           colClasses
         ), cssModule)}
