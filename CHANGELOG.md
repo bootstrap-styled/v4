@@ -1,3 +1,10 @@
+## [2.0.14](https://github.com/bootstrap-styled/v4/compare/v2.0.13...v2.0.14) (2019-01-03)
+
+
+### Bug Fixes
+
+* **release:** fixed released version ([6654260](https://github.com/bootstrap-styled/v4/commit/6654260))
+
 ## [2.0.13](https://github.com/bootstrap-styled/v4/compare/v2.0.12...v2.0.13) (2019-01-03)
 
 
