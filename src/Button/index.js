@@ -103,6 +103,7 @@ export const propTypes = {
     '$btn-font-weight': PropTypes.string,
     '$btn-box-shadow': PropTypes.string,
     '$btn-focus-box-shadow': PropTypes.string,
+    '$btn-disabled-opacity': PropTypes.string,
     '$btn-active-box-shadow': PropTypes.string,
     '$btn-primary-color': PropTypes.string,
     '$btn-primary-bg': PropTypes.string,
@@ -260,6 +261,7 @@ const Button = styled(ButtonUnstyled)`
     props.theme['$btn-danger-color'],
     props.theme['$btn-danger-bg'],
     props.theme['$btn-danger-border'],
+    props.theme['$btn-disabled-opacity'],
   )}
  `} 
 `;
