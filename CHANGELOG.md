@@ -1,3 +1,10 @@
+## [2.0.13](https://github.com/bootstrap-styled/v4/compare/v2.0.12...v2.0.13) (2019-01-03)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade dependencies ([542acd1](https://github.com/bootstrap-styled/v4/commit/542acd1))
+
 ## [2.0.12](https://github.com/bootstrap-styled/v4/compare/v2.0.11...v2.0.12) (2019-01-02)
 
 
