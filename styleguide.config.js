@@ -4,6 +4,7 @@ const { createConfig } = require('@rollup-umd/documentation');
 const config = createConfig({
   pagePerSection: true,
 });
+
 /**
  * We generally make the modules aliased for having nice example, but in this case
  * we use the module itself for the documentation and to prevent multiple version of
