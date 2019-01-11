@@ -1,3 +1,10 @@
+## [2.0.16](https://github.com/bootstrap-styled/v4/compare/v2.0.15...v2.0.16) (2019-01-11)
+
+
+### Bug Fixes
+
+* **dependencies:** remove useless dependencies react-redux and redux ([c3dec75](https://github.com/bootstrap-styled/v4/commit/c3dec75))
+
 ## [2.0.15](https://github.com/bootstrap-styled/v4/compare/v2.0.14...v2.0.15) (2019-01-03)
 
 
