@@ -31,6 +31,7 @@ const defaultTetherConfig = {
 export const defaultProps = {
   isOpen: false,
   tag: 'div',
+  group: false,
   theme: {
     '$enable-rounded': true,
     '$enable-shadows': false,
