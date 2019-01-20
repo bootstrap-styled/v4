@@ -38,7 +38,7 @@ class Tr extends React.Component { // eslint-disable-line react/prefer-stateless
 
     const classes = cn(
       className,
-      color ? `table-${color}` : false,
+      { [`table-${color}`]: color }
     );
     return (
       <tr className={classes} {...attributes}>
