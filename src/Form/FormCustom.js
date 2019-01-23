@@ -35,6 +35,7 @@ export const propTypes = {
 };
 class FormCustom extends React.Component {// eslint-disable-line react/prefer-stateless-function
   static propTypes = propTypes;
+
   render() {
     const {
       className,
