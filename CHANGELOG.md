@@ -1,3 +1,13 @@
+## [2.0.17](https://github.com/bootstrap-styled/v4/compare/v2.0.16...v2.0.17) (2019-01-23)
+
+
+### Bug Fixes
+
+* **Dropdown:** added defaultProptype group=false. ([9b545cf](https://github.com/bootstrap-styled/v4/commit/9b545cf))
+* **eslint:** corrected minor bug. ([bf4c84b](https://github.com/bootstrap-styled/v4/commit/bf4c84b))
+* **FormCustom:** moved props spreading to Input rather than Label. ([1524e22](https://github.com/bootstrap-styled/v4/commit/1524e22))
+* **Tr:** fixed className issue. ([b8feea3](https://github.com/bootstrap-styled/v4/commit/b8feea3))
+
 ## [2.0.16](https://github.com/bootstrap-styled/v4/compare/v2.0.15...v2.0.16) (2019-01-11)
 
 
