@@ -167,6 +167,10 @@
       "node_modules",
       "src"
     ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules",
+      "<rootDir>/internals"
+    ],
     "testRegex": "tests/.*\\.test\\.js$",
     "testResultsProcessor": "jest-sonar-reporter"
   },
