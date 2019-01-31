@@ -11,7 +11,7 @@ export const defaultProps = {
   tag: 'div',
   theme: {
     '$grid-gutter-width': '30px',
-    '$enable-grid-classes': false,
+    '$enable-grid-classes': true,
   },
 };
 export const propTypes = {
@@ -73,20 +73,19 @@ const Row = styled(RowUnstyled)`
   ${(props) => `
     &.row {
       ${makeRow(props.theme['$enable-grid-classes'], props.theme['$grid-gutter-width'])}
-    }
-    /*
-      Remove the negative margin from default .row, then the horizontal padding
-      from all immediate children columns (to prevent runaway style inheritance).
-    */
 
-    &.no-gutters {
-      margin-right: 0;
-      margin-left: 0;
+      // Remove the negative margin from default .row, then the horizontal padding
+      // from all immediate children columns (to prevent runaway style inheritance).
 
-      > .col,
-      > [class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
+      &.no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+
+        > .col,
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
       }
     }
  `}
