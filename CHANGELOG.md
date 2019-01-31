@@ -1,3 +1,10 @@
+## [2.0.18](https://github.com/bootstrap-styled/v4/compare/v2.0.17...v2.0.18) (2019-01-31)
+
+
+### Bug Fixes
+
+* **Row:** Row was having wrong defaultProps ([5577cae](https://github.com/bootstrap-styled/v4/commit/5577cae)), closes [#74](https://github.com/bootstrap-styled/v4/issues/74)
+
 ## [2.0.17](https://github.com/bootstrap-styled/v4/compare/v2.0.16...v2.0.17) (2019-01-23)
 
 
