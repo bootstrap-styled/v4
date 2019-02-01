@@ -1,3 +1,10 @@
+## [2.0.22](https://github.com/bootstrap-styled/v4/compare/v2.0.21...v2.0.22) (2019-02-01)
+
+
+### Bug Fixes
+
+* **Row:** Fix box-sizing within <Row /> ([c7f46bf](https://github.com/bootstrap-styled/v4/commit/c7f46bf)), closes [#74](https://github.com/bootstrap-styled/v4/issues/74)
+
 ## [2.0.21](https://github.com/bootstrap-styled/v4/compare/v2.0.20...v2.0.21) (2019-02-01)
 
 
