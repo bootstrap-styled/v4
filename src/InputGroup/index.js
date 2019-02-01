@@ -44,7 +44,7 @@ export const defaultProps = {
     '$input-border-focus': 'hsl(207.79999999999995, 98.2%, 53.4%)',
     '$input-box-shadow-focus': 'inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(hsl(207.79999999999995, 98.2%, 53.4%),.6)',
     '$input-color': '#464a4c',
-    '$input-group-addon-border-color': 'border-color ease-in-out .15s, box-shadow ease-in-out .15s',
+    '$input-group-addon-border-color': 'rgba(0, 0, 0, 0.15)',
     '$input-padding-x-sm': '.5rem',
     '$input-padding-y-sm': '.25rem',
     '$input-color-placeholder': '#636c72',
