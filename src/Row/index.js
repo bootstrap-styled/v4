@@ -87,6 +87,11 @@ const Row = styled(RowUnstyled)`
           padding-left: 0;
         }
       }
+      
+      // Fix when not used with a BootstrapProvider, globals are missing (See #74)
+      & *, & ::after, & ::before {
+        box-sizing: border-box;
+      }
     }
  `}
 `;
