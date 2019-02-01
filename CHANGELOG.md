@@ -1,3 +1,12 @@
+## [2.0.21](https://github.com/bootstrap-styled/v4/compare/v2.0.20...v2.0.21) (2019-02-01)
+
+
+### Bug Fixes
+
+* **dependencies:** removed sinon (duplicate use with jest) ([02f0280](https://github.com/bootstrap-styled/v4/commit/02f0280))
+* **Dropdown:** corrected mistake in defaultprops theme values. ([49aacf6](https://github.com/bootstrap-styled/v4/commit/49aacf6))
+* **InputGroupButton:** corrected theme varibale default mistake + improved example. ([1bedf2b](https://github.com/bootstrap-styled/v4/commit/1bedf2b))
+
 ## [2.0.20](https://github.com/bootstrap-styled/v4/compare/v2.0.19...v2.0.20) (2019-01-31)
 
 
