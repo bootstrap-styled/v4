@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/bootstrap-styled/v4/compare/v2.0.22...v3.0.0) (2019-02-02)
+
+
+### Bug Fixes
+
+* **Fa:** Remove Fa from v4 as it is not bootstrap related at all ([66a1f7d](https://github.com/bootstrap-styled/v4/commit/66a1f7d)), closes [#67](https://github.com/bootstrap-styled/v4/issues/67) [#67](https://github.com/bootstrap-styled/v4/issues/67)
+
+
+### BREAKING CHANGES
+
+* **Fa:** Fa and FaStacked are removed
+
 ## [2.0.22](https://github.com/bootstrap-styled/v4/compare/v2.0.21...v2.0.22) (2019-02-01)
 
 
