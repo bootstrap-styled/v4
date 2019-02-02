@@ -6,7 +6,6 @@
     "**/*.d.ts",
     "**/src/index.js",
     "**/src/Article/index.js",
-    "**/src/Fa/FaStacked.js",
     "**/src/Footer/index.js",
     "**/src/Label/index.js",
     "**/src/Modal/Fade.js",
