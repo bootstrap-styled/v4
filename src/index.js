@@ -24,8 +24,6 @@ export { default as Details } from './Details';
 export { default as Dl } from './Dl';
 export { default as Drawer } from './Drawer';
 export { default as Dt } from './Dt';
-export { default as Fa } from './Fa';
-export { default as FaStacked } from './Fa/FaStacked';
 export { default as Fieldset } from './Fieldset';
 export { default as Footer } from './Footer';
 export { default as H1 } from './H1';
