@@ -132,6 +132,7 @@
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.2",
+    "terser": "^3.14.1",
     "toctoc": "^0.3.2",
     "webpack": "^4.29.0"
   },
