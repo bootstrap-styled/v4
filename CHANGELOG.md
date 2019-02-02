@@ -1,3 +1,11 @@
+## [3.0.2](https://github.com/bootstrap-styled/v4/compare/v3.0.1...v3.0.2) (2019-02-02)
+
+
+### Bug Fixes
+
+* **dependencies:** fix terser ([63d5f15](https://github.com/bootstrap-styled/v4/commit/63d5f15))
+* **dependencies:** install terser@3.41.1 (see https://github.com/webpack-contrib/terser-webpack-plugin/issues/66) ([67b9e0a](https://github.com/bootstrap-styled/v4/commit/67b9e0a))
+
 ## [3.0.1](https://github.com/bootstrap-styled/v4/compare/v3.0.0...v3.0.1) (2019-02-02)
 
 
