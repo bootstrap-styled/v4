@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/bootstrap-styled/v4/compare/v3.0.2...v3.0.3) (2019-02-04)
+
+
+### Bug Fixes
+
+* **Col:** Add .col by default if no other cols are provided ([9333e51](https://github.com/bootstrap-styled/v4/commit/9333e51)), closes [#74](https://github.com/bootstrap-styled/v4/issues/74)
+
 ## [3.0.2](https://github.com/bootstrap-styled/v4/compare/v3.0.1...v3.0.2) (2019-02-02)
 
 
