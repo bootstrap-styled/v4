@@ -6,7 +6,6 @@ import omit from 'lodash.omit';
 import { makeGridColumns } from '@bootstrap-styled/css-mixins/lib/grid-framework';
 import mapToCssModules from 'map-to-css-modules';
 
-
 const colWidths = ['xs', 'sm', 'md', 'lg', 'xl'];
 const stringOrNumberProp = PropTypes.oneOfType([PropTypes.number, PropTypes.string]);
 
@@ -95,10 +94,11 @@ class ColUnstyled extends React.Component { // eslint-disable-line react/prefer-
 
     const colClasses = [];
 
-    widths.forEach((colWidth, i) => {
+    widths.forEach((colWidth) => {
       let columnProp = this.props[colWidth];
+      const isXs = colWidth === 'xs';
 
-      if (!i && columnProp === undefined) {
+      if (isXs && columnProp === undefined) {
         columnProp = true;
       }
 
@@ -108,7 +108,6 @@ class ColUnstyled extends React.Component { // eslint-disable-line react/prefer-
         return;
       }
 
-      const isXs = !i;
       let colClass;
 
       if (typeof columnProp === 'object') {
@@ -130,9 +129,11 @@ class ColUnstyled extends React.Component { // eslint-disable-line react/prefer-
     return (
       <Tag
         className={mapToCssModules(cn(
-          'col',
           className,
-          colClasses
+          colClasses,
+          {
+            col: colWidths.filter((w) => this.props[w]).length === 0,
+          }
         ), cssModule)}
         {...attributes}
       />

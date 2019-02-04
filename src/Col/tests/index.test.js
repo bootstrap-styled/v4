@@ -100,4 +100,24 @@ describe('<Col />', () => {
     });
     expect(renderedComponent.contains(children)).toEqual(true);
   });
+  it('should have .col class', () => {
+    const renderedComponent = renderComponent({
+      children,
+    });
+    expect(renderedComponent.find('div.col').length).toEqual(1);
+  });
+  it('should not contain .col class', () => {
+    const renderedComponent = renderComponent({
+      xs: true,
+      children,
+    });
+    expect(renderedComponent.find('div.col').length).toEqual(0);
+  });
+  it('should have .col-6 class', () => {
+    const renderedComponent = renderComponent({
+      xs: 6,
+      children,
+    });
+    expect(renderedComponent.find('div.col-6').length).toEqual(1);
+  });
 });
