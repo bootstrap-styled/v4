@@ -1,6 +1,6 @@
 `<Col />` component example:
 
-```js static
+```js
 <Row>
   <Col lg="2">
     1 of 3
