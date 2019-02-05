@@ -3,21 +3,21 @@
     <img alt="bootstrap-styled" src="https://user-images.githubusercontent.com/1866564/50375497-cda74880-0630-11e9-9f1e-e8d798dff47b.png" />
   </a>
   <br/>
-  <br/>  
+  <br/>
 </div>
 
-**If you don't know Bootstrap Styled yet, we suggest you to read [their documentation](https://bootstrap-styled.github.io/bootstrap-styled) first.**
+**If you don't know Bootstrap Styled yet, we suggest you to read [their documentation](https://bootstrap-styled.github.io) first.**
 
-[![Build Status](https://travis-ci.org/bootstrap-styled/v4.svg?branch=master)](https://travis-ci.org/bootstrap-styled/v4) 
-[![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4) 
-[![License](https://img.shields.io/npm/l/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4) 
-[![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/v4.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/v4) 
+[![Build Status](https://travis-ci.org/bootstrap-styled/v4.svg?branch=master)](https://travis-ci.org/bootstrap-styled/v4)
+[![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4)
+[![License](https://img.shields.io/npm/l/@bootstrap-styled/v4.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4)
+[![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/v4.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/v4)
 [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4) 
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4)
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4)
 [![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled) [![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/v4.svg)](https://greenkeeper.io/)
 
-:rocket: [twbs/bootstrap](https://github.com/twbs/bootstrap) **V4** UI Components made with [bootstrap-styled](https://bootstrap-styled.github.io/bootstrap-styled). Work with css-in-js, [react](https://github.com/facebook/react), [styled-components](https://github.com/styled-components/styled-components), and Bootstrap Styled utilities.
+:rocket: [twbs/bootstrap](https://github.com/twbs/bootstrap) **V4** UI Components made with [bootstrap-styled](https://bootstrap-styled.github.io). Work with css-in-js, [react](https://github.com/facebook/react), [styled-components](https://github.com/styled-components/styled-components), and Bootstrap Styled utilities.
 
 ## Table of Contents
 
@@ -42,7 +42,7 @@ Please also note that all repositories under the bootstrap-styled organization f
 
 The MIT License
 
-Copyright (c) 2017-2018 Yeutech Company Limited. https://bootstrap-styled.github.io/bootstrap-styled
+Copyright (c) 2017-2018 Yeutech Company Limited. https://bootstrap-styled.github.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
