@@ -1,3 +1,37 @@
+## [3.0.3](https://github.com/bootstrap-styled/v4/compare/v3.0.2...v3.0.3) (2019-02-04)
+
+
+### Bug Fixes
+
+* **Col:** Add .col by default if no other cols are provided ([9333e51](https://github.com/bootstrap-styled/v4/commit/9333e51)), closes [#74](https://github.com/bootstrap-styled/v4/issues/74)
+
+## [3.0.2](https://github.com/bootstrap-styled/v4/compare/v3.0.1...v3.0.2) (2019-02-02)
+
+
+### Bug Fixes
+
+* **dependencies:** fix terser ([63d5f15](https://github.com/bootstrap-styled/v4/commit/63d5f15))
+* **dependencies:** install terser@3.41.1 (see https://github.com/webpack-contrib/terser-webpack-plugin/issues/66) ([67b9e0a](https://github.com/bootstrap-styled/v4/commit/67b9e0a))
+
+## [3.0.1](https://github.com/bootstrap-styled/v4/compare/v3.0.0...v3.0.1) (2019-02-02)
+
+
+### Bug Fixes
+
+* **dependencies:** Upgrade all dependencies and fix documentation ([a6a2018](https://github.com/bootstrap-styled/v4/commit/a6a2018))
+
+# [3.0.0](https://github.com/bootstrap-styled/v4/compare/v2.0.22...v3.0.0) (2019-02-02)
+
+
+### Bug Fixes
+
+* **Fa:** Remove Fa from v4 as it is not bootstrap related at all ([66a1f7d](https://github.com/bootstrap-styled/v4/commit/66a1f7d)), closes [#67](https://github.com/bootstrap-styled/v4/issues/67) [#67](https://github.com/bootstrap-styled/v4/issues/67)
+
+
+### BREAKING CHANGES
+
+* **Fa:** Fa and FaStacked are removed
+
 ## [2.0.22](https://github.com/bootstrap-styled/v4/compare/v2.0.21...v2.0.22) (2019-02-01)
 
 
