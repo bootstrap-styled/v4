@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/bootstrap-styled/v4/compare/v3.0.3...v3.0.4) (2019-02-05)
+
+
+### Bug Fixes
+
+* **Button:** resolv issue [#82](https://github.com/bootstrap-styled/v4/issues/82), $btn-border-width variable ([f6fc779](https://github.com/bootstrap-styled/v4/commit/f6fc779))
+
 ## [3.0.3](https://github.com/bootstrap-styled/v4/compare/v3.0.2...v3.0.3) (2019-02-04)
 
 
