@@ -6,6 +6,7 @@
     "**/*.d.ts",
     "**/src/index.js",
     "**/src/Article/index.js",
+    "**/src/Fa/FaStacked.js",
     "**/src/Footer/index.js",
     "**/src/Label/index.js",
     "**/src/Modal/Fade.js",
@@ -48,10 +49,100 @@
     },
     {
       "name": "UI Components",
-      "components": "src/**/*.js",
-      "ignore": [
-        "src/Accordions/index.js",
-        "src/Cards/index.js"
+      "sections": [
+        {
+          "name": "Layout",
+          "components": [
+            "src/Row/index.js",
+            "src/Col/index.js",
+            "src/Container/index.js"
+          ]
+        },
+        {
+          "name": "Content",
+          "components": [
+            "src/A/index.js",
+            "src/Abbr/index.js",
+            "src/Address/index.js",
+            "src/Area/index.js",
+            "src/Article/index.js",
+            "src/Blockquote/index.js",
+            "src/Caption/index.js",
+            "src/Close/index.js",
+            "src/Code/index.js",
+            "src/Dd/index.js",
+            "src/Details/index.js",
+            "src/Dfn/index.js",
+            "src/Dl/index.js",
+            "src/Dt/index.js",
+            "src/Fieldset/index.js",
+            "src/Footer/index.js",
+            "src/H1/index.js",
+            "src/H1/index.js",
+            "src/H2/index.js",
+            "src/H3/index.js",
+            "src/H4/index.js",
+            "src/H5/index.js",
+            "src/H6/index.js",
+            "src/Header/index.js",
+            "src/Hr/index.js",
+            "src/Img/index.js",
+            "src/Input/index.js",
+            "src/IssueIcon/index.js",
+            "src/Kbd/index.js",
+            "src/Label/index.js",
+            "src/Legend/index.js",
+            "src/Map/index.js",
+            "src/Mark/index.js",
+            "src/Li/index.js",
+            "src/Ol/index.js",
+            "src/Option/index.js",
+            "src/Output/index.js",
+            "src/P/index.js",
+            "src/Pre/index.js",
+            "src/Samp/index.js",
+            "src/Section/index.js",
+            "src/Select/index.js",
+            "src/Small/index.js",
+            "src/Strong/index.js",
+            "src/Sub/index.js",
+            "src/Summary/index.js",
+            "src/Sup/index.js",
+            "src/Textarea/index.js",
+            "src/Ul/index.js"
+          ]
+        },
+        {
+          "name": "Components",
+          "components": [
+            "src/Alert/index.js",
+            "src/Accordions/*.js",
+            "src/Badge/index.js",
+            "src/Breadcrumb/*.js",
+            "src/Button/*.js",
+            "src/ButtonGroup/*.js",
+            "src/Cards/*.js",
+            "src/Collapse/*.js",
+            "src/Drawer/index.js",
+            "src/Dropdown/*.js",
+            "src/Form/*.js",
+            "src/InputGroup/*.js",
+            "src/Jumbotron/*.js",
+            "src/ListGroup/*.js",
+            "src/Media/*.js",
+            "src/Modal/*.js",
+            "src/Nav/*.js",
+            "src/Navbar/*.js",
+            "src/Pagination/*.js",
+            "src/Progress/*.js",
+            "src/Table/*.js",
+            "src/Tooltip/*.js"
+          ],
+          "ignore": [
+            "src/Accordions/index.js",
+            "src/Cards/index.js"
+          ]
+        }
       ],
       "sectionDepth": 1
     },
