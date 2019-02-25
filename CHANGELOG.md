@@ -1,3 +1,11 @@
+## [3.0.5](https://github.com/bootstrap-styled/v4/compare/v3.0.4...v3.0.5) (2019-02-25)
+
+
+### Bug Fixes
+
+* **dependencies:** Upgrade all dependencies, using @rollup-umd/rollup for rollup configuration ([d091060](https://github.com/bootstrap-styled/v4/commit/d091060))
+* **documentation:** corrected typo mistake and improved layout. ([28dbd13](https://github.com/bootstrap-styled/v4/commit/28dbd13))
+
 ## [3.0.4](https://github.com/bootstrap-styled/v4/compare/v3.0.3...v3.0.4) (2019-02-05)
 
 
