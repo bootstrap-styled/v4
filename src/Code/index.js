@@ -10,7 +10,7 @@ import omit from 'lodash.omit';
 import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
 
 export const defaultProps = {
-  tag: 'a',
+  tag: 'code',
   theme: {
     '$code-font-size': '90%',
     '$code-padding-x': '.4rem',
