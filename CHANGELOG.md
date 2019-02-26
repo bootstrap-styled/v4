@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/bootstrap-styled/v4/compare/v3.0.5...v3.0.6) (2019-02-26)
+
+
+### Bug Fixes
+
+* **Code:** changed defaultProps from a tag to code tag. ([442c4f3](https://github.com/bootstrap-styled/v4/commit/442c4f3))
+
 ## [3.0.5](https://github.com/bootstrap-styled/v4/compare/v3.0.4...v3.0.5) (2019-02-25)
 
 
