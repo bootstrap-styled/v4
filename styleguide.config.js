@@ -1,5 +1,5 @@
-const pkg = require('./package.json');
 const { createConfig } = require('@rollup-umd/documentation');
+const pkg = require('./package.json');
 
 const config = createConfig({
   pagePerSection: true,
@@ -13,4 +13,3 @@ const config = createConfig({
 delete config.webpackConfig.resolve.alias[pkg.name];
 
 module.exports = config;
-

@@ -440,6 +440,8 @@ const Form = styled(FormUnstyled)`
     */
 
     & .form-control-static {
+      display: block;
+      width: 100%;
       padding-top: ${props.theme['$input-padding-y']};
       padding-bottom: ${props.theme['$input-padding-y']};
       margin-bottom: 0; /* match inputs if this class comes on inputs with default margins */

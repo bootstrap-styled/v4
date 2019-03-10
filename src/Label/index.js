@@ -36,6 +36,7 @@ export const propTypes = {
   tag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
+    '$label-margin-bottom': PropTypes.string,
     '$btn-padding-x': PropTypes.string,
     '$btn-padding-y': PropTypes.string,
     '$btn-line-height': PropTypes.string,
@@ -111,6 +112,7 @@ export const propTypes = {
 export const defaultProps = {
   tag: 'label',
   theme: {
+    '$label-margin-bottom': '.5rem',
     '$enable-rounded': true,
     '$enable-shadows': false,
     '$enable-hover-media-query': true,

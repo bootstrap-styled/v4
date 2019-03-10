@@ -18,6 +18,7 @@ export const defaultProps = {
     '$code-color': '#bd4147',
     '$code-bg': '#f7f7f9',
     '$enable-rounded': false,
+    '$font-family-monospace': 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
   },
 };
 export const propTypes = {
@@ -37,6 +38,7 @@ export const propTypes = {
     '$code-color': PropTypes.string,
     '$code-bg': PropTypes.string,
     '$enable-rounded': PropTypes.bool,
+    '$font-family-monospace': PropTypes.string,
   }),
 };
 class CodeUnstyled extends React.Component { // eslint-disable-line react/prefer-stateless-function

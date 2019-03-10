@@ -17,7 +17,7 @@ Different `<Input />` **type**:
 <Form>
   <FormGroup>
     <Label htmlFor="exampleEmail">Static</Label>
-    <Input static>Some static value</Input>
+    <Input static defaultValue="Some static value" />
   </FormGroup>
   <FormGroup>
     <Label htmlFor="exampleEmail">Email</Label>
