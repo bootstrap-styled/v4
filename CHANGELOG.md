@@ -1,3 +1,11 @@
+## [3.0.8](https://github.com/bootstrap-styled/v4/compare/v3.0.7...v3.0.8) (2019-03-10)
+
+
+### Bug Fixes
+
+* **documentation:** fixed bug wiht Tooltip ([286316d](https://github.com/bootstrap-styled/v4/commit/286316d))
+* **documentation:** Fixed some minor documentation bugs. ([3706154](https://github.com/bootstrap-styled/v4/commit/3706154))
+
 ## [3.0.7](https://github.com/bootstrap-styled/v4/compare/v3.0.6...v3.0.7) (2019-03-10)
 
 
