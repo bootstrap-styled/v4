@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 export const defaultProps = {
   theme: {
+    '$spacer-y': '1rem',
     '$hr-border-width': '1px',
     '$hr-border-color': 'rgba(0, 0, 0, 0.1)',
   },
@@ -11,6 +12,7 @@ export const defaultProps = {
 export const propTypes = {
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
+    '$spacer-y': PropTypes.string,
     '$hr-border-width': PropTypes.string,
     '$hr-border-color': PropTypes.string,
   }),

@@ -85,7 +85,6 @@ class H1Unstyled extends React.Component { // eslint-disable-line react/prefer-s
       lead,
       ...attributes
     } = omit(this.props, ['theme']);
-
     const classes = mapToCssModules(cn(
       className,
       lead ? 'lead' : false,

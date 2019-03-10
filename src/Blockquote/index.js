@@ -15,6 +15,8 @@ import mapToCssModules from 'map-to-css-modules';
 export const defaultProps = {
   tag: 'blockquote',
   theme: {
+    $spacer: '1rem',
+    '$spacer-halved': '0.5rem',
     '$blockquote-small-color': '#636c72',
     '$blockquote-font-size': '1.25rem',
     '$blockquote-border-color': '#eceeef',
@@ -32,6 +34,8 @@ export const propTypes = {
   tag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
+    $spacer: PropTypes.string,
+    '$spacer-halved': PropTypes.string,
     '$blockquote-small-color': PropTypes.string,
     '$blockquote-font-size': PropTypes.string,
     '$blockquote-border-color': PropTypes.string,

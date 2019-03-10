@@ -92,7 +92,10 @@ export const propTypes = {
   /**
    * Transition's duration used to dismiss alert automatically.
    */
-  autoHideDuration: PropTypes.number,
+  autoHideDuration: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   /** Theme variables. */
   theme: PropTypes.shape({
     '$alert-padding-x': PropTypes.string,

@@ -9,6 +9,7 @@ import { makeGridColumns } from '@bootstrap-styled/css-mixins/lib/grid-framework
 
 export const defaultProps = {
   theme: {
+    '$dt-font-weight': 'bold',
     '$grid-columns': '12',
     '$grid-gutter-width': '30px',
     '$grid-breakpoints': {
@@ -24,6 +25,7 @@ export const defaultProps = {
 export const propTypes = {
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
+    '$dt-font-weight': PropTypes.string,
     '$grid-columns': PropTypes.string,
     '$grid-gutter-width': PropTypes.string,
     '$grid-breakpoints': PropTypes.object,

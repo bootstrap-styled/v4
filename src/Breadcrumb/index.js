@@ -21,6 +21,7 @@ export const defaultProps = {
     '$breadcrumb-divider-color': '#636c72',
     '$breadcrumb-active-color': '#636c72',
     '$breadcrumb-divider': '"/"',
+    '$spacer-y': '1rem',
     '$enable-rounded': false,
   },
 };
@@ -42,6 +43,7 @@ export const propTypes = {
     '$breadcrumb-divider-color': PropTypes.string,
     '$breadcrumb-active-color': PropTypes.string,
     '$breadcrumb-divider': PropTypes.string,
+    '$spacer-y': PropTypes.string,
     '$enable-rounded': PropTypes.bool,
   }),
   /**

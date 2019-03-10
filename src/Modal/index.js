@@ -60,6 +60,7 @@ export const propTypes = {
     '$modal-title-line-height': PropTypes.string,
     '$modal-inner-padding': PropTypes.string,
     '$modal-footer-border-color': PropTypes.string,
+    '$modal-footer-border-width': PropTypes.string,
   }),
   /** Toggles opened CSS style. */
   isOpen: PropTypes.bool,
@@ -168,6 +169,7 @@ export const defaultProps = {
     '$modal-title-line-height': '1.5',
     '$modal-inner-padding': '15px',
     '$modal-footer-border-color': '#eceeef',
+    '$modal-footer-border-width': '1px',
   },
   fade: true,
   onOpened: null,

@@ -18,6 +18,7 @@ export const defaultProps = {
   tag: 'table',
   responsiveTag: 'div',
   theme: {
+    $spacer: '1rem',
     '$body-bg': '#fff',
     '$table-cell-padding': '.75rem',
     '$table-sm-cell-padding': '.3rem',
@@ -67,6 +68,7 @@ export const propTypes = {
   responsiveTag: PropTypes.any,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
+    $spacer: PropTypes.string,
     '$body-bg': PropTypes.string,
     '$table-cell-padding': PropTypes.string,
     '$table-sm-cell-padding': PropTypes.string,
@@ -152,7 +154,7 @@ const Table = styled(TableUnstyled)`
     &.table {
       width: 100%;
       max-width: 100%;
-      margin-bottom: ${props.theme['$spacer']};
+      margin-bottom: ${props.theme.$spacer};
       background-color: ${props.theme['$table-bg']};
 
       th,
