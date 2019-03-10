@@ -70,12 +70,8 @@ jobs:
       node_js:
         - 'lts/*'
       script:
-        - git fetch --tags
-        - git checkout refs/tags/$(git describe --tags `git rev-list --tags --max-count=1`)
-        - npm install
-        - chmod +x styleguide/prepare.sh
-        - styleguide/prepare.sh
-        - npm run styleguide:build
+        - version=$(git describe --tags `git rev-list --tags --max-count=1`)
+        - npx @rollup-umd/deploy --version ${version}
       deploy:
         - provider: pages
           skip_cleanup: true
