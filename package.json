@@ -36,7 +36,7 @@
     "jsdoc": "jsdoc-documentation --file",
     "prestyleguide": "npm run jsdoc",
     "styleguide": "styleguidist server",
-    "prestyleguide:build": "npm run jsdoc",
+    "prestyleguide:build": "npm run jsdoc && ./styleguide/prepare.sh",
     "styleguide:build": "styleguidist build"
   },
   "repository": {
