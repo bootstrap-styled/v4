@@ -1,3 +1,11 @@
+## [3.0.7](https://github.com/bootstrap-styled/v4/compare/v3.0.6...v3.0.7) (2019-03-10)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([4a3a80f](https://github.com/bootstrap-styled/v4/commit/4a3a80f))
+* **TetherContent:** use portals to fix bounds issues in tethered content. ([bebe9e1](https://github.com/bootstrap-styled/v4/commit/bebe9e1))
+
 ## [3.0.6](https://github.com/bootstrap-styled/v4/compare/v3.0.5...v3.0.6) (2019-02-26)
 
 
