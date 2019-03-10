@@ -37,6 +37,12 @@ class TetherContent extends React.Component {// eslint-disable-line react/prefer
 
   static defaultProps = defaultProps;
 
+  constructor(props) {
+    super(props);
+
+    this.element = document.createElement('div');
+  }
+
   componentDidMount = () => {
     this.handleProps();
   }
@@ -44,9 +50,6 @@ class TetherContent extends React.Component {// eslint-disable-line react/prefer
   componentDidUpdate = (prevProps) => {
     if (this.props.isOpen !== prevProps.isOpen) {
       this.handleProps();
-    } else if (this.element) {
-      // rerender
-      this.renderIntoSubtree();
     }
   }
 
@@ -92,10 +95,8 @@ class TetherContent extends React.Component {// eslint-disable-line react/prefer
   hide = () => {
     document.removeEventListener('click', this.handleDocumentClick, true);
 
-    if (this.element) {
+    if (this.element.parentElement === document.body) {
       document.body.removeChild(this.element);
-      ReactDOM.unmountComponentAtNode(this.element);
-      this.element = null;
     }
 
     if (this.tether) {
@@ -110,10 +111,8 @@ class TetherContent extends React.Component {// eslint-disable-line react/prefer
   show = () => {
     document.addEventListener('click', this.handleDocumentClick, true);
 
-    this.element = document.createElement('div');
     this.element.className = this.props.className;
     document.body.appendChild(this.element);
-    this.renderIntoSubtree();
     this.tether = new Tether(this.getTetherConfig());
     if (this.props.tetherRef) {
       this.props.tetherRef(this.tether);
@@ -129,14 +128,6 @@ class TetherContent extends React.Component {// eslint-disable-line react/prefer
     return this.props.toggle();
   }
 
-  renderIntoSubtree = () => {
-    ReactDOM.unstable_renderSubtreeIntoContainer(
-      this,
-      this.renderChildren(),
-      this.element
-    );
-  }
-
   renderChildren = () => {
     const { children, style } = this.props;
     return React.cloneElement(
@@ -146,8 +137,13 @@ class TetherContent extends React.Component {// eslint-disable-line react/prefer
   }
 
   render() {
-    return (
-      null
+    if (!this.props.isOpen) {
+      return null;
+    }
+
+    return ReactDOM.createPortal(
+      this.renderChildren(),
+      this.element
     );
   }
 }
