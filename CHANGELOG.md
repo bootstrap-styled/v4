@@ -1,3 +1,10 @@
+## [3.0.12](https://github.com/bootstrap-styled/v4/compare/v3.0.11...v3.0.12) (2019-03-11)
+
+
+### Bug Fixes
+
+* **TetherContent:** import isFunction from correct module ([33f71e7](https://github.com/bootstrap-styled/v4/commit/33f71e7))
+
 ## [3.0.11](https://github.com/bootstrap-styled/v4/compare/v3.0.10...v3.0.11) (2019-03-11)
 
 
