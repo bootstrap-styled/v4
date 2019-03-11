@@ -39,18 +39,19 @@ import {
   Button,
   Alert,
 } from '@bootstrap-styled/v4';
+
 initialState = {
   counter: 1336
 };
 
-
 /**
 * @public
-* @description The <BootstrapProvider> inject bootstrap class utilities and a theme that can be customized.
-* @param {string} title - Your title, you can edit it through <BootstrapHello />
-* @param {string} name - Your name, you can edit it through <BootstrapHello />
-* @param {object} theme - A theme object, see https://bootstrap-styled.github.io for more details
-* @returns {component} - The Hello example
+* @description The <BootstrapProvider> accept theme and can inject global css utilities
+* @param {object} props - instance props
+* @param {string} props.title - A title
+* @param {string} props.name - A name
+* @param {object} props.theme - A theme object, see https://bootstrap-styled.github.io for more details
+* @returns {component} - bootstrap application example
 */
 const App = ({ title, name, theme }) => (
   <BootstrapProvider theme={theme}>
