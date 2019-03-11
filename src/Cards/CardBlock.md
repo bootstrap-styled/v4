@@ -1,6 +1,15 @@
 `<CardBlock />` component example:
 
 ```js
+import {
+  Card,
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Card width="50%">
   <CardBlock>
     <CardTitle>Card title</CardTitle>

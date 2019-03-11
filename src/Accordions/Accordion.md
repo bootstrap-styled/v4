@@ -1,6 +1,8 @@
 `<Accordion />` component example:
 
 ```js static
+import { Accordion, CardBlock } from '$PACKAGE_NAME';
+
 <Accordion heading="Collapsible Group Item #1" name="Accordion1">
  <CardBlock>
    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
@@ -8,4 +10,4 @@
 </Accordion>
 ```
 
-> > In order to work, this component must wrapped inside a `<AccordionGroup />` component, if you want to use only one accordion, you might use `<Collapse />` component.
+> In order to work, this component must wrapped inside a `<AccordionGroup />` component, if you want to use only one accordion, you might use `<Collapse />` component.

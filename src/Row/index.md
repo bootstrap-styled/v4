@@ -1,6 +1,11 @@
 `<Row />` component example:
 
 ```js
+import {
+  Row,
+  Col,
+} from '$PACKAGE_NAME';
+
 <Row>
   <Col lg="2">
     1 of 3

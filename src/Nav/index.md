@@ -1,6 +1,16 @@
 `<Media />` component example:
 
 ```js
+import { 
+  Nav,
+  NavItem,
+  NavLink,
+  NavDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from '$PACKAGE_NAME';
+
 initialState = {
   isOpen: false,
 };

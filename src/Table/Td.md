@@ -1,10 +1,17 @@
 `<Td />` component example:
 
 ```js
+import { 
+  Table,
+  Tr,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table>
   <Tbody>
     <Tr>
-      <Th scope="row">1</Th>
+      <Td scope="row">1</Td>
       <Td>Mark</Td>
       <Td>Otto</Td>
       <Td>@mdo</Td>

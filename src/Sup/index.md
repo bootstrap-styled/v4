@@ -4,5 +4,7 @@ This component has no props.
 `<Sup />` component example:
 
 ```js
+import { P, Sup } from '$PACKAGE_NAME';
+
 <P>This text contains <Sup>superscript</Sup> text.</P>
 ```

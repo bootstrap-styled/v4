@@ -4,5 +4,7 @@ This component has no props.
 `<Samp />` component example:
 
 ```js
+import { Samp } from '$PACKAGE_NAME';
+
 <Samp>Sample output from a computer program</Samp>
 ```

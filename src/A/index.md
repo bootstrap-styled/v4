@@ -1,6 +1,7 @@
 `<A />` component example:
 
 ```js
+import { A, P } from '$PACKAGE_NAME';
 <div>
   <A href="javascript:;">Visit Bootstrap Styled</A>!
   <P>
@@ -13,6 +14,7 @@ Or as a `<Button />`:
 
 
 ```js
+import { Button } from '$PACKAGE_NAME';
 <Button tag={A} color="danger" href="javascript:;">Visit Bootstrap Styled !</Button>
 ```
 

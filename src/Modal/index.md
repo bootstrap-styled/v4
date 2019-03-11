@@ -1,17 +1,20 @@
 `<Modal />` component example:
 
 ```js
+import { 
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from '$PACKAGE_NAME';
+
 initialState = {
     modal: false,
 };
 
-const handleClose = function() {
-  setState({
-    modal: !state.modal,
-  });
-};
+const handleClose = () => setState({ modal: !state.modal });
 
-;
 <div>
   <Button color="danger" onClick={() => handleClose()}>Launch Modal</Button>
   <Modal isOpen={state.modal} toggle={() => handleClose()}>
@@ -30,24 +33,21 @@ const handleClose = function() {
 `Nested <Modal />` component example:
 
 ```js
+import { 
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from '$PACKAGE_NAME';
+
 initialState = {
     modal: false,
 };
 
-const handleClose = function() {
-  setState({
-    modal: !state.modal,
-    nestedModal: false,
-  });
-};
+const handleClose = () => setState({ modal: !state.modal, nestedModal: false });
+const handleCloseNested = () => setState({ nestedModal: !state.nestedModal });
 
-const handleCloseNested = function() {
-  setState({
-    nestedModal: !state.nestedModal,
-  });
-}
-
-;
 <div>
   <Button color="danger" onClick={() => handleClose()}>Launch Modal</Button>
   <Modal isOpen={state.modal} toggle={() => handleClose()}>

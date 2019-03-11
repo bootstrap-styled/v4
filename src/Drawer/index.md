@@ -1,9 +1,12 @@
 `<Drawer />` component example:
 
 ```js static
+import { Drawer, P, H1, Button } from '$PACKAGE_NAME';
+
 initialState = {
   isOpen: false,
 };
+
 <div>
   <Button onClick={() => setState({ isOpen: !state.isOpen })}>Open Drawer</Button>
   <Drawer active={state.isOpen} left="260px">
@@ -16,6 +19,8 @@ initialState = {
 You can also `dock` your component so that, when activated, it pushes the content of your main layout:
 
 ```js
+import { Drawer, P, H1, Button } from '$PACKAGE_NAME';
+
 initialState = {
   isOpen: false,
 };

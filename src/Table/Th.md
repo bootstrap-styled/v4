@@ -1,6 +1,13 @@
 `<Th />` component example:
 
 ```js
+import { 
+  Table,
+  Thead,
+  Tr,
+  Th,
+} from '$PACKAGE_NAME';
+
 <Table>
   <Thead defaultBg>
     <Tr>

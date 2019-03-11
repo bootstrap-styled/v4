@@ -1,6 +1,18 @@
 `<NavDropdown />` component example:
 
 ```js
+import {
+  Navbar,
+  NavbarToggler,
+  Container,
+  Collapse,
+  Nav,
+  NavDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from '$PACKAGE_NAME';
+
 initialState = {
   showNavbar: false,
   dropdownOpen: false,

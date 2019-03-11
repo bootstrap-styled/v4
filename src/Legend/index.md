@@ -5,6 +5,8 @@ This component has no props.
 `<Legend />` component example:
 
 ```js
+import { Form, Fieldset, Legend, Input } from '$PACKAGE_NAME';
+
 <Form>
   <Fieldset>
     <Legend>Register:</Legend>

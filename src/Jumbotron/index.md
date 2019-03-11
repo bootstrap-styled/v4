@@ -1,6 +1,15 @@
 `<Jumbotron />` component example:
 
 ```js
+import {
+  Jumbotron,
+  H1,
+  P,
+  Hr,
+  Button,
+  Container,
+} from '$PACKAGE_NAME';
+
 <div>
   <Jumbotron>
     <H1 className="display-3">Hello, world!</H1>

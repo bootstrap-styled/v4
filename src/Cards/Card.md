@@ -1,6 +1,16 @@
 `<Card />` component example:
 
 ```js
+import { 
+  Card, 
+  CardImg,
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Card width="25%">
   <CardImg top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
   <CardBlock>
@@ -15,6 +25,17 @@
 `<Card />` component example with **sizing**:
 
 ```js
+import {
+  Row,
+  Col,
+  Card, 
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Row>
   <Col className="col-sm-6">
     <Card block>
@@ -36,6 +57,17 @@
 `<Card />` component example with **grid markup**:
 
 ```js
+import {
+  Row,
+  Col,
+  Card, 
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Row>
   <Col sm={{ size: 6 }}>
     <Card>
@@ -61,6 +93,17 @@
 `<Card />` component example using **utilities**:
 
 ```js
+import {
+  Row,
+  Col,
+  Card, 
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <div>
   <Card className="w-75">
     <CardBlock>
@@ -82,6 +125,15 @@
 `<Card />` component example using **custom css**:
 
 ```js
+import {
+  Card, 
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Card width='15rem'>
   <CardBlock>
     <CardTitle>Special title treatment</CardTitle>
@@ -94,6 +146,15 @@
 `<Card />` component example using **text alignment**:
 
 ```js
+import {
+  Card, 
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <div>
   <Card>
     <CardBlock>
@@ -122,6 +183,18 @@
 `<Card />` component example using **navigation**:
 
 ```js
+import {
+  Card,
+  CardHeader,
+  Nav,
+  NavItem,
+  NavLink,
+  CardBlock,
+  CardTitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Card className="text-center">
   <CardHeader>
     <Nav className="card-header-tabs" tabs>
@@ -147,6 +220,18 @@
 `<Card />` component example using **active navigation**:
 
 ```js
+import {
+  Card,
+  CardHeader,
+  Nav,
+  NavItem,
+  NavLink,
+  CardBlock,
+  CardTitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Card className="text-center">
   <CardHeader>
     <Nav className="card-header-pills" pills>
@@ -172,6 +257,11 @@
 `<Card />` component example using **background color variant**:
 
 ```js
+import {
+  Card,
+  CardText,
+} from '$PACKAGE_NAME';
+
 <div>
   <Card block inverse color="primary" className="text-center">
     <CardText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</CardText>
@@ -194,6 +284,11 @@
 **Outline** `<Card />` component example:
 
 ```js
+import {
+  Card,
+  CardText,
+} from '$PACKAGE_NAME';
+
 <div>
   <Card block outline color="primary" className="text-center">
     <CardText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</CardText>
@@ -216,6 +311,17 @@
 `<Card />` component example using **layout**:
 
 ```js
+import {
+  Card,
+  CardGroup,
+  CardImg,
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button,
+} from '$PACKAGE_NAME';
+
 <CardGroup>
   <Card>
     <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />

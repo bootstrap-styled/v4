@@ -1,6 +1,8 @@
 `<Col />` component example:
 
 ```js
+import { Col, Row } from '$PACKAGE_NAME';
+
 <Row>
   <Col lg="2">
     1 of 3

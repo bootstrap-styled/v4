@@ -1,6 +1,21 @@
 `<Navbar />` component example:
 
 ```js
+import {
+  A,
+  Form,
+  Input,
+  Button,
+  Navbar,
+  Container,
+  NavbarBrand,
+  NavbarToggler,
+  Collapse,
+  Nav,
+  NavItem,
+  NavLink,
+} from '$PACKAGE_NAME';
+
 initialState = {
   isOpen: false,
 };

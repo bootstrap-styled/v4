@@ -1,6 +1,16 @@
 `<Caption />` component example:
 
 ```js
+import {
+  Table,
+  Caption,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table>
   <Caption>List of users</Caption>
   <Thead>

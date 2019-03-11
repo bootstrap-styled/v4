@@ -1,6 +1,15 @@
 `<Table />` component example:
 
 ```js
+import { 
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table>
   <Thead>
     <Tr>
@@ -37,6 +46,15 @@
 __You can also add color using props `color`__
 
 ```js
+import { 
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table inverse>
   <Thead>
     <Tr>
@@ -73,6 +91,15 @@ __You can also add color using props `color`__
 __You can also add color using props `color`__
 
 ```js
+import { 
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table striped>
   <Thead>
     <Tr>
@@ -109,6 +136,15 @@ __You can also add color using props `color`__
 __You can also add background using className `bg-` such as `bg-success`__
 
 ```js
+import { 
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table bordered>
   <Thead>
     <Tr>
@@ -149,6 +185,15 @@ __You can also add background using className `bg-` such as `bg-success`__
 `<Table />` component example using `hover` props:
 
 ```js
+import { 
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table hover>
   <Thead>
     <Tr color="active">
@@ -160,19 +205,19 @@ __You can also add background using className `bg-` such as `bg-success`__
   </Thead>
   <Tbody>
     <Tr>
-      <Th scope="row">1</Th>
+      <Td scope="row">1</Td>
       <Td>Mark</Td>
       <Td>Otto</Td>
       <Td>@mdo</Td>
     </Tr>
     <Tr>
-      <Th scope="row">2</Th>
+      <Td scope="row">2</Td>
       <Td>Jacob</Td>
       <Td>Thornton</Td>
       <Td>@fat</Td>
     </Tr>
     <Tr>
-      <Th scope="row">3</Th>
+      <Td scope="row">3</Td>
       <Td colSpan="2">Larry the Bird</Td>
       <Td>@twitter</Td>
     </Tr>
@@ -183,6 +228,15 @@ __You can also add background using className `bg-` such as `bg-success`__
 Small `<Table />` component example using `size` props with `sm` string value:
 
 ```js
+import { 
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+} from '$PACKAGE_NAME';
+
 <Table size="sm">
   <Thead>
     <Tr color="info">
@@ -194,19 +248,19 @@ Small `<Table />` component example using `size` props with `sm` string value:
   </Thead>
   <Tbody>
     <Tr>
-      <Th scope="row">1</Th>
+      <Td scope="row">1</Td>
       <Td>Mark</Td>
       <Td>Otto</Td>
       <Td>@mdo</Td>
     </Tr>
     <Tr>
-      <Th scope="row">2</Th>
+      <Td scope="row">2</Td>
       <Td>Jacob</Td>
       <Td>Thornton</Td>
       <Td>@fat</Td>
     </Tr>
     <Tr>
-      <Th scope="row">3</Th>
+      <Td scope="row">3</Td>
       <Td colSpan="2">Larry the Bird</Td>
       <Td>@twitter</Td>
     </Tr>
