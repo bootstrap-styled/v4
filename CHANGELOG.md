@@ -1,3 +1,10 @@
+## [3.0.10](https://github.com/bootstrap-styled/v4/compare/v3.0.9...v3.0.10) (2019-03-11)
+
+
+### Bug Fixes
+
+* **doc:** using @rollup-umd/deploy to deploy page ([1b72ffb](https://github.com/bootstrap-styled/v4/commit/1b72ffb))
+
 ## [3.0.9](https://github.com/bootstrap-styled/v4/compare/v3.0.8...v3.0.9) (2019-03-10)
 
 
