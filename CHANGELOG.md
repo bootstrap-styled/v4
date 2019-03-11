@@ -1,3 +1,10 @@
+## [3.0.11](https://github.com/bootstrap-styled/v4/compare/v3.0.10...v3.0.11) (2019-03-11)
+
+
+### Bug Fixes
+
+* **documentation:** Remove react-styleguidist and install @rollup-umd/documentation@2.0.0 that inclu ([2e5759b](https://github.com/bootstrap-styled/v4/commit/2e5759b))
+
 ## [3.0.10](https://github.com/bootstrap-styled/v4/compare/v3.0.9...v3.0.10) (2019-03-11)
 
 
