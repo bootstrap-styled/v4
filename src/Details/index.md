@@ -3,6 +3,8 @@ The `<Details />` component specifies additional details that the user can view 
 `<Details />` component example:
 
 ```js
+import { Details, Summary, P } from '$PACKAGE_NAME';
+
 <Details>
   <Summary>Copyright 2016-2018.</Summary>
   <P> - by YeuTech All Rights Reserved.</P>

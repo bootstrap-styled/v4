@@ -2,6 +2,7 @@ const { createConfig } = require('@rollup-umd/documentation');
 const pkg = require('./package.json');
 
 const config = createConfig({
+  assetsDir: '',
   pagePerSection: true,
 });
 

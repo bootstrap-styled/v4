@@ -5,7 +5,8 @@ Add react `state` and `handleClick` function or use directly our example below.
 `<Collapse />` component example:
 
 ```js
-console.log(Button)
+import { Button, Collapse, P } from '$PACKAGE_NAME';
+
 
 initialState = {
   isOpen: false,

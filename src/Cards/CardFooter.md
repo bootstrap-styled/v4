@@ -1,6 +1,15 @@
 `<CardFooter />` component example:
 
 ```js
+import {
+  Card,
+  CardBlock,
+  CardTitle,
+  CardText,
+  CardFooter,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Card width="50%">
   <CardBlock>
     <CardTitle>Special Title Treatment</CardTitle>

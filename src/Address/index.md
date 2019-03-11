@@ -5,6 +5,8 @@ This component has no props so you should use it only to let web crawler (google
 `<Address />` component example:
 
 ```js
+import { Address, Strong, P, A, Small } from '$PACKAGE_NAME';
+
 <Address>
   <Strong>YeuTech</Strong>
   <P className="mb-0">So 6, Duong 25, Phuong 10</P>

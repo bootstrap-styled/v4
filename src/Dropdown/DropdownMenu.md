@@ -8,5 +8,5 @@
 </DropdownMenu>
 ```
 
-> > In order to work, this component must wrapped inside a `<Dropdown />` component.
+> In order to work, this component must wrapped inside a `<Dropdown />` component.
 

@@ -1,6 +1,8 @@
 `<Li />` component example:
 
 ```js
+import { Ul, Li } from '$PACKAGE_NAME';
+
 <Ul>
   <Li>Cras justo odio</Li>
   <Li>Dapibus ac facilisis in</Li>

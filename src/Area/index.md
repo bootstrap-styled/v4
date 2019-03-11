@@ -5,6 +5,8 @@ This component have no props.
 `<Area />` component example:
 
 ```js
+import { P, Img, Area } from '$PACKAGE_NAME';
+
 <div>
   <P>Click on the sun or on one of the planets to watch it closer:</P>
   <Img src="https://www.w3schools.com/tags/planets.gif" width="145" height="126" alt="Planets" useMap="#planetmap" />

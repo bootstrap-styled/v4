@@ -1,6 +1,13 @@
 `<ButtonDropdown />` component example:
 
 ```js
+import {
+  ButtonDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from '$PACKAGE_NAME';
+
 initialState = {
   dropdownOpen: false,
 };

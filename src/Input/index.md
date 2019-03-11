@@ -1,6 +1,12 @@
 `<Input />` component example:
 
 ```js
+import { 
+  Form,
+  Input,
+  Option, 
+} from '$PACKAGE_NAME';
+
 <Form>
   <Input type="text" name="text" placeholder="Insert text" />
   <Input type="select" name="select">
@@ -14,6 +20,15 @@
 Different `<Input />` **type**:
 
 ```js
+import { 
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Option,
+  FormText, 
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup>
     <Label htmlFor="exampleEmail">Static</Label>

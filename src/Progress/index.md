@@ -1,6 +1,11 @@
 `<Progress />` component example:
 
 ```js
+import {
+  Progress,
+  ProgressBar,
+} from '$PACKAGE_NAME';
+
 <div>
   <div className="text-center">0%</div>
   <Progress>

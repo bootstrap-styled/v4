@@ -1,6 +1,8 @@
 `<Select />` component example:
 
 ```js
+import { Select, Option } from '$PACKAGE_NAME';
+
 <Select>
   <Option value="bootstrap">Bootstrap</Option>
   <Option value="styled">Styled</Option>

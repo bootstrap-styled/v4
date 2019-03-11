@@ -1,6 +1,15 @@
 `<FormFeedback />` component example:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  FormFeedback,
+  FormText,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup color="success">
     <Label>Input with success</Label>
@@ -26,6 +35,13 @@
 `<FormFeedback />` component example with **checkboxes** and **radios**:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup color="success">
     <Label check>

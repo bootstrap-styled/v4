@@ -1,6 +1,18 @@
 `<Header />` component example:
 
 ```js
+import { 
+  Header, 
+  H3, 
+  Nav,
+  NavItem,
+  NavLink,
+  NavDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,  
+} from '$PACKAGE_NAME';
+
 initialState = {
   isOpen: false,
 };
