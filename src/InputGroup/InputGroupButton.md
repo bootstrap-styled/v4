@@ -1,6 +1,13 @@
 `<InputGroupButton />` component example:
 
 ```js
+import {
+  InputGroup,
+  Input,
+  InputGroupButton,
+} from '$PACKAGE_NAME';
+
+
 <InputGroup>
   <InputGroupButton>
     I'm a button
@@ -8,13 +15,17 @@
   <Input />
 </InputGroup>
 ```
-```js
-<React.Fragment>
-  <InputGroup>
-    <InputGroupButton color="danger">To the Left!</InputGroupButton>
-    <Input placeholder="and..." />
-    <InputGroupButton color="success">To the Right!</InputGroupButton>
-  </InputGroup>
-</React.Fragment>
 
+```js
+import {
+  InputGroup,
+  Input,
+  InputGroupButton,
+} from '$PACKAGE_NAME';
+
+<InputGroup>
+  <InputGroupButton color="danger">To the Left!</InputGroupButton>
+  <Input placeholder="and..." />
+  <InputGroupButton color="success">To the Right!</InputGroupButton>
+</InputGroup>
 ```

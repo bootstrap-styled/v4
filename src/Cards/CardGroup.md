@@ -1,6 +1,19 @@
 `<CardGroup />` component example:
 
 ```js
+import {
+  CardGroup,
+  Card,
+  CardImg,
+  CardBlock,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  CardFooter,
+  Button,
+  Small,
+} from '$PACKAGE_NAME';
+
 <CardGroup>
   <Card>
     <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />

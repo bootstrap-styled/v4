@@ -1,6 +1,8 @@
 `<ButtonToolbar />` component example:
 
 ```js
+import { Button, ButtonToolbar, ButtonGroup } from '$PACKAGE_NAME';
+
 <ButtonToolbar>
   <ButtonGroup>
     <Button>1</Button>
@@ -22,6 +24,8 @@
 `<ButtonToolbar />` component example with `<InputGroup />`:
 
 ```js
+import { Button, ButtonToolbar, ButtonGroup, Input, InputGroup, InputGroupAddon } from '$PACKAGE_NAME';
+
 <ButtonToolbar>
   <ButtonGroup className="mr-2">
     <Button>1</Button>
@@ -39,6 +43,8 @@
 `<ButtonToolbar />` component example with **justified displayed** `<InputGroup />`:
 
 ```js
+import { Button, ButtonToolbar, ButtonGroup, Input, InputGroup, InputGroupAddon } from '$PACKAGE_NAME';
+
 <ButtonToolbar className="justify-content-between">
   <ButtonGroup>
     <Button>1</Button>

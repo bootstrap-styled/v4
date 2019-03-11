@@ -1,6 +1,12 @@
 `<ListGroupItemText />` component example:
 
 ```js
+import { 
+  ListGroup, 
+  ListGroupItem,
+  ListGroupItemText,
+} from '$PACKAGE_NAME';
+
 <ListGroup>
   <ListGroupItem active>
     <ListGroupItemText>

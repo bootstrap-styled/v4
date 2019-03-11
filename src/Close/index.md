@@ -1,6 +1,7 @@
 `<Close />` component example:
 
 ```js
-const onDismiss = () => alert('Add your callback action.');
-<Close onDismiss={onDismiss}/>
+import { Close } from '$PACKAGE_NAME';
+
+<Close onDismiss={() => alert('Add your callback action.')}/>
 ```

@@ -1,6 +1,13 @@
 `<FormCustom />` component example:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  FormCustom,
+  Hr,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup>
     <FormCustom>Check this custom checkbox</FormCustom>

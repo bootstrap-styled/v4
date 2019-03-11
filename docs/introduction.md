@@ -27,6 +27,18 @@ This is example is a counter made with React and Bootstrap Styled with a custom 
 - Use a few bootstrap components such `<Alert />`, `<Code />`, `<A />`, `<Strong />`, `<Small />`
 
 ```js
+import {
+  Card,
+  CardBlock,
+  H3,
+  Small,
+  A,
+  Strong,
+  Badge,
+  Code,
+  Button,
+  Alert,
+} from '@bootstrap-styled/v4';
 initialState = {
   counter: 1336
 };

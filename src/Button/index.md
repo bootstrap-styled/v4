@@ -1,6 +1,8 @@
 `<Button />` component example:
 
 ```js
+import { Button } from '$PACKAGE_NAME';
+
 <div>
   <Button color="primary">primary</Button>
   <Button color="secondary">secondary</Button>
@@ -15,6 +17,8 @@
 `<Button />` component example with specific tags:
 
 ```js
+import { Button, A, Input } from '$PACKAGE_NAME';
+
 <div>
   <Button tag={A} color="primary" href="javascript:;">Link</Button>
   <Button color="primary" type="submit">Button</Button>
@@ -27,6 +31,8 @@
 Outline `<Button />` component example with specific tags:
 
 ```js
+import { Button } from '$PACKAGE_NAME';
+
 <div>
   <Button outline color="primary">primary</Button>
   <Button outline color="secondary">secondary</Button>
@@ -40,6 +46,8 @@ Outline `<Button />` component example with specific tags:
 `<Button />` component example with specific sizes and display:
 
 ```js
+import { Button } from '$PACKAGE_NAME';
+
 <div>
   <Button color="primary" size="sm">Small Button</Button>
   <Button color="secondary" size="sm">Small Button</Button>
@@ -55,6 +63,8 @@ Outline `<Button />` component example with specific tags:
 `<Button />` component example with states:
 
 ```js
+import { Button, A } from '$PACKAGE_NAME';
+
 <div>
   <div>
     <Button tag={A} color="primary" size="lg" active>Active primary link</Button>
@@ -70,12 +80,13 @@ Outline `<Button />` component example with specific tags:
 Radio `<Button />` component example:
 
 ```js
+import { P, Button, ButtonGroup } from '$PACKAGE_NAME';
+
 initialState = {
   cSelected: [],
 };
-const onRadioBtnClick = function(rSelected) {
-  setState({ rSelected });
-};
+const onRadioBtnClick = (rSelected) => setState({ rSelected });
+
 <div>
   <div className="my-3">
     <ButtonGroup>
@@ -91,10 +102,13 @@ const onRadioBtnClick = function(rSelected) {
 Checkbox `<Button />` component example with:
 
 ```js
+import { Button, ButtonGroup, P } from '$PACKAGE_NAME';
+
 initialState = {
   cSelected: [],
 };
-const onCheckboxBtnClick = function(selected) {
+
+const onCheckboxBtnClick = (selected) => {
   const index = state.cSelected.indexOf(selected);
   if (index < 0) {
     state.cSelected.push(selected);
@@ -103,6 +117,7 @@ const onCheckboxBtnClick = function(selected) {
   }
   setState({ cSelected: [...state.cSelected] });
 };
+
 <div>
   <div className="my-3">
     <ButtonGroup>

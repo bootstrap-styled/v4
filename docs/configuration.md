@@ -3,7 +3,7 @@ You can import individual components, it will work.
 To get all the bootstrap class utilities and use a different theme, you must install `@bootstrap-styled/provider` package.
 
 ```bash
-$ npm install --save @bootstrap-styled/provider
+npm install --save @bootstrap-styled/provider
 ```
 
 Wrap your react application into it.

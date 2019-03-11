@@ -1,6 +1,12 @@
 `<Breadcrumb />` component example:
 
 ```js
+import {
+  A,
+  Breadcrumb,
+  BreadcrumbItem,
+} from '$PACKAGE_NAME';
+
 <div>
   <Breadcrumb>
     <BreadcrumbItem active>Home</BreadcrumbItem>

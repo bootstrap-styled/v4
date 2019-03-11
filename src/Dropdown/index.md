@@ -1,16 +1,19 @@
 `<Dropdown />` component example:
 
 ```js
-console.log(Dropdown)
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from '$PACKAGE_NAME';
 
 initialState = {
   isOpen: false,
 };
 
 <Dropdown isOpen={state.isOpen} toggle={() => setState({ isOpen: !state.isOpen })}>
- <DropdownToggle caret>
-   Dropdown
- </DropdownToggle>
+ <DropdownToggle caret>Dropdown</DropdownToggle>
  <DropdownMenu>
    <DropdownItem header>Header</DropdownItem>
    <DropdownItem disabled>Disabled</DropdownItem>

@@ -1,6 +1,17 @@
 `<Form />` component example:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  Option,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup>
     <Label htmlFor="inline-form-input">Label</Label>
@@ -33,6 +44,20 @@
 `<Form />` component example with **grids**:
 
 ```js
+import {
+  Col,
+  Form,
+  FormGroup,
+  FormText,
+  Legend,
+  Label,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  Option,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup row>
     <Label htmlFor="example-email-form" sm={2}>Email</Label>
@@ -119,6 +144,16 @@
 **Inline** `<Form />` component example:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Form inline className="justify-content-between">
   <FormGroup>
     <Label hidden for="inlineFormInput">Name</Label>
@@ -143,6 +178,16 @@
 **Inline** `<Form />` component example with dropdown:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  FormCustom,
+  Select,
+  Option,
+  Label,
+  Button,
+} from '$PACKAGE_NAME';
+
 <Form inline>
   <Label htmlFor="inlineFormCustomSelect" className="mr-3">Preference</Label>
   <Select id="inlineFormCustomSelect" defaultValue="Default Select">
@@ -157,10 +202,17 @@
 </Form>
 ```
 
-
 `<Form />` component example with specific **sizing** label:
 
 ```js
+import {
+  Form,
+  Input,
+  FormGroup,
+  FormCustom,
+  Option,
+} from '$PACKAGE_NAME';
+
 <Form>
   <Input placeholder="lg" size="lg" />
   <Input placeholder="default" />
@@ -177,16 +229,24 @@
     </Input>
   </FormGroup>
   <FormGroup>
-  <Input type="select" size="sm">
-    <Option>Small Select</Option>
-  </Input>
-    </FormGroup>
+    <Input type="select" size="sm">
+      <Option>Small Select</Option>
+    </Input>
+  </FormGroup>
 </Form>
 ```
 
 `<Form />` component example with **grid** **sizing** label:
 
 ```js
+import {
+  Form,
+  Input,
+  Col,
+  Label,
+  FormGroup,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup row>
     <Label htmlFor="example-email-input-form" sm={2} size="lg">Email</Label>
@@ -206,6 +266,16 @@
 `<Form />` component example with **hidden** label:
 
 ```js
+import {
+  Form,
+  Input,
+  Col,
+  Label,
+  Button,
+  FormGroup,
+} from '$PACKAGE_NAME';
+
+
 <Form inline>
   <FormGroup className="mr-2">
     <Label htmlFor="example-email-input-hidden" hidden>Email</Label>
@@ -222,6 +292,13 @@
 `<Form />` component example with **checkboxes** and **radio** :
 
 ```js
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup check>
     <Label check>
@@ -266,6 +343,13 @@
 `<Form />` component example with **inline** **checkboxes** and **radio** :
 
 ```js
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup check inline>
     <Label check>
@@ -310,6 +394,13 @@
 `<Form />` component example with **column sizing** :
 
 ```js
+import {
+  Form,
+  FormGroup,
+  Col,
+  Input,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup row>
     <Col sm={2}>
@@ -329,6 +420,12 @@
 **Stacked** `<Form />` component example:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  FormCustom,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup>
     <FormCustom radio={{ id: 'id-1', name: 'name'}}>Check this custom radio</FormCustom>
@@ -346,6 +443,12 @@
 `<Form />` component example with custom variations:
 
 ```js
+import {
+  Form,
+  FormGroup,
+  FormCustom,
+} from '$PACKAGE_NAME';
+
 <Form>
   <FormGroup color="success">
     <FormCustom >Check this custom checkbox</FormCustom>
