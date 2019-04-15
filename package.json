@@ -189,7 +189,7 @@
     "map-to-css-modules": "^1.0.6",
     "prop-types": "^15.7.2",
     "react-portal": "^4.2.0",
-    "react-transition-group": "^2.6.0",
+    "react-transition-group": "^3.0.0",
     "tether-fix": "^1.4.0-fix-es"
   },
   "peerDependencies": {
