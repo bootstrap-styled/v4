@@ -11,8 +11,8 @@ import { Address, Strong, P, A, Small } from '$PACKAGE_NAME';
   <Strong>YeuTech</Strong>
   <P className="mb-0">So 6, Duong 25, Phuong 10</P>
   <P>Quan 6, TP. HCMC</P>
-  <A target="_blank" href="https://bootstrap-styled.yeutech.com">
-    <Small>bootstrap-styled.yeutech.com</Small>
+  <A target="_blank" href="https://bootstrap-styled.github.io">
+    <Small>bootstrap-styled.github.io</Small>
   </A>
 </Address>
 ```

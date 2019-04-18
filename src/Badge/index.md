@@ -20,7 +20,7 @@ import { P, Badge, Button } from '$PACKAGE_NAME';
 <div>
   <P>Messages <Badge color="primary">33</Badge></P>
   <Button>Messages <Badge color="danger">33</Badge></Button>
-  <P>Updates <Badge color="warning" pill tag={A} href="https://bootstrap-styled.yeutech.com" target="_blank">1</Badge></P>
+  <P>Updates <Badge color="warning" pill tag={A} href="https://bootstrap-styled.github.io" target="_blank">1</Badge></P>
 </div>
 
 ```

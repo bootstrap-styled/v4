@@ -187,7 +187,7 @@ const ListGroup = styled(ListGroupUnstyled)`
       margin-bottom: -${props.theme['$list-group-border-width']};
       background-color: ${props.theme['$list-group-bg']};
       border: ${props.theme['$list-group-border-width']} solid ${props.theme['$list-group-border-color']};
-    
+      color: ${props.theme['$list-group-color']};
       &:first-child {
         ${borderTopRadius(
     props.theme['$enable-rounded'],
