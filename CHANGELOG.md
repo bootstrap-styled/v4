@@ -1,3 +1,10 @@
+## [3.0.13](https://github.com/bootstrap-styled/v4/compare/v3.0.12...v3.0.13) (2019-04-18)
+
+
+### Bug Fixes
+
+* **ListGroupItem:** added missing css rule. ([2cb3034](https://github.com/bootstrap-styled/v4/commit/2cb3034))
+
 ## [3.0.12](https://github.com/bootstrap-styled/v4/compare/v3.0.11...v3.0.12) (2019-03-11)
 
 
