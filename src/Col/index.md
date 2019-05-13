@@ -15,3 +15,21 @@ import { Col, Row } from '$PACKAGE_NAME';
   </Col>
 </Row>
 ```
+
+You can use `offset`, `size`, `push`, `pull` modifier on any `Col` component:
+
+```js
+<Row>
+  <Col lg={2} md={{ offset: 4 }}>Hello</Col>
+  <Col lg={10} md={2}>World</Col>
+</Row>
+```
+
+Left empty to have automatic columns:
+
+```js
+<Row>
+  <Col>Hello</Col>
+  <Col>World</Col>
+</Row>
+```
