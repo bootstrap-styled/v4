@@ -1,3 +1,11 @@
+## [3.0.14](https://github.com/bootstrap-styled/v4/compare/v3.0.13...v3.0.14) (2019-05-13)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([eca3f20](https://github.com/bootstrap-styled/v4/commit/eca3f20))
+* **Grid:** fix example missing imporrts ([f394b4f](https://github.com/bootstrap-styled/v4/commit/f394b4f))
+
 ## [3.0.13](https://github.com/bootstrap-styled/v4/compare/v3.0.12...v3.0.13) (2019-04-18)
 
 
