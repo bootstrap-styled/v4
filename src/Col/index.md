@@ -19,6 +19,8 @@ import { Col, Row } from '$PACKAGE_NAME';
 You can use `offset`, `size`, `push`, `pull` modifier on any `Col` component:
 
 ```js
+import { Col, Row } from '$PACKAGE_NAME';
+
 <Row>
   <Col lg={2} md={{ offset: 4 }}>Hello</Col>
   <Col lg={10} md={2}>World</Col>
@@ -28,6 +30,8 @@ You can use `offset`, `size`, `push`, `pull` modifier on any `Col` component:
 Left empty to have automatic columns:
 
 ```js
+import { Col, Row } from '$PACKAGE_NAME';
+
 <Row>
   <Col>Hello</Col>
   <Col>World</Col>
