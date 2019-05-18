@@ -1,3 +1,10 @@
+## [3.0.15](https://github.com/bootstrap-styled/v4/compare/v3.0.14...v3.0.15) (2019-05-18)
+
+
+### Bug Fixes
+
+* **Select component:** fixed Select component for SSR ([d8e6828](https://github.com/bootstrap-styled/v4/commit/d8e6828)), closes [#121](https://github.com/bootstrap-styled/v4/issues/121)
+
 ## [3.0.14](https://github.com/bootstrap-styled/v4/compare/v3.0.13...v3.0.14) (2019-05-13)
 
 
