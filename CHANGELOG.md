@@ -1,3 +1,10 @@
+## [3.0.16](https://github.com/bootstrap-styled/v4/compare/v3.0.15...v3.0.16) (2019-06-17)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([6e895ae](https://github.com/bootstrap-styled/v4/commit/6e895ae))
+
 ## [3.0.15](https://github.com/bootstrap-styled/v4/compare/v3.0.14...v3.0.15) (2019-05-18)
 
 
