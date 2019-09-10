@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import omit from 'lodash.omit';
 import parseTransition from '@bootstrap-styled/utils/lib/parseTransition';
-import { collapse } from '@bootstrap-styled/css-utils/lib/transition';
+import { collapseMixin } from '@bootstrap-styled/css-utils/lib/transition';
 import mapToCssModules from 'map-to-css-modules';
 
 const SHOW = 'SHOW';
@@ -213,5 +213,5 @@ class Collapse extends Component {
 
 
 export default styled(Collapse)`
-  ${(props) => collapse(props.theme['$enable-transitions'], props.theme['$transition-collapse'])}
+  ${(props) => collapseMixin(props.theme['$enable-transitions'], props.theme['$transition-collapse'])}
 `;
