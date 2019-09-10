@@ -1,3 +1,12 @@
+## [3.1.1](https://github.com/bootstrap-styled/v4/compare/v3.1.0...v3.1.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* **Collapse:** collapse can now work without the BootstrapProvider ([fe80f0f](https://github.com/bootstrap-styled/v4/commit/fe80f0f)), closes [#125](https://github.com/bootstrap-styled/v4/issues/125)
+* **dependencies:** upgrade bootstrap-styled dependency ([3354be9](https://github.com/bootstrap-styled/v4/commit/3354be9))
+* **react:** locked version of react >=16.0.0 <=16.8.6 due to [#144](https://github.com/bootstrap-styled/v4/issues/144) ([58adafa](https://github.com/bootstrap-styled/v4/commit/58adafa))
+
 # [3.1.0](https://github.com/bootstrap-styled/v4/compare/v3.0.16...v3.1.0) (2019-07-27)
 
 
