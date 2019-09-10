@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import omit from 'lodash.omit';
 import parseTransition from '@bootstrap-styled/utils/lib/parseTransition';
+import { collapse } from '@bootstrap-styled/css-utils/lib/transition';
 import mapToCssModules from 'map-to-css-modules';
 
 const SHOW = 'SHOW';
@@ -11,7 +13,7 @@ const HIDE = 'HIDE';
 const HIDDEN = 'HIDDEN';
 
 /* eslint-disable react/prop-types */
-export default class Collapse extends Component {
+class Collapse extends Component {
   static propTypes = {
     /**
      * @ignore
@@ -36,6 +38,7 @@ export default class Collapse extends Component {
     onClosed: PropTypes.func,
     /** Theme variables. Can be: */
     theme: PropTypes.shape({
+      '$enable-transitions': PropTypes.bool,
       '$transition-collapse': PropTypes.string,
     }),
     /**
@@ -48,6 +51,7 @@ export default class Collapse extends Component {
   static defaultProps = {
     isOpen: false,
     theme: {
+      '$enable-transitions': true,
       '$transition-collapse': 'height .35s ease',
     },
     tag: 'div',
@@ -206,3 +210,8 @@ export default class Collapse extends Component {
     );
   }
 }
+
+
+export default styled(Collapse)`
+  ${(props) => collapse(props.theme['$enable-transitions'], props.theme['$transition-collapse'])}
+`;
