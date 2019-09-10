@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import omit from 'lodash.omit';
 import parseTransition from '@bootstrap-styled/utils/lib/parseTransition';
-import { collapseMixin } from '@bootstrap-styled/css-utils/lib/transition';
+import { collapse as collapseMixin } from '@bootstrap-styled/css-utils/lib/transition';
 import mapToCssModules from 'map-to-css-modules';
 
 const SHOW = 'SHOW';
