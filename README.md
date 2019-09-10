@@ -21,12 +21,20 @@
 
 ## Table of Contents
 
+  - [Become a contributor](#become-a-contributor)
   - [Documentation](#documentation)
   - [Contributing](#contributing)
   - [License MIT](#license-mit)
 
 ---
 
+## Become a contributor
+
+We are missing contributors to keep up to date the project with the latest react upgrade.
+
+This is why we have recently locked the react compatible version between `>=16.0.0 <=16.8.6`.
+
+If you wish to join the core team and help to follow react upgrades, please contact `dka@yeutech.com`. 
 
 ## Documentation
 

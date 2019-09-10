@@ -109,9 +109,9 @@
     "mini-html-webpack-plugin": "^1.0.0",
     "pre-commit": "^1.2.2",
     "raf": "^3.4.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
+    "react": ">=16.0.0 <=16.8.6",
+    "react-dom": ">=16.0.0 <=16.8.6",
+    "react-test-renderer": ">=16.0.0 <=16.8.6",
     "rimraf": "^2.6.3",
     "rollup": "^1.15.6",
     "semantic-release": "^15.13.16",
@@ -145,7 +145,7 @@
     "coverageThreshold": {
       "global": {
         "statements": 90,
-        "branches": 75,
+        "branches": 74,
         "functions": 85,
         "lines": 90
       }
@@ -193,8 +193,8 @@
     "tether-fix": "^1.4.0-fix-es"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": ">=16.0.0 <=16.8.6",
+    "react-dom": ">=16.0.0 <=16.8.6",
     "styled-components": "^4.0.0"
   },
   "publishConfig": {
