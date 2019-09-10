@@ -182,7 +182,7 @@
     "@bootstrap-styled/utils": "^1.8.0",
     "@rollup-umd/documentation-cli": "^1.1.3",
     "basic-math-utils": "^0.3.4",
-    "bootstrap-styled": "^2.5.0",
+    "bootstrap-styled": "^2.5.1",
     "classnames": "^2.2.6",
     "lodash.isfunction": "^3.0.9",
     "lodash.omit": "^4.5.0",
