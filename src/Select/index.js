@@ -22,7 +22,8 @@ class SelectUnstyled extends React.Component { // eslint-disable-line react/pref
   }
 
   // Android browser fix: https://v4-alpha.getbootstrap.com/getting-started/browsers-devices/#android-stock-browser
-  componentWillMount() {
+  /* eslint-disable-next-line camelcase */
+  UNSAFE_componentWillMount() {
     if (typeof window !== 'undefined') {
       const nua = navigator.userAgent;
       const isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
