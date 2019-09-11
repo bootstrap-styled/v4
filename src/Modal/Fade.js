@@ -81,8 +81,7 @@ function Fade(props) {
               className,
               baseClass,
               isActive && baseClassActive
-            ), cssModule)
-            }
+            ), cssModule)}
             {...childProps}
           >
             {children}
