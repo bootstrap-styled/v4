@@ -82,7 +82,7 @@ class ProgressBar extends React.Component { // eslint-disable-line react/prefer-
     return (
       <div
         className={progressBarClasses}
-        style={Object.assign({ width: this.getWidth(valueNow, valueMin, valueMax) }, { height })}
+        style={({ width: this.getWidth(valueNow, valueMin, valueMax), height })}
         {...rest}
       >
         {children}
