@@ -431,6 +431,7 @@ declare module '@bootstrap-styled/v4' {
     onOpened?: Function;
     onClosed?: Function;
     theme?: {
+      '$enable-transitions'?: boolean;
       '$transition-collapse'?: string;
     };
     cssModule?: object;
