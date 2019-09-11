@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/bootstrap-styled/v4/compare/v3.1.3...v3.1.4) (2019-09-11)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade react to v16.9.0 ([3504270](https://github.com/bootstrap-styled/v4/commit/3504270))
+
 ## [3.1.3](https://github.com/bootstrap-styled/v4/compare/v3.1.2...v3.1.3) (2019-09-11)
 
 
