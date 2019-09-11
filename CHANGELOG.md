@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/bootstrap-styled/v4/compare/v3.1.1...v3.1.2) (2019-09-11)
+
+
+### Bug Fixes
+
+* **typescript:** Moved typescript definition to root of the package ([ff21225](https://github.com/bootstrap-styled/v4/commit/ff21225))
+
 ## [3.1.1](https://github.com/bootstrap-styled/v4/compare/v3.1.0...v3.1.1) (2019-09-10)
 
 
