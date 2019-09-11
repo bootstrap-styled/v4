@@ -68,12 +68,14 @@ class Collapse extends Component {
     height: null,
   };
 
-  componentWillMount() {
+  /* eslint-disable-next-line camelcase */
+  UNSAFE_componentWillMount() {
     this.updateVisibility({ collapse: this.props.isOpen ? SHOWN : HIDDEN });
     this.updateTransition({ delay: this.props.delay, theme: this.props.theme });
   }
 
-  componentWillReceiveProps(nextProps) {
+  /* eslint-disable-next-line camelcase */
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const willOpen = nextProps.isOpen;
     const { collapse } = this.state;
 

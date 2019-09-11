@@ -214,7 +214,8 @@ class ModalUnstyled extends React.Component {
     this._isMounted = true;
   }
 
-  componentWillReceiveProps(nextProps) {
+  /* eslint-disable-next-line camelcase */
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.isOpen && !this.props.isOpen) {
       this.setState({ isOpen: nextProps.isOpen });
     }
