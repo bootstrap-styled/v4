@@ -139,7 +139,8 @@ class AlertUnstyled extends React.Component { // eslint-disable-line react/prefe
     exited: false,
   };
 
-  componentWillMount() {
+  /* eslint-disable-next-line camelcase */
+  UNSAFE_componentWillMount() {
     this.initializeIsOpen(this.props);
     if (this.props.uncontrolled) {
       if (this.state.uncontrolledOpen) {
@@ -160,7 +161,8 @@ class AlertUnstyled extends React.Component { // eslint-disable-line react/prefe
   }
 
   /* eslint-enable no-console */
-  componentWillReceiveProps(nextProps) {
+  /* eslint-disable-next-line camelcase */
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.isOpen) {
       this.setState({ exited: false });
     }
