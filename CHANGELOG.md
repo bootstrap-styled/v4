@@ -1,3 +1,10 @@
+## [3.1.5](https://github.com/bootstrap-styled/v4/compare/v3.1.4...v3.1.5) (2019-09-16)
+
+
+### Bug Fixes
+
+* **cards:** remove bad file in tests ([f38c3ac](https://github.com/bootstrap-styled/v4/commit/f38c3ac)), closes [#152](https://github.com/bootstrap-styled/v4/issues/152)
+
 ## [3.1.4](https://github.com/bootstrap-styled/v4/compare/v3.1.3...v3.1.4) (2019-09-11)
 
 
