@@ -1,8 +1,0 @@
-alias ll='ls -altr'
-alias dc='docker-compose'
-alias rus='rollup-umd-scripts'
-alias umd='npx @yeutech/rollup-umd-scripts'
-alias vpn='sudo openvpn /home/ajt/private/ajt.ovpn'
-alias j='./node_modules/jest-cli/.bin/jest'
-alias gitshow='git log --oneline --decorate --all --graph'
-test
