@@ -21,3 +21,4 @@ coverage/
 docs/
 reports/
 /styleguide
+index.d.ts
