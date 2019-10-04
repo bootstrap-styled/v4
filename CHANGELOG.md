@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/bootstrap-styled/v4/compare/v3.1.6...v3.2.0) (2019-10-04)
+
+
+### Features
+
+* **Col:** add option for order-* ([3816fb7](https://github.com/bootstrap-styled/v4/commit/3816fb7))
+
 ## [3.1.6](https://github.com/bootstrap-styled/v4/compare/v3.1.5...v3.1.6) (2019-09-26)
 
 
