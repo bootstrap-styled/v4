@@ -83,16 +83,17 @@ describe('<Col />', () => {
     });
     expect(renderedComponent.find('div').at(1).hasClass('col-md-auto')).toEqual(true);
   });
-  it('should have a classes .col .col-sm-6 .sm-push-2 .sm-pull-2 .sm-offset-2', () => {
+  it('should have a classes .col .col-sm-6 .sm-push-2 .sm-pull-2 .sm-offset-1 .sm-order-2', () => {
     const renderedComponent = renderComponentUsingTheme({
       sm: {
-        size: 6, push: 2, pull: 2, offset: 1,
+        size: 6, push: 2, pull: 2, offset: 1, order: 2,
       },
     });
     expect(renderedComponent.find('div').at(1).hasClass('col-sm-6')).toEqual(true);
     expect(renderedComponent.find('div').at(1).hasClass('push-sm-2')).toEqual(true);
     expect(renderedComponent.find('div').at(1).hasClass('pull-sm-2')).toEqual(true);
     expect(renderedComponent.find('div').at(1).hasClass('offset-sm-1')).toEqual(true);
+    expect(renderedComponent.find('div').at(1).hasClass('order-sm-2')).toEqual(true);
   });
   it('should have children with a theme', () => {
     const renderedComponent = renderComponentUsingTheme({
