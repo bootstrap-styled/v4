@@ -394,6 +394,7 @@ declare module '@bootstrap-styled/v4' {
         push?: number | string;
         pull?: number | string;
         offset?: number | string;
+        order?: number | string;
       });
 
   export type ColProps = {

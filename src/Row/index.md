@@ -19,7 +19,7 @@ import {
 </Row>
 ```
 
-You can use `offset`, `size`, `push`, `pull` modifier on any `Col` component:
+You can use `offset`, `order`, `size`, `push`, `pull` modifier on any `Col` component:
 
 ```js
 import { Col, Row } from '$PACKAGE_NAME';
