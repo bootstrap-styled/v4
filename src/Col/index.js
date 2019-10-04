@@ -18,6 +18,7 @@ const columnProps = PropTypes.oneOfType([
     push: stringOrNumberProp,
     pull: stringOrNumberProp,
     offset: stringOrNumberProp,
+    order: stringOrNumberProp,
   }),
 ]);
 
@@ -119,6 +120,7 @@ class ColUnstyled extends React.Component { // eslint-disable-line react/prefer-
           [`push${colSizeInterfix}${columnProp.push}`]: columnProp.push,
           [`pull${colSizeInterfix}${columnProp.pull}`]: columnProp.pull,
           [`offset${colSizeInterfix}${columnProp.offset}`]: columnProp.offset,
+          [`order${colSizeInterfix}${columnProp.order}`]: columnProp.order,
         })), cssModule);
       } else {
         colClass = getColumnSizeClass(isXs, colWidth, columnProp);
