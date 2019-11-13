@@ -324,7 +324,7 @@ const Tooltip = styled(TooltipUnstyled)`
       margin-left: -5px;
       content: "";
       border-width: 5px 5px 0;
-      border-top-color: #000
+      border-top-color: ${props.theme['$tooltip-arrow-color']};
     }
     
     &.tooltip.bs-tether-element-attached-left,
@@ -340,7 +340,7 @@ const Tooltip = styled(TooltipUnstyled)`
       margin-top: -5px;
       content: "";
       border-width: 5px 5px 5px 0;
-      border-right-color: #000
+      border-right-color: ${props.theme['$tooltip-arrow-color']};
     }
     
     &.tooltip.bs-tether-element-attached-top,
@@ -356,7 +356,7 @@ const Tooltip = styled(TooltipUnstyled)`
       margin-left: -5px;
       content: "";
       border-width: 0 5px 5px;
-      border-bottom-color: #000
+      border-bottom-color: ${props.theme['$tooltip-arrow-color']};
     }
     
     &.tooltip.bs-tether-element-attached-right,
@@ -372,7 +372,7 @@ const Tooltip = styled(TooltipUnstyled)`
       margin-top: -5px;
       content: "";
       border-width: 5px 0 5px 5px;
-      border-left-color: #000
+      border-left-color: ${props.theme['$tooltip-arrow-color']};
     }
     
     & .tooltip-inner {
