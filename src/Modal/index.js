@@ -221,7 +221,8 @@ class ModalUnstyled extends React.Component {
     }
   }
 
-  componentWillUpdate(nextProps, nextState) {
+  /* eslint-disable-next-line camelcase */
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
     if (nextState.isOpen && !this.state.isOpen) {
       this.init();
     }

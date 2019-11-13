@@ -49,6 +49,7 @@
     },
     {
       "name": "UI Components",
+      "sectionDepth": 2,
       "sections": [
         {
           "name": "Layout",
@@ -142,8 +143,7 @@
             "src/Cards/index.js"
           ]
         }
-      ],
-      "sectionDepth": 1
+      ]
     },
     {
       "name": "Developers",
