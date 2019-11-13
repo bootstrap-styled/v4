@@ -1,3 +1,13 @@
+## [3.2.1](https://github.com/bootstrap-styled/v4/compare/v3.2.0...v3.2.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([3b01e6f](https://github.com/bootstrap-styled/v4/commit/3b01e6fa13e1a72b29fa6b60e1c8d253b2d22964))
+* **documentation:** fixing link loading whole page ([e0ee814](https://github.com/bootstrap-styled/v4/commit/e0ee8148db036a274e5d8d924525cb8b5f42d061))
+* **Modal:** using UNSAFE_componentWillUpdate ([7612eeb](https://github.com/bootstrap-styled/v4/commit/7612eeb67716ef3ea16d715e3dea1c81ceb54b85))
+* **Tooltip:** Use the $tooltip-arrow-color variable within the component style ([86e827d](https://github.com/bootstrap-styled/v4/commit/86e827dce790d8cedbb7e117212789b5dc32012c))
+
 # [3.2.0](https://github.com/bootstrap-styled/v4/compare/v3.1.6...v3.2.0) (2019-10-04)
 
 
