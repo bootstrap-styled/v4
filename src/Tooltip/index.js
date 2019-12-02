@@ -10,6 +10,7 @@ import omit from 'lodash.omit';
 import { getTetherAttachments, tetherAttachements } from '@bootstrap-styled/utils/lib/tools';
 import mapToCssModules from 'map-to-css-modules';
 import TetherContent from '../TetherContent';
+import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
 
 const DEFAULT_DELAYS = {
   shape: 0,
@@ -61,14 +62,20 @@ export const propTypes = {
   /** Theme variables. */
   theme: PropTypes.shape({
     '$zindex-tooltip': PropTypes.string,
+    '$tooltip-font-family': PropTypes.string,
+    '$tooltip-font-size': PropTypes.string,
+    '$tooltip-font-weight': PropTypes.string,
     '$tooltip-max-width': PropTypes.string,
     '$tooltip-color': PropTypes.string,
     '$tooltip-bg': PropTypes.string,
+    '$tooltip-border-radius': PropTypes.string,
     '$tooltip-opacity': PropTypes.string,
+    '$tooltip-line-height': PropTypes.string,
     '$tooltip-padding-y': PropTypes.string,
     '$tooltip-padding-x': PropTypes.string,
     '$tooltip-margin': PropTypes.string,
     '$tooltip-arrow-width': PropTypes.string,
+    '$tooltip-arrow-height': PropTypes.string,
     '$tooltip-arrow-color': PropTypes.string,
     '$component-active-color': PropTypes.string,
   }),
@@ -86,14 +93,20 @@ export const defaultProps = {
   toggle: null,
   theme: {
     '$zindex-tooltip': '1070',
+    '$tooltip-font-family': '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    '$tooltip-font-size': '.875rem',
+    '$tooltip-font-weight': '400',
     '$tooltip-max-width': '200px',
     '$tooltip-color': '#fff',
     '$tooltip-bg': '#000',
+    '$tooltip-line-height': '1.5',
+    '$tooltip-border-radius': '.25rem',
     '$tooltip-opacity': '.9',
-    '$tooltip-padding-y': '3px',
-    '$tooltip-padding-x': '8px',
-    '$tooltip-margin': '3px',
-    '$tooltip-arrow-width': '5px',
+    '$tooltip-padding-y': '.25rem',
+    '$tooltip-padding-x': '.5rem',
+    '$tooltip-margin': '0',
+    '$tooltip-arrow-width': '.8rem',
+    '$tooltip-arrow-height': '.4rem',
     '$tooltip-arrow-color': '#000',
   },
 };
@@ -288,12 +301,14 @@ const Tooltip = styled(TooltipUnstyled)`
       position: absolute;
       z-index: ${props.theme['$zindex-tooltip']};
       display: block;
-      font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+      margin: ${props.theme['$tooltip-margin']};
+      font-family: ${props.theme['$tooltip-font-family']};
+      font-size: ${props.theme['$tooltip-font-size']};
       font-style: normal;
-      font-weight: 400;
+      font-weight: ${props.theme['$tooltip-font-weight']};
       letter-spacing: normal;
       line-break: auto;
-      line-height: 1.5;
+      line-height: ${props.theme['$tooltip-line-height']};
       text-align: left;
       text-align: start;
       text-decoration: none;
@@ -302,19 +317,19 @@ const Tooltip = styled(TooltipUnstyled)`
       white-space: normal;
       word-break: normal;
       word-spacing: normal;
-      font-size: .875rem;
+      // Allow breaking very long words so they don't overflow the tooltip's bounds
       word-wrap: break-word;
-      opacity: 0
+      opacity: 0;
     }
     
     &.tooltip.show {
-      opacity: ${props.theme['$tooltip-opacity']}
+      opacity: ${props.theme['$tooltip-opacity']};
     }
     
     &.tooltip.bs-tether-element-attached-bottom,
     &.tooltip.tooltip-top {
       padding: 5px 0;
-      margin-top: -3px
+      margin-top: -3px;
     }
     
     &.tooltip.bs-tether-element-attached-bottom .tooltip-inner:before,
@@ -330,7 +345,7 @@ const Tooltip = styled(TooltipUnstyled)`
     &.tooltip.bs-tether-element-attached-left,
     &.tooltip.tooltip-right {
       padding: 0 5px;
-      margin-left: 3px
+      margin-left: 3px;
     }
     
     &.tooltip.bs-tether-element-attached-left .tooltip-inner:before,
@@ -346,7 +361,7 @@ const Tooltip = styled(TooltipUnstyled)`
     &.tooltip.bs-tether-element-attached-top,
     &.tooltip.tooltip-bottom {
       padding: 5px 0;
-      margin-top: 3px
+      margin-top: 3px;
     }
     
     &.tooltip.bs-tether-element-attached-top .tooltip-inner:before,
@@ -362,7 +377,7 @@ const Tooltip = styled(TooltipUnstyled)`
     &.tooltip.bs-tether-element-attached-right,
     &.tooltip.tooltip-left {
       padding: 0 5px;
-      margin-left: -3px
+      margin-left: -3px;
     }
     
     &.tooltip.bs-tether-element-attached-right .tooltip-inner:before,
@@ -375,13 +390,14 @@ const Tooltip = styled(TooltipUnstyled)`
       border-left-color: ${props.theme['$tooltip-arrow-color']};
     }
     
+    // Wrapper for the tooltip content
     & .tooltip-inner {
       max-width: ${props.theme['$tooltip-max-width']};
       padding: ${props.theme['$tooltip-padding-y']} ${props.theme['$tooltip-padding-x']};
       color: ${props.theme['$tooltip-color']};
       text-align: center;
       background-color: ${props.theme['$tooltip-bg']};
-      border-radius: .25rem
+      ${borderRadius(props.theme['$enable-rounded'], props.theme['$tooltip-border-radius'])};
     }
     
     & .tooltip-inner:before {
@@ -389,7 +405,7 @@ const Tooltip = styled(TooltipUnstyled)`
       width: 0;
       height: 0;
       border-color: transparent;
-      border-style: solid
+      border-style: solid;
     }
   `}
 `;
