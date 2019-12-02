@@ -1,3 +1,11 @@
+## [3.2.2](https://github.com/bootstrap-styled/v4/compare/v3.2.1...v3.2.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* **tooltip:** added more tooltips variables ([b20ad05](https://github.com/bootstrap-styled/v4/commit/b20ad0594af8432bfbea58bd749b7be3eb4a66f9))
+* **tooltip:** added new tooltip variables ([063f0b3](https://github.com/bootstrap-styled/v4/commit/063f0b3c1b283ce09a8ab75b54a8a9bc935fb466))
+
 ## [3.2.1](https://github.com/bootstrap-styled/v4/compare/v3.2.0...v3.2.1) (2019-11-13)
 
 
