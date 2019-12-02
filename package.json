@@ -76,7 +76,7 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "@bootstrap-styled/documentation": "^2.0.0",
-    "@bootstrap-styled/provider": "^1.5.3",
+    "@bootstrap-styled/provider": "^2.0.0",
     "@rollup-umd/documentation": "^2.0.11",
     "@rollup-umd/rollup": "^1.1.0",
     "@semantic-release/changelog": "^3.0.5",
