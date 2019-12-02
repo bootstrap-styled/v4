@@ -9,8 +9,8 @@ import styled from 'styled-components';
 import omit from 'lodash.omit';
 import { getTetherAttachments, tetherAttachements } from '@bootstrap-styled/utils/lib/tools';
 import mapToCssModules from 'map-to-css-modules';
-import TetherContent from '../TetherContent';
 import { borderRadius } from '@bootstrap-styled/css-mixins/lib/border-radius';
+import TetherContent from '../TetherContent';
 
 const DEFAULT_DELAYS = {
   shape: 0,
