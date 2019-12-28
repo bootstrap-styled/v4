@@ -81,6 +81,7 @@ export const propTypes = {
     'info',
     'warning',
     'danger',
+    'white',
   ]),
   /** Use that property to pass a ref callback to the native button component. */
   ref: PropTypes.func,
@@ -264,7 +265,7 @@ const Button = styled(ButtonUnstyled)`
     props.theme['$btn-danger-border'],
     props.theme['$btn-disabled-opacity'],
   )}
- `} 
+ `}
 `;
 
 Button.defaultProps = defaultProps;
