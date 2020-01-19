@@ -82,6 +82,8 @@ export const propTypes = {
     'warning',
     'danger',
     'white',
+    'light',
+    'dark'
   ]),
   /** Use that property to pass a ref callback to the native button component. */
   ref: PropTypes.func,
