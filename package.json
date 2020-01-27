@@ -85,7 +85,7 @@
     "@rollup-umd/documentation": "^2.0.11",
     "@rollup-umd/rollup": "^1.1.0",
     "@rollup-umd/ncu": "^1.0.9",
-    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/changelog": "^5.0.0",
     "@semantic-release/git": "^7.0.18",
     "@semantic-release/github": "^5.5.5",
     "@semantic-release/npm": "^5.3.4",
