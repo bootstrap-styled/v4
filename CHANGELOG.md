@@ -1,3 +1,16 @@
+# [3.4.0](https://github.com/bootstrap-styled/v4/compare/v3.3.0...v3.4.0) (2020-02-18)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([d1219ca](https://github.com/bootstrap-styled/v4/commit/d1219ca2c36056fab58fd5d18968042e5f77b66c))
+* **peerDepedencies:** allow styled-components v4 and v5 and react 16.9.0 ([e706702](https://github.com/bootstrap-styled/v4/commit/e706702e51153cdf3f70167097230ba72a3a57c0))
+
+
+### Features
+
+* **button:** add props.color option 'dark' & 'light' ([cdf8197](https://github.com/bootstrap-styled/v4/commit/cdf8197259ee5ebce9b61ecb12bd4fa05b5997d4))
+
 # [3.3.0](https://github.com/bootstrap-styled/v4/compare/v3.2.2...v3.3.0) (2019-12-28)
 
 
