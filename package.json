@@ -30,13 +30,14 @@
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src",
     "lint:css": "stylelint './src/**/*.js'",
-    "prepublish": "npm run build",
+    "prepublish": "npm run snyk-protect && npm run build",
     "lint-staged": "lint-staged",
     "jsdoc-documentation": "jsdoc-documentation",
     "jsdoc": "jsdoc-documentation --file",
     "prestyleguide": "npm run jsdoc",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -193,7 +194,8 @@
     "prop-types": "^15.7.2",
     "react-portal": "^4.2.1",
     "react-transition-group": "^2.6.0",
-    "tether-fix": "^1.4.0-fix-es"
+    "tether-fix": "^1.4.0-fix-es",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",
@@ -294,5 +296,6 @@
       "devDependencyPin": "chore: pin ${dependency} to ${oldVersion}",
       "closes": "\n\nCloses #${number}"
     }
-  }
+  },
+  "snyk": true
 }
