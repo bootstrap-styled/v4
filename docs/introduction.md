@@ -19,7 +19,7 @@
 
 ## In practice
 
-This is example is a counter made with React and Bootstrap Styled with a custom theme, we:
+This example is a counter made with React and Bootstrap Styled with a custom theme, we:
 
 - Use `<App />` as application wrapper for our example.
 - Customize it's `theme` props .
