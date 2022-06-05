@@ -6,7 +6,7 @@ import omit from 'lodash.omit';
 import { makeGridColumns } from '@bootstrap-styled/css-mixins/lib/grid-framework';
 import mapToCssModules from 'map-to-css-modules';
 
-const colWidths = ['xs', 'sm', 'md', 'lg', 'xl'];
+const colWidths = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 const stringOrNumberProp = PropTypes.oneOfType([PropTypes.number, PropTypes.string]);
 
 const columnProps = PropTypes.oneOfType([
@@ -43,6 +43,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$grid-columns': '12',
     '$grid-gutter-width': '30px',
@@ -67,6 +68,8 @@ export const propTypes = {
   lg: columnProps,
   /** Extra large columns variables. */
   xl: columnProps,
+  /** Extra extra large columns variables. */
+  xxl: columnProps,
   /** Widths size variables. */
   widths: PropTypes.array,
   /** Theme variables. */

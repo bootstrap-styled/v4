@@ -15,6 +15,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$enable-rounded': true,
     '$enable-hover-media-query': false,
@@ -134,7 +135,7 @@ const P = styled(PUnstyled)`
       font-size: ${props.theme['$lead-font-size']};
       font-weight: ${props.theme['$lead-font-weight']};
     }
-    
+
     &.h1{
       font-size: ${props.theme['$font-size-h1']};
       ${typography(
@@ -153,7 +154,7 @@ const P = styled(PUnstyled)`
     props.theme['$display4-weight'],
   )}
     }
-    
+
     &.h2{
       font-size: ${props.theme['$font-size-h2']};
       ${typography(
@@ -172,7 +173,7 @@ const P = styled(PUnstyled)`
     props.theme['$display4-weight'],
   )}
     }
-    
+
     &.h3{
       font-size: ${props.theme['$font-size-h3']};
       ${typography(
@@ -191,7 +192,7 @@ const P = styled(PUnstyled)`
     props.theme['$display4-weight'],
   )}
     }
-    
+
     &.h4{
       font-size: ${props.theme['$font-size-h4']};
       ${typography(
@@ -210,7 +211,7 @@ const P = styled(PUnstyled)`
     props.theme['$display4-weight'],
   )}
     }
-    
+
     &.h5{
       font-size: ${props.theme['$font-size-h5']};
       ${typography(
@@ -229,7 +230,7 @@ const P = styled(PUnstyled)`
     props.theme['$display4-weight'],
   )}
     }
-    
+
     &.h6{
       font-size: ${props.theme['$font-size-h6']};
       ${typography(
@@ -248,9 +249,9 @@ const P = styled(PUnstyled)`
     props.theme['$display4-weight'],
   )}
     }
-    
+
     /* Reboot Scss */
-    margin-top: 0;   
+    margin-top: 0;
     margin-bottom: 1rem;
   `}
 `;

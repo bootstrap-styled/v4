@@ -135,7 +135,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
-      xxl: '1452px',
+      xxl: '1400px',
     },
     '$enable-rounded': true,
     '$enable-shadows': false,
@@ -450,7 +450,7 @@ const Modal = styled(ModalUnstyled)`
       outline: 0;
       overflow-x: hidden;
       overflow-y: auto;
-      
+
       ${fade(props.theme['$enable-transitions'], props.theme['$transition-fade'])}
       &.fade {
         .modal-dialog {
@@ -464,7 +464,7 @@ const Modal = styled(ModalUnstyled)`
         }
       }
     }
-    
+
     & .modal-dialog {
       position: relative;
       width: auto;
@@ -478,8 +478,8 @@ const Modal = styled(ModalUnstyled)`
     props.theme['$body-bg'],
   )}
     }
-    
-    
+
+
     & .modal-content {
       position: relative;
       display: flex;
@@ -491,7 +491,7 @@ const Modal = styled(ModalUnstyled)`
       ${boxShadow(props.theme['$enable-shadows'], props.theme['$modal-content-xs-box-shadow'])}
       outline: 0;
     }
-    
+
     & .modal-backdrop {
       position: fixed;
       top: 0;
@@ -508,8 +508,8 @@ const Modal = styled(ModalUnstyled)`
         opacity: ${props.theme['$modal-backdrop-opacity']};
       }
     }
-      
-        
+
+
     & .modal-header {
       display: flex;
       align-items: center;
@@ -517,18 +517,18 @@ const Modal = styled(ModalUnstyled)`
       padding: ${props.theme['$modal-header-padding']};
       border-bottom: ${props.theme['$modal-header-border-width']} solid ${props.theme['$modal-header-border-color']};
     }
-    
+
     & .modal-title {
       margin-bottom: 0;
       line-height: ${props.theme['$modal-title-line-height']};
     }
-    
+
     & .modal-body {
       position: relative;
       flex: 1 1 auto;
       padding: ${props.theme['$modal-inner-padding']};
     }
-    
+
     & .modal-footer {
       display: flex;
       align-items: center;
@@ -539,9 +539,9 @@ const Modal = styled(ModalUnstyled)`
       > :not(:first-child) { margin-left: .25rem; }
       > :not(:last-child) { margin-right: .25rem; }
     }
-    
 
-  
+
+
     // Scale up the modal
     ${mediaBreakpointUp('sm', props.theme['$grid-breakpoints'],
     `
@@ -549,21 +549,21 @@ const Modal = styled(ModalUnstyled)`
           max-width: ${props.theme['$modal-md']};
           margin: ${props.theme['$modal-dialog-sm-up-margin-y']} auto;
         }
-      
+
         & .modal-content {
           ${boxShadow(props.theme['$enable-shadows'], props.theme['$modal-content-sm-up-box-shadow'])}
         }
-      
+
         & .modal-sm {
           max-width: ${props.theme['$modal-sm']};
         }
       `)}
-  
+
 
     ${mediaBreakpointUp('lg', props.theme['$grid-breakpoints'],
     `
         & .modal-lg {
-           max-width:  ${props.theme['$modal-lg']}; 
+           max-width:  ${props.theme['$modal-lg']};
          }
       `)}
   `}

@@ -23,6 +23,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$border-radius-lg': '.3rem',
     '$jumbotron-padding': '2rem',
@@ -93,16 +94,16 @@ const Jumbotron = styled(JumbotronUnstyled)`
     props.theme['$enable-rounded'],
     props.theme['$border-radius-lg']
   )}
-    
+
       ${mediaBreakpointUp('sm',
     props.theme['$grid-breakpoints'],
-    `padding: calc(${props.theme['$jumbotron-padding']} * 2) ${props.theme['$jumbotron-padding']};`)}  
+    `padding: calc(${props.theme['$jumbotron-padding']} * 2) ${props.theme['$jumbotron-padding']};`)}
     }
 
     & .jumbotron-hr {
       border-top-color: ${Color(props.theme['$jumbotron-bg']).darken(0.1).toString()};
     }
-    
+
     &.jumbotron-fluid {
       padding-right: 0;
       padding-left: 0;

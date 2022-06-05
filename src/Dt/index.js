@@ -18,6 +18,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$enable-grid-classes': true,
   },
@@ -36,7 +37,7 @@ export const propTypes = {
 /**
  * Use our `<Dt />` component defines a term/name in a description list.
  */
-const Dt = styled.dt` 
+const Dt = styled.dt`
   ${(props) => `
     /* Reboot Scss */
     font-weight: ${props.theme['$dt-font-weight']};

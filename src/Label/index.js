@@ -10,7 +10,7 @@ import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules';
 import { button } from '@bootstrap-styled/css-mixins/lib/buttons';
 
-const colSizes = ['xs', 'sm', 'md', 'lg', 'xl'];
+const colSizes = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 
 const stringOrNumberProp = PropTypes.oneOfType([PropTypes.number, PropTypes.string]);
 
@@ -102,6 +102,8 @@ export const propTypes = {
   lg: columnProps,
   /** Extra large columns variables. */
   xl: columnProps,
+  /** Extra extra large columns variables. */
+  xxl: columnProps,
   /**
    * Replace or remove a className from the component.
    * See example <a href="https://www.npmjs.com/package/map-to-css-modules" target="_blank">here</a>.

@@ -40,6 +40,7 @@ const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$grid-gutter-width': '30px',
     '$font-size-base': '1rem',
@@ -345,7 +346,7 @@ class FormUnstyled extends React.Component {// eslint-disable-line react/prefer-
  * Use our `<Form />` component in order to quick create reliable Form. It use `<FormsGroup />` containing `<Label />` and `<Input />` you want to use.
  * You can also use `hidden` attribute in order to hide `<Label />` or `check` (when using checkbox).
  */
-const Form = styled(FormUnstyled)` 
+const Form = styled(FormUnstyled)`
   ${(props) => `
     /*
      Textual form controls
@@ -375,7 +376,7 @@ const Form = styled(FormUnstyled)`
     props.theme['$input-bg-disabled'],
     props.theme['$cursor-disabled'],
   )}
-    
+
     select.form-control {
       &:focus::-ms-value {
         /* Suppress the nested default white text on blue background highlight given to
@@ -626,7 +627,7 @@ const Form = styled(FormUnstyled)`
             justify-content: center;
             margin-bottom: 0;
           }
-          
+
           /* Inline-block all the things for inline */
           & .form-group {
             display: flex;
@@ -634,28 +635,28 @@ const Form = styled(FormUnstyled)`
             flex-flow: row wrap;
             margin-bottom: 0;
           }
-      
+
           /* Allow folks to *not* use .form-group */
           & .form-control {
             display: inline-block;
             width: auto; /* Prevent labels from stacking above inputs in .form-group */
             vertical-align: middle;
           }
-      
+
           /* Make static controls behave like regular ones */
           & .form-control-static {
             display: inline-block;
           }
-      
+
           & .input-group {
             width: auto;
           }
-          
+
           & .form-control-label {
              margin-bottom: 0;
             vertical-align: middle;
           }
-      
+
           /* Remove default margin on radios/checkboxes that were used for stacking, and */
           /*  then undo the floating of radios and checkboxes to match. */
           & .form-check {
@@ -675,7 +676,7 @@ const Form = styled(FormUnstyled)`
             margin-top: 0;
             margin-right: ${props.theme['$form-check-input-margin-x']};
           }
-          
+
           /* Custom form controls */
           & .custom-control {
             display: flex;
@@ -683,14 +684,14 @@ const Form = styled(FormUnstyled)`
             justify-content: center;
             padding-left: 0;
           }
-          
+
           & .custom-control-indicator {
             position: static;
             display: inline-block;
             margin-right: ${props.theme['$form-check-input-margin-x']}; /* Flexbox alignment means we lose our HTML space here, so we compensate. */
             vertical-align: text-bottom;
           }
-          
+
           /* Re-override the feedback icon. */
           & .has-feedback .form-control-feedback {
             top: 0;

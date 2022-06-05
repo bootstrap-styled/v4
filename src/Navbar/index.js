@@ -30,6 +30,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$enable-rounded': true,
     '$enable-hover-media-query': false,

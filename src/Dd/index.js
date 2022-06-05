@@ -17,6 +17,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$enable-grid-classes': true,
   },
@@ -34,7 +35,7 @@ export const propTypes = {
 /**
  * Use our `<Dd />` component to describe a term/name in a description list.
  */
-const Dd = styled.dd` 
+const Dd = styled.dd`
   /* _reboot.scss */
   margin-bottom: .5rem;
   margin-left: 0; /* Undo browser default */
