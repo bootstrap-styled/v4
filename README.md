@@ -27,6 +27,9 @@
 
 ---
 
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbootstrap-styled%2Fv4.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbootstrap-styled%2Fv4?ref=badge_large)
+
 ## Documentation
 
 Read [v4 documentation](https://bootstrap-styled.github.io/v4).
@@ -60,4 +63,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
