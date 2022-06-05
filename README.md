@@ -15,8 +15,7 @@
 [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/v4)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4)
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.v4&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.v4)
-[![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled) [![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/v4.svg)](https://greenkeeper.io/)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbootstrap-styled%2Fv4.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbootstrap-styled%2Fv4?ref=badge_shield)
+[![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled) 
 
 :rocket: [twbs/bootstrap](https://github.com/twbs/bootstrap) **V4** UI Components made with [bootstrap-styled](https://bootstrap-styled.github.io). Work with css-in-js, [react](https://github.com/facebook/react), [styled-components](https://github.com/styled-components/styled-components), and Bootstrap Styled utilities.
 
