@@ -1,3 +1,128 @@
+# [3.4.0](https://github.com/bootstrap-styled/v4/compare/v3.3.0...v3.4.0) (2020-02-18)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([d1219ca](https://github.com/bootstrap-styled/v4/commit/d1219ca2c36056fab58fd5d18968042e5f77b66c))
+* **peerDepedencies:** allow styled-components v4 and v5 and react 16.9.0 ([e706702](https://github.com/bootstrap-styled/v4/commit/e706702e51153cdf3f70167097230ba72a3a57c0))
+
+
+### Features
+
+* **button:** add props.color option 'dark' & 'light' ([cdf8197](https://github.com/bootstrap-styled/v4/commit/cdf8197259ee5ebce9b61ecb12bd4fa05b5997d4))
+
+# [3.3.0](https://github.com/bootstrap-styled/v4/compare/v3.2.2...v3.3.0) (2019-12-28)
+
+
+### Features
+
+* **button:** add props.color option 'white' ([35cf344](https://github.com/bootstrap-styled/v4/commit/35cf344d4222e661eb790fb18dacb6f52e21dfec)), closes [#178](https://github.com/bootstrap-styled/v4/issues/178)
+
+## [3.2.2](https://github.com/bootstrap-styled/v4/compare/v3.2.1...v3.2.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* **tooltip:** added more tooltips variables ([b20ad05](https://github.com/bootstrap-styled/v4/commit/b20ad0594af8432bfbea58bd749b7be3eb4a66f9))
+* **tooltip:** added new tooltip variables ([063f0b3](https://github.com/bootstrap-styled/v4/commit/063f0b3c1b283ce09a8ab75b54a8a9bc935fb466))
+
+## [3.2.1](https://github.com/bootstrap-styled/v4/compare/v3.2.0...v3.2.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([3b01e6f](https://github.com/bootstrap-styled/v4/commit/3b01e6fa13e1a72b29fa6b60e1c8d253b2d22964))
+* **documentation:** fixing link loading whole page ([e0ee814](https://github.com/bootstrap-styled/v4/commit/e0ee8148db036a274e5d8d924525cb8b5f42d061))
+* **Modal:** using UNSAFE_componentWillUpdate ([7612eeb](https://github.com/bootstrap-styled/v4/commit/7612eeb67716ef3ea16d715e3dea1c81ceb54b85))
+* **Tooltip:** Use the $tooltip-arrow-color variable within the component style ([86e827d](https://github.com/bootstrap-styled/v4/commit/86e827dce790d8cedbb7e117212789b5dc32012c))
+
+# [3.2.0](https://github.com/bootstrap-styled/v4/compare/v3.1.6...v3.2.0) (2019-10-04)
+
+
+### Features
+
+* **Col:** add option for order-* ([3816fb7](https://github.com/bootstrap-styled/v4/commit/3816fb7))
+
+## [3.1.6](https://github.com/bootstrap-styled/v4/compare/v3.1.5...v3.1.6) (2019-09-26)
+
+
+### Bug Fixes
+
+* **typescripts:** disable typescript due to https://github.com/bootstrap-styled/bootstrap-styled/issues/83#issuecomment-535666014 ([3d101ed](https://github.com/bootstrap-styled/v4/commit/3d101ed)), closes [/github.com/bootstrap-styled/bootstrap-styled/issues/83#issuecomment-535666014](https://github.com//github.com/bootstrap-styled/bootstrap-styled/issues/83/issues/issuecomment-535666014)
+
+## [3.1.5](https://github.com/bootstrap-styled/v4/compare/v3.1.4...v3.1.5) (2019-09-16)
+
+
+### Bug Fixes
+
+* **cards:** remove bad file in tests ([f38c3ac](https://github.com/bootstrap-styled/v4/commit/f38c3ac)), closes [#152](https://github.com/bootstrap-styled/v4/issues/152)
+
+## [3.1.4](https://github.com/bootstrap-styled/v4/compare/v3.1.3...v3.1.4) (2019-09-11)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade react to v16.9.0 ([3504270](https://github.com/bootstrap-styled/v4/commit/3504270))
+
+## [3.1.3](https://github.com/bootstrap-styled/v4/compare/v3.1.2...v3.1.3) (2019-09-11)
+
+
+### Bug Fixes
+
+* **dependencies:** Upgrade many dependencies ([4936096](https://github.com/bootstrap-styled/v4/commit/4936096))
+
+## [3.1.2](https://github.com/bootstrap-styled/v4/compare/v3.1.1...v3.1.2) (2019-09-11)
+
+
+### Bug Fixes
+
+* **typescript:** Moved typescript definition to root of the package ([ff21225](https://github.com/bootstrap-styled/v4/commit/ff21225))
+
+## [3.1.1](https://github.com/bootstrap-styled/v4/compare/v3.1.0...v3.1.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* **Collapse:** collapse can now work without the BootstrapProvider ([fe80f0f](https://github.com/bootstrap-styled/v4/commit/fe80f0f)), closes [#125](https://github.com/bootstrap-styled/v4/issues/125)
+* **dependencies:** upgrade bootstrap-styled dependency ([3354be9](https://github.com/bootstrap-styled/v4/commit/3354be9))
+* **react:** locked version of react >=16.0.0 <=16.8.6 due to [#144](https://github.com/bootstrap-styled/v4/issues/144) ([58adafa](https://github.com/bootstrap-styled/v4/commit/58adafa))
+
+# [3.1.0](https://github.com/bootstrap-styled/v4/compare/v3.0.16...v3.1.0) (2019-07-27)
+
+
+### Features
+
+* **typescript:** added typescript definition ([19b4af1](https://github.com/bootstrap-styled/v4/commit/19b4af1))
+
+## [3.0.16](https://github.com/bootstrap-styled/v4/compare/v3.0.15...v3.0.16) (2019-06-17)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([6e895ae](https://github.com/bootstrap-styled/v4/commit/6e895ae))
+
+## [3.0.15](https://github.com/bootstrap-styled/v4/compare/v3.0.14...v3.0.15) (2019-05-18)
+
+
+### Bug Fixes
+
+* **Select component:** fixed Select component for SSR ([d8e6828](https://github.com/bootstrap-styled/v4/commit/d8e6828)), closes [#121](https://github.com/bootstrap-styled/v4/issues/121)
+
+## [3.0.14](https://github.com/bootstrap-styled/v4/compare/v3.0.13...v3.0.14) (2019-05-13)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([eca3f20](https://github.com/bootstrap-styled/v4/commit/eca3f20))
+* **Grid:** fix example missing imporrts ([f394b4f](https://github.com/bootstrap-styled/v4/commit/f394b4f))
+
+## [3.0.13](https://github.com/bootstrap-styled/v4/compare/v3.0.12...v3.0.13) (2019-04-18)
+
+
+### Bug Fixes
+
+* **ListGroupItem:** added missing css rule. ([2cb3034](https://github.com/bootstrap-styled/v4/commit/2cb3034))
+
 ## [3.0.12](https://github.com/bootstrap-styled/v4/compare/v3.0.11...v3.0.12) (2019-03-11)
 
 

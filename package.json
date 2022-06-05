@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/v4",
-  "version": "3.0.12",
+  "version": "3.4.0",
   "description": "twbs/bootstrap V4 UI Components made with bootstrap-styled. Work with css-in-js, react, styled-components, and Bootstrap Styled utilities.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/v4.esm.js",
@@ -280,19 +280,6 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "greenkeeper": {
-    "label": "dependency",
-    "commitMessages": {
-      "initialBadge": "docs(readme): add Greenkeeper badge",
-      "initialDependencies": "chore(package): update dependencies",
-      "initialBranches": "chore(travis): whitelist greenkeeper branches",
-      "dependencyUpdate": "fix(package): update ${dependency} to version ${version}",
-      "devDependencyUpdate": "chore(package): update ${dependency} to version ${version}",
-      "dependencyPin": "fix: pin ${dependency} to ${oldVersion}",
-      "devDependencyPin": "chore: pin ${dependency} to ${oldVersion}",
-      "closes": "\n\nCloses #${number}"
     }
   }
 }
