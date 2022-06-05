@@ -27,6 +27,7 @@ export const defaultProps = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
+      xxl: '1400px',
     },
     '$enable-rounded': true,
     '$enable-hover-media-query': false,
@@ -227,11 +228,11 @@ const Ul = styled(UlUnstyled)`
     &.list-inline {
       ${listInline()}
     }
-    
+
     /* Reboot Scss */
     margin-top: 0;
     margin-bottom: 1rem;
-  
+
     & ol,
     & ul {
       margin-bottom: 0;

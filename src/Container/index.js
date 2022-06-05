@@ -13,6 +13,7 @@ export const defaultProps = {
       md: '720px',
       lg: '960px',
       xl: '1140px',
+      xxl: '1320px',
     },
     '$enable-grid-classes': true,
   },
@@ -66,7 +67,7 @@ const Container = styled(ContainerUnstyled)`
     props.theme['$enable-grid-classes'],
     props.theme['$grid-gutter-width']
   )}
-    
+
   ${!props.fluid ? makeContainerMaxWidths(
     props.theme['$enable-grid-classes'],
     props.theme['$container-max-widths'],
